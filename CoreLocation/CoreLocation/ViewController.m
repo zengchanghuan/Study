@@ -7,18 +7,29 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
-
+#import <CoreLocation/CoreLocation.h>
+@interface ViewController ()<CLLocationManagerDelegate>
+@property (nonatomic, strong) CLLocationManager *mgr;
 @end
-
 @implementation ViewController
-
+- (CLLocationManager *)mgr
+{
+    if (!_mgr) {
+        _mgr = [[CLLocationManager alloc] init];
+    }
+    return _mgr;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor redColor];
+    _mgr.delegate = self;
+    [_mgr startUpdatingLocation];
+    
 }
 
-
-
+#pragma mark -CLLocationManagerDelegate
+-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations
+{
+    NSLog(@"%s",__func__);
+}
 @end
