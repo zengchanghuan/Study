@@ -1,13 +1,15 @@
 //
-//  StaticLibray.h
-//  StaticLibray
+//  ViewController.h
+//  TestStaticLibary
 //
 //  Created by ZengChanghuan on 16/5/18.
 //  Copyright © 2016年 ZengChanghuan. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface StaticLibray : NSObject
+@interface ViewController : UIViewController
+
 
 @end
+

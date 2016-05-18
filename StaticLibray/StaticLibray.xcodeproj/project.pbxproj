@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8ED7B18F1CEC726900850E9C /* StaticLibray.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8ED7B18E1CEC726900850E9C /* StaticLibray.h */; };
-		8ED7B1911CEC726900850E9C /* StaticLibray.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7B1901CEC726900850E9C /* StaticLibray.m */; };
+		8ED7B1991CEC72C500850E9C /* XZTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7B1981CEC72C500850E9C /* XZTool.m */; };
+		8ED7B19A1CEC73D200850E9C /* XZTool.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8ED7B1971CEC72C500850E9C /* XZTool.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,7 +18,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				8ED7B18F1CEC726900850E9C /* StaticLibray.h in CopyFiles */,
+				8ED7B19A1CEC73D200850E9C /* XZTool.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -26,8 +26,8 @@
 
 /* Begin PBXFileReference section */
 		8ED7B18B1CEC726900850E9C /* libStaticLibray.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStaticLibray.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		8ED7B18E1CEC726900850E9C /* StaticLibray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticLibray.h; sourceTree = "<group>"; };
-		8ED7B1901CEC726900850E9C /* StaticLibray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticLibray.m; sourceTree = "<group>"; };
+		8ED7B1971CEC72C500850E9C /* XZTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTool.h; sourceTree = "<group>"; };
+		8ED7B1981CEC72C500850E9C /* XZTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +60,8 @@
 		8ED7B18D1CEC726900850E9C /* StaticLibray */ = {
 			isa = PBXGroup;
 			children = (
-				8ED7B18E1CEC726900850E9C /* StaticLibray.h */,
-				8ED7B1901CEC726900850E9C /* StaticLibray.m */,
+				8ED7B1971CEC72C500850E9C /* XZTool.h */,
+				8ED7B1981CEC72C500850E9C /* XZTool.m */,
 			);
 			path = StaticLibray;
 			sourceTree = "<group>";
@@ -122,7 +122,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8ED7B1911CEC726900850E9C /* StaticLibray.m in Sources */,
+				8ED7B1991CEC72C500850E9C /* XZTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
