@@ -8,9 +8,7 @@
 
 #import "BDVRViewController.h"
 #import "BDVoiceRecognitionClient.h"
-#import "BDVRSettingViewController.h"
 #import "BDVRSConfig.h"
-#import "BDVRCustomRecognitonViewController.h"
 #import "BDVRUIPromptTextCustom.h"
 
 //#error 请修改为您在百度开发者平台申请的API_KEY和SECRET_KEY
