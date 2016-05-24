@@ -13,7 +13,7 @@
 @property (nonatomic) BOOL playStartMusicSwitch;
 @property (nonatomic) BOOL playEndMusicSwitch;
 @property (nonatomic, strong) NSNumber *recognitionProperty;
-@property (nonatomic) int recognitionLanguage;
+@property (nonatomic,assign) int recognitionLanguage;
 @property (nonatomic) BOOL resultContinuousShow;
 @property (nonatomic) BOOL voiceLevelMeter;
 @property (nonatomic) BOOL uiHintMusicSwitch;
