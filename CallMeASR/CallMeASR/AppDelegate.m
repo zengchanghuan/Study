@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ASRViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] init];
+    self.window.frame = [UIScreen mainScreen].bounds;
+    
+    ASRViewController *vc = [[ASRViewController alloc] init];
+    UINavigationController *na = [[UINavigationController alloc] initWithRootViewController:vc];
+    [na setNavigationBarHidden:YES];
+    self.window.rootViewController = na;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
