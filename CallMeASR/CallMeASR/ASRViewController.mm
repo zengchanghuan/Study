@@ -21,11 +21,8 @@
 #define API_KEY @"P2tajQOfTwTiuTviYGriU20W" // 请修改为您在百度开发者平台申请的API_KEY
 #define SECRET_KEY @"a352ef5317b377b2713ce125027cb925" // 请修改您在百度开发者平台申请的SECRET_KEY
 #define APPID @"8172021" // 请修改为您在百度开发者平台申请的APP ID
-@interface ASRViewController ()<BDRecognizerViewDelegate,MVoiceRecognitionClientDelegate>
+@interface ASRViewController ()<BDRecognizerViewDelegate>
 @property (nonatomic, strong) BDRecognizerViewController *recognizerViewController;
-@property (nonatomic, strong) BDVRRawDataRecognizer *rawDataRecognizer;
-@property (nonatomic, strong) BDVRFileRecognizer *fileRecognizer;
-@property (nonatomic, strong) BDVRDataUploader *contactsUploader;
 @end
 
 @implementation ASRViewController
@@ -43,7 +40,7 @@
     UIButton *recognitionBtn = [[UIButton alloc] init];
     recognitionBtn.backgroundColor = [UIColor grayColor];
     [self.view addSubview:recognitionBtn];
-    [recognitionBtn addTarget:self action:@selector(voiceRecognitionAction) forControlEvents:UIControlEventTouchUpInside];
+    [recognitionBtn addTarget:self action:@selector(startRecognitionAction) forControlEvents:UIControlEventTouchUpInside];
     
     [recognitionBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(100, 60));
@@ -129,10 +126,7 @@
     
     [_recognizerViewController startWithParams:paramsObject];
 }
-- (void)voiceRecognitionAction
-{
-    
-}
+
 #pragma mark -BDRecognizerViewDelegate
 /**
  * @brief 语音识别结果返回，搜索和输入模式结果返回的结构不相同
@@ -164,84 +158,6 @@
         NSLog(@"%@",tmpString);
         
     }
-}
-/**
- * @brief 录音数据返回
- *
- * @param recordData 录音数据
- * @param sampleRate 采样率
- */
-- (void)onRecordDataArrived:(NSData *)recordData sampleRate:(int)sampleRate
-{
-    
-}
-
-/**
- * @brief 录音结束
- */
-- (void)onRecordEnded
-{
-    DLog(@"onRecordEnded");
-}
-
-/**
- * @brief 返回中间识别结果
- *
- * @param results 中间识别结果
- */
-- (void)onPartialResults:(NSString *)results
-{
-    
-}
-
-/**
- * @brief 发生错误
- *
- * @param errorCode
- *            错误码
- */
-- (void)onError:(int)errorCode
-{
-    NSLog(@"errorCode = %d",errorCode);
-}
-
-/**
- * @brief 提示语出现
- */
-- (void)onTipsShow
-{
-    
-}
-
-- (void)onSpeakFinish
-{
-    
-}
-
-- (void)onRetry
-{
-    
-}
-
-/**
- * @brief 弹窗关闭
- */
-- (void)onClose
-{
-    
-}
-#pragma mark -MVoiceRecognitionClientDelegate
-- (void)VoiceRecognitionClientWorkStatus:(int) aStatus obj:(id)aObj{
-    NSLog(@"出错");
-}
-- (void)VoiceRecognitionClientErrorStatus:(int) aStatus subStatus:(int)aSubStatus{
-    NSLog(@"处理网络状态变化");
-}
-
-- (void)VoiceRecognitionClientNetWorkStatus:(int) aStatus
-{
-    NSLog(@"处理网络状态变化");
-
 }
 
 @end
