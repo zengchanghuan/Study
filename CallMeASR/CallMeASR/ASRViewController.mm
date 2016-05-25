@@ -37,7 +37,7 @@
     UIButton *recognitionBtn = [[UIButton alloc] init];
     recognitionBtn.backgroundColor = [UIColor grayColor];
     [self.view addSubview:recognitionBtn];
-    [recognitionBtn addTarget:self action:@selector(startVoiceRecognitionAction) forControlEvents:UIControlEventTouchUpInside];
+    [recognitionBtn addTarget:self action:@selector(startRecognitionAction) forControlEvents:UIControlEventTouchUpInside];
     
     [recognitionBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(100, 60));
@@ -123,7 +123,7 @@
     
     [_recognizerViewController startWithParams:paramsObject];
 }
-
+//沒有UI的主意識別
 - (void)startVoiceRecognitionAction
 {
     [[BDVoiceRecognitionClient sharedInstance] setApiKey:API_KEY withSecretKey:SECRET_KEY];
@@ -163,7 +163,7 @@
     
     
     
-    /*
+    
     
     if ([[BDVoiceRecognitionClient sharedInstance] getRecognitionProperty] != EVoiceRecognitionPropertyInput)
     {
@@ -186,7 +186,7 @@
         NSLog(@"%@",tmpString);
         
     }
-     */
+     
 }
 
 @end

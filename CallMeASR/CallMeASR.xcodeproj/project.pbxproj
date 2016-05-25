@@ -46,7 +46,6 @@
 		8E797CE21CF4344100D775D8 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E797CE11CF4344100D775D8 /* CoreTelephony.framework */; };
 		8EA978A31CF5458F00651B69 /* libBDVoiceRecognitionClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA978A21CF5458F00651B69 /* libBDVoiceRecognitionClient.a */; };
 		8EA978A51CF545F500651B69 /* BDVoiceRecognitionClientResources in Resources */ = {isa = PBXBuildFile; fileRef = 8EA978A41CF545F500651B69 /* BDVoiceRecognitionClientResources */; };
-		8EA978A81CF57D7100651B69 /* BDVRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA978A71CF57D7100651B69 /* BDVRViewController.m */; };
 		8EA978AB1CF57DA300651B69 /* BDVRSConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA978AA1CF57DA300651B69 /* BDVRSConfig.m */; };
 /* End PBXBuildFile section */
 
@@ -123,8 +122,6 @@
 		8E797CE31CF462CF00D775D8 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		8EA978A21CF5458F00651B69 /* libBDVoiceRecognitionClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBDVoiceRecognitionClient.a; path = CallMeASR/libBDVoiceRecognitionClient/libBDVoiceRecognitionClient.a; sourceTree = "<group>"; };
 		8EA978A41CF545F500651B69 /* BDVoiceRecognitionClientResources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = BDVoiceRecognitionClientResources; path = "Third-party/BDVoiceRecognitionClientResources"; sourceTree = "<group>"; };
-		8EA978A61CF57D7100651B69 /* BDVRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVRViewController.h; sourceTree = "<group>"; };
-		8EA978A71CF57D7100651B69 /* BDVRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDVRViewController.m; sourceTree = "<group>"; };
 		8EA978A91CF57DA300651B69 /* BDVRSConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVRSConfig.h; sourceTree = "<group>"; };
 		8EA978AA1CF57DA300651B69 /* BDVRSConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDVRSConfig.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -200,8 +197,6 @@
 				8E797C131CF3ED1500D775D8 /* AppDelegate.m */,
 				8E797C261CF3ED8200D775D8 /* ASRViewController.h */,
 				8E797C271CF3ED8200D775D8 /* ASRViewController.mm */,
-				8EA978A61CF57D7100651B69 /* BDVRViewController.h */,
-				8EA978A71CF57D7100651B69 /* BDVRViewController.m */,
 				8EA978A91CF57DA300651B69 /* BDVRSConfig.h */,
 				8EA978AA1CF57DA300651B69 /* BDVRSConfig.m */,
 				8E797C1B1CF3ED1500D775D8 /* Assets.xcassets */,
@@ -394,7 +389,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E797CC81CF4036700D775D8 /* NSArray+MASAdditions.m in Sources */,
-				8EA978A81CF57D7100651B69 /* BDVRViewController.m in Sources */,
 				8E797CC71CF4036700D775D8 /* MASViewConstraint.m in Sources */,
 				8E797CA81CF3FDA100D775D8 /* CAXException.cpp in Sources */,
 				8E797CC41CF4036700D775D8 /* MASConstraintMaker.m in Sources */,
@@ -522,6 +516,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/CallMeASR/libBDVoiceRecognitionClient",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shixinyun.callme;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -541,6 +536,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/CallMeASR/libBDVoiceRecognitionClient",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shixinyun.callme;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

@@ -24,11 +24,10 @@ enum TDemoButtonType
 
 // @class - BDVRViewController
 // @brief - Sample主界面的实现类
-@interface BDVRViewController : UIViewController<BDRecognizerViewDelegate, MVoiceRecognitionClientDelegate, BDVRDataUploaderDelegate>
+@interface BDVRViewController : UIViewController<BDRecognizerViewDelegate >
 {
 }
 
-@property (nonatomic, retain) BDVRCustomRecognitonViewController *audioViewController;
 @property (nonatomic, retain) BDRecognizerViewController *recognizerViewController;
 
 

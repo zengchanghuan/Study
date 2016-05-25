@@ -107,7 +107,6 @@
                                     @"$artist_CORE" : @"刘德华\n周华健\n"};
     
     [_recognizerViewController startWithParams:paramsObject];
-    [paramsObject release];
 }
 
 
