@@ -28,12 +28,10 @@ enum TDemoButtonType
 {
 }
 
-@property (nonatomic, retain) BDVRCustomRecognitonViewController *audioViewController;
 @property (nonatomic, retain) BDRecognizerViewController *recognizerViewController;
 
 
 // --UI中按钮动作
-- (void)sdkUIRecognitionAction;
-
+- (IBAction)sdkUIRecognitionAction;
 
 @end

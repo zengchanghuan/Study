@@ -25,21 +25,6 @@
 		8E797C3E1CF3F28900D775D8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E797C3D1CF3F28900D775D8 /* CoreGraphics.framework */; };
 		8E797C401CF3F29C00D775D8 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E797C3F1CF3F29C00D775D8 /* CoreText.framework */; };
 		8E797C6F1CF3FC0F00D775D8 /* libBDVoiceRecognitionClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E797C5F1CF3FC0F00D775D8 /* libBDVoiceRecognitionClient.a */; };
-		8E797C971CF3FDA100D775D8 /* darkBlue.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8E797C781CF3FDA100D775D8 /* darkBlue.bundle */; };
-		8E797C981CF3FDA100D775D8 /* darkGreen.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8E797C791CF3FDA100D775D8 /* darkGreen.bundle */; };
-		8E797C991CF3FDA100D775D8 /* darkOrange.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8E797C7A1CF3FDA100D775D8 /* darkOrange.bundle */; };
-		8E797C9A1CF3FDA100D775D8 /* darkRed.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8E797C7B1CF3FDA100D775D8 /* darkRed.bundle */; };
-		8E797C9B1CF3FDA100D775D8 /* defaultFullScreenTheme.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8E797C7C1CF3FDA100D775D8 /* defaultFullScreenTheme.bundle */; };
-		8E797C9C1CF3FDA100D775D8 /* defaultTheme.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8E797C7D1CF3FDA100D775D8 /* defaultTheme.bundle */; };
-		8E797C9D1CF3FDA100D775D8 /* lightBlue.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8E797C7E1CF3FDA100D775D8 /* lightBlue.bundle */; };
-		8E797C9E1CF3FDA100D775D8 /* lightGreen.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8E797C7F1CF3FDA100D775D8 /* lightGreen.bundle */; };
-		8E797C9F1CF3FDA100D775D8 /* lightOrange.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8E797C801CF3FDA100D775D8 /* lightOrange.bundle */; };
-		8E797CA01CF3FDA100D775D8 /* lightRed.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8E797C811CF3FDA100D775D8 /* lightRed.bundle */; };
-		8E797CA11CF3FDA100D775D8 /* record_cancel.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8E797C831CF3FDA100D775D8 /* record_cancel.caf */; };
-		8E797CA21CF3FDA100D775D8 /* record_end.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8E797C841CF3FDA100D775D8 /* record_end.caf */; };
-		8E797CA31CF3FDA100D775D8 /* record_fail.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8E797C851CF3FDA100D775D8 /* record_fail.caf */; };
-		8E797CA41CF3FDA100D775D8 /* record_start.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8E797C861CF3FDA100D775D8 /* record_start.caf */; };
-		8E797CA51CF3FDA100D775D8 /* record_success.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8E797C871CF3FDA100D775D8 /* record_success.caf */; };
 		8E797CA61CF3FDA100D775D8 /* CADebugMacros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E797C8D1CF3FDA100D775D8 /* CADebugMacros.cpp */; };
 		8E797CA71CF3FDA100D775D8 /* CAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E797C901CF3FDA100D775D8 /* CAStreamBasicDescription.cpp */; };
 		8E797CA81CF3FDA100D775D8 /* CAXException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E797C921CF3FDA100D775D8 /* CAXException.cpp */; };
@@ -53,13 +38,16 @@
 		8E797CC81CF4036700D775D8 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E797CBB1CF4036700D775D8 /* NSArray+MASAdditions.m */; };
 		8E797CC91CF4036700D775D8 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E797CBE1CF4036700D775D8 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		8E797CCA1CF4036700D775D8 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E797CC01CF4036700D775D8 /* View+MASAdditions.m */; };
-		8E797CCD1CF4228700D775D8 /* BDVRSConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E797CCC1CF4228700D775D8 /* BDVRSConfig.m */; };
 		8E797CD61CF4293E00D775D8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E797CD51CF4293E00D775D8 /* UIKit.framework */; };
 		8E797CDD1CF432A600D775D8 /* s_1 in Resources */ = {isa = PBXBuildFile; fileRef = 8E797CD81CF432A600D775D8 /* s_1 */; };
 		8E797CDE1CF432A600D775D8 /* s_2_InputMethod in Resources */ = {isa = PBXBuildFile; fileRef = 8E797CD91CF432A600D775D8 /* s_2_InputMethod */; };
 		8E797CDF1CF432A600D775D8 /* s_2_Navi in Resources */ = {isa = PBXBuildFile; fileRef = 8E797CDA1CF432A600D775D8 /* s_2_Navi */; };
 		8E797CE01CF432A600D775D8 /* bdasr_temp_license.dat in Resources */ = {isa = PBXBuildFile; fileRef = 8E797CDC1CF432A600D775D8 /* bdasr_temp_license.dat */; };
 		8E797CE21CF4344100D775D8 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E797CE11CF4344100D775D8 /* CoreTelephony.framework */; };
+		8EA978A31CF5458F00651B69 /* libBDVoiceRecognitionClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA978A21CF5458F00651B69 /* libBDVoiceRecognitionClient.a */; };
+		8EA978A51CF545F500651B69 /* BDVoiceRecognitionClientResources in Resources */ = {isa = PBXBuildFile; fileRef = 8EA978A41CF545F500651B69 /* BDVoiceRecognitionClientResources */; };
+		8EA978A81CF57D7100651B69 /* BDVRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA978A71CF57D7100651B69 /* BDVRViewController.m */; };
+		8EA978AB1CF57DA300651B69 /* BDVRSConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA978AA1CF57DA300651B69 /* BDVRSConfig.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,21 +78,6 @@
 		8E797C731CF3FDA100D775D8 /* BDRecognizerViewParamsObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDRecognizerViewParamsObject.h; sourceTree = "<group>"; };
 		8E797C741CF3FDA100D775D8 /* BDTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDTheme.h; sourceTree = "<group>"; };
 		8E797C751CF3FDA100D775D8 /* BDVoiceRecognitionClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVoiceRecognitionClient.h; sourceTree = "<group>"; };
-		8E797C781CF3FDA100D775D8 /* darkBlue.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = darkBlue.bundle; sourceTree = "<group>"; };
-		8E797C791CF3FDA100D775D8 /* darkGreen.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = darkGreen.bundle; sourceTree = "<group>"; };
-		8E797C7A1CF3FDA100D775D8 /* darkOrange.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = darkOrange.bundle; sourceTree = "<group>"; };
-		8E797C7B1CF3FDA100D775D8 /* darkRed.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = darkRed.bundle; sourceTree = "<group>"; };
-		8E797C7C1CF3FDA100D775D8 /* defaultFullScreenTheme.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = defaultFullScreenTheme.bundle; sourceTree = "<group>"; };
-		8E797C7D1CF3FDA100D775D8 /* defaultTheme.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = defaultTheme.bundle; sourceTree = "<group>"; };
-		8E797C7E1CF3FDA100D775D8 /* lightBlue.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = lightBlue.bundle; sourceTree = "<group>"; };
-		8E797C7F1CF3FDA100D775D8 /* lightGreen.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = lightGreen.bundle; sourceTree = "<group>"; };
-		8E797C801CF3FDA100D775D8 /* lightOrange.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = lightOrange.bundle; sourceTree = "<group>"; };
-		8E797C811CF3FDA100D775D8 /* lightRed.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = lightRed.bundle; sourceTree = "<group>"; };
-		8E797C831CF3FDA100D775D8 /* record_cancel.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = record_cancel.caf; sourceTree = "<group>"; };
-		8E797C841CF3FDA100D775D8 /* record_end.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = record_end.caf; sourceTree = "<group>"; };
-		8E797C851CF3FDA100D775D8 /* record_fail.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = record_fail.caf; sourceTree = "<group>"; };
-		8E797C861CF3FDA100D775D8 /* record_start.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = record_start.caf; sourceTree = "<group>"; };
-		8E797C871CF3FDA100D775D8 /* record_success.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = record_success.caf; sourceTree = "<group>"; };
 		8E797C881CF3FDA100D775D8 /* BDVRDataUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVRDataUploader.h; sourceTree = "<group>"; };
 		8E797C891CF3FDA100D775D8 /* BDVRFileRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVRFileRecognizer.h; sourceTree = "<group>"; };
 		8E797C8A1CF3FDA100D775D8 /* BDVRRawDataRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVRRawDataRecognizer.h; sourceTree = "<group>"; };
@@ -141,8 +114,6 @@
 		8E797CBF1CF4036700D775D8 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
 		8E797CC01CF4036700D775D8 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
 		8E797CC11CF4036700D775D8 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		8E797CCB1CF4228700D775D8 /* BDVRSConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVRSConfig.h; sourceTree = "<group>"; };
-		8E797CCC1CF4228700D775D8 /* BDVRSConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDVRSConfig.m; sourceTree = "<group>"; };
 		8E797CD51CF4293E00D775D8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8E797CD81CF432A600D775D8 /* s_1 */ = {isa = PBXFileReference; lastKnownFileType = file; path = s_1; sourceTree = "<group>"; };
 		8E797CD91CF432A600D775D8 /* s_2_InputMethod */ = {isa = PBXFileReference; lastKnownFileType = file; path = s_2_InputMethod; sourceTree = "<group>"; };
@@ -150,6 +121,12 @@
 		8E797CDC1CF432A600D775D8 /* bdasr_temp_license.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bdasr_temp_license.dat; sourceTree = "<group>"; };
 		8E797CE11CF4344100D775D8 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		8E797CE31CF462CF00D775D8 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		8EA978A21CF5458F00651B69 /* libBDVoiceRecognitionClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBDVoiceRecognitionClient.a; path = CallMeASR/libBDVoiceRecognitionClient/libBDVoiceRecognitionClient.a; sourceTree = "<group>"; };
+		8EA978A41CF545F500651B69 /* BDVoiceRecognitionClientResources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = BDVoiceRecognitionClientResources; path = "Third-party/BDVoiceRecognitionClientResources"; sourceTree = "<group>"; };
+		8EA978A61CF57D7100651B69 /* BDVRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVRViewController.h; sourceTree = "<group>"; };
+		8EA978A71CF57D7100651B69 /* BDVRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDVRViewController.m; sourceTree = "<group>"; };
+		8EA978A91CF57DA300651B69 /* BDVRSConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVRSConfig.h; sourceTree = "<group>"; };
+		8EA978AA1CF57DA300651B69 /* BDVRSConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDVRSConfig.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E797C6F1CF3FC0F00D775D8 /* libBDVoiceRecognitionClient.a in Frameworks */,
 				8E797CE21CF4344100D775D8 /* CoreTelephony.framework in Frameworks */,
 				8E797CD61CF4293E00D775D8 /* UIKit.framework in Frameworks */,
 				8E797C401CF3F29C00D775D8 /* CoreText.framework in Frameworks */,
@@ -167,11 +145,11 @@
 				8E797C361CF3F25500D775D8 /* CoreLocation.framework in Frameworks */,
 				8E797C341CF3F24200D775D8 /* CFNetwork.framework in Frameworks */,
 				8E797C321CF3F23400D775D8 /* libz.1.tbd in Frameworks */,
-				8E797C6F1CF3FC0F00D775D8 /* libBDVoiceRecognitionClient.a in Frameworks */,
 				8E797C301CF3F21400D775D8 /* Security.framework in Frameworks */,
 				8E797C2E1CF3F20A00D775D8 /* SystemConfiguration.framework in Frameworks */,
 				8E797C2C1CF3F1FA00D775D8 /* AVFoundation.framework in Frameworks */,
 				8E797C2A1CF3F1F000D775D8 /* AudioToolbox.framework in Frameworks */,
+				8EA978A31CF5458F00651B69 /* libBDVoiceRecognitionClient.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +159,7 @@
 		8E797C031CF3ED1500D775D8 = {
 			isa = PBXGroup;
 			children = (
+				8EA978A21CF5458F00651B69 /* libBDVoiceRecognitionClient.a */,
 				8E797CE11CF4344100D775D8 /* CoreTelephony.framework */,
 				8E797CD51CF4293E00D775D8 /* UIKit.framework */,
 				8E797C3F1CF3F29C00D775D8 /* CoreText.framework */,
@@ -211,6 +190,7 @@
 		8E797C0E1CF3ED1500D775D8 /* CallMeASR */ = {
 			isa = PBXGroup;
 			children = (
+				8EA978A41CF545F500651B69 /* BDVoiceRecognitionClientResources */,
 				8E797CD71CF432A600D775D8 /* Data */,
 				8E797CDB1CF432A600D775D8 /* License */,
 				8E797CAA1CF4036700D775D8 /* Masonry */,
@@ -220,8 +200,10 @@
 				8E797C131CF3ED1500D775D8 /* AppDelegate.m */,
 				8E797C261CF3ED8200D775D8 /* ASRViewController.h */,
 				8E797C271CF3ED8200D775D8 /* ASRViewController.mm */,
-				8E797CCB1CF4228700D775D8 /* BDVRSConfig.h */,
-				8E797CCC1CF4228700D775D8 /* BDVRSConfig.m */,
+				8EA978A61CF57D7100651B69 /* BDVRViewController.h */,
+				8EA978A71CF57D7100651B69 /* BDVRViewController.m */,
+				8EA978A91CF57DA300651B69 /* BDVRSConfig.h */,
+				8EA978AA1CF57DA300651B69 /* BDVRSConfig.m */,
 				8E797C1B1CF3ED1500D775D8 /* Assets.xcassets */,
 				8E797C1D1CF3ED1500D775D8 /* LaunchScreen.storyboard */,
 				8E797C201CF3ED1500D775D8 /* Info.plist */,
@@ -255,7 +237,6 @@
 				8E797C731CF3FDA100D775D8 /* BDRecognizerViewParamsObject.h */,
 				8E797C741CF3FDA100D775D8 /* BDTheme.h */,
 				8E797C751CF3FDA100D775D8 /* BDVoiceRecognitionClient.h */,
-				8E797C761CF3FDA100D775D8 /* BDVoiceRecognitionClientResources */,
 				8E797C881CF3FDA100D775D8 /* BDVRDataUploader.h */,
 				8E797C891CF3FDA100D775D8 /* BDVRFileRecognizer.h */,
 				8E797C8A1CF3FDA100D775D8 /* BDVRRawDataRecognizer.h */,
@@ -264,44 +245,6 @@
 				8E797C941CF3FDA100D775D8 /* TTTAttributedLabel */,
 			);
 			path = "Third-party";
-			sourceTree = "<group>";
-		};
-		8E797C761CF3FDA100D775D8 /* BDVoiceRecognitionClientResources */ = {
-			isa = PBXGroup;
-			children = (
-				8E797C771CF3FDA100D775D8 /* Theme */,
-				8E797C821CF3FDA100D775D8 /* Tone */,
-			);
-			path = BDVoiceRecognitionClientResources;
-			sourceTree = "<group>";
-		};
-		8E797C771CF3FDA100D775D8 /* Theme */ = {
-			isa = PBXGroup;
-			children = (
-				8E797C781CF3FDA100D775D8 /* darkBlue.bundle */,
-				8E797C791CF3FDA100D775D8 /* darkGreen.bundle */,
-				8E797C7A1CF3FDA100D775D8 /* darkOrange.bundle */,
-				8E797C7B1CF3FDA100D775D8 /* darkRed.bundle */,
-				8E797C7C1CF3FDA100D775D8 /* defaultFullScreenTheme.bundle */,
-				8E797C7D1CF3FDA100D775D8 /* defaultTheme.bundle */,
-				8E797C7E1CF3FDA100D775D8 /* lightBlue.bundle */,
-				8E797C7F1CF3FDA100D775D8 /* lightGreen.bundle */,
-				8E797C801CF3FDA100D775D8 /* lightOrange.bundle */,
-				8E797C811CF3FDA100D775D8 /* lightRed.bundle */,
-			);
-			path = Theme;
-			sourceTree = "<group>";
-		};
-		8E797C821CF3FDA100D775D8 /* Tone */ = {
-			isa = PBXGroup;
-			children = (
-				8E797C831CF3FDA100D775D8 /* record_cancel.caf */,
-				8E797C841CF3FDA100D775D8 /* record_end.caf */,
-				8E797C851CF3FDA100D775D8 /* record_fail.caf */,
-				8E797C861CF3FDA100D775D8 /* record_start.caf */,
-				8E797C871CF3FDA100D775D8 /* record_success.caf */,
-			);
-			path = Tone;
 			sourceTree = "<group>";
 		};
 		8E797C8C1CF3FDA100D775D8 /* CoreAudioUtility */ = {
@@ -434,26 +377,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E797CDD1CF432A600D775D8 /* s_1 in Resources */,
-				8E797C9F1CF3FDA100D775D8 /* lightOrange.bundle in Resources */,
-				8E797CA51CF3FDA100D775D8 /* record_success.caf in Resources */,
-				8E797C9B1CF3FDA100D775D8 /* defaultFullScreenTheme.bundle in Resources */,
+				8EA978A51CF545F500651B69 /* BDVoiceRecognitionClientResources in Resources */,
 				8E797CDE1CF432A600D775D8 /* s_2_InputMethod in Resources */,
 				8E797C1F1CF3ED1500D775D8 /* LaunchScreen.storyboard in Resources */,
-				8E797C971CF3FDA100D775D8 /* darkBlue.bundle in Resources */,
 				8E797CE01CF432A600D775D8 /* bdasr_temp_license.dat in Resources */,
-				8E797CA11CF3FDA100D775D8 /* record_cancel.caf in Resources */,
-				8E797CA01CF3FDA100D775D8 /* lightRed.bundle in Resources */,
 				8E797CDF1CF432A600D775D8 /* s_2_Navi in Resources */,
-				8E797CA41CF3FDA100D775D8 /* record_start.caf in Resources */,
 				8E797C1C1CF3ED1500D775D8 /* Assets.xcassets in Resources */,
-				8E797C9C1CF3FDA100D775D8 /* defaultTheme.bundle in Resources */,
-				8E797C981CF3FDA100D775D8 /* darkGreen.bundle in Resources */,
-				8E797C9D1CF3FDA100D775D8 /* lightBlue.bundle in Resources */,
-				8E797C991CF3FDA100D775D8 /* darkOrange.bundle in Resources */,
-				8E797CA31CF3FDA100D775D8 /* record_fail.caf in Resources */,
-				8E797CA21CF3FDA100D775D8 /* record_end.caf in Resources */,
-				8E797C9A1CF3FDA100D775D8 /* darkRed.bundle in Resources */,
-				8E797C9E1CF3FDA100D775D8 /* lightGreen.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,9 +394,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E797CC81CF4036700D775D8 /* NSArray+MASAdditions.m in Sources */,
+				8EA978A81CF57D7100651B69 /* BDVRViewController.m in Sources */,
 				8E797CC71CF4036700D775D8 /* MASViewConstraint.m in Sources */,
 				8E797CA81CF3FDA100D775D8 /* CAXException.cpp in Sources */,
-				8E797CCD1CF4228700D775D8 /* BDVRSConfig.m in Sources */,
 				8E797CC41CF4036700D775D8 /* MASConstraintMaker.m in Sources */,
 				8E797CCA1CF4036700D775D8 /* View+MASAdditions.m in Sources */,
 				8E797C141CF3ED1500D775D8 /* AppDelegate.m in Sources */,
@@ -479,6 +408,7 @@
 				8E797CC21CF4036700D775D8 /* MASCompositeConstraint.m in Sources */,
 				8E797CC51CF4036700D775D8 /* MASLayoutConstraint.m in Sources */,
 				8E797CA61CF3FDA100D775D8 /* CADebugMacros.cpp in Sources */,
+				8EA978AB1CF57DA300651B69 /* BDVRSConfig.m in Sources */,
 				8E797C281CF3ED8200D775D8 /* ASRViewController.mm in Sources */,
 				8E797CA71CF3FDA100D775D8 /* CAStreamBasicDescription.cpp in Sources */,
 			);
@@ -635,6 +565,7 @@
 				8E797C251CF3ED1500D775D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

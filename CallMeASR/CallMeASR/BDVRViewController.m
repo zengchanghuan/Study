@@ -1,43 +1,37 @@
 //
-//  ASRViewController.m
-//  CallMeASR
+//  BDVRViewController.m
+//  BDVRClientSample
 //
-//  Created by ZengChanghuan on 16/5/24.
-//  Copyright © 2016年 ZengChanghuan. All rights reserved.
+//  Created by Baidu on 13-9-24.
+//  Copyright (c) 2013年 Baidu. All rights reserved.
 //
 
-#import "ASRViewController.h"
-#import "BDRecognizerViewController.h"
-#import "BDRecognizerViewDelegate.h"
+#import "BDVRViewController.h"
 #import "BDVoiceRecognitionClient.h"
-#import "Masonry.h"
 #import "BDVRSConfig.h"
+#import "Masonry.h"
 
-
-
+//#error 请修改为您在百度开发者平台申请的API_KEY和SECRET_KEY
 #define API_KEY @"P2tajQOfTwTiuTviYGriU20W" // 请修改为您在百度开发者平台申请的API_KEY
 #define SECRET_KEY @"a352ef5317b377b2713ce125027cb925" // 请修改您在百度开发者平台申请的SECRET_KEY
+
+//#error 请修改为您在百度开发者平台申请的APP ID
 #define APPID @"8172021" // 请修改为您在百度开发者平台申请的APP ID
-@interface ASRViewController ()<BDRecognizerViewDelegate,MVoiceRecognitionClientDelegate>
-@property (nonatomic, strong) BDRecognizerViewController *recognizerViewController;
-@end
 
-@implementation ASRViewController
+@implementation BDVRViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
     [self creatRecognitionButton];
-    
 }
-
 - (void)creatRecognitionButton
 {
     //__weak typeof(self) weakSelf = self;
     UIButton *recognitionBtn = [[UIButton alloc] init];
     recognitionBtn.backgroundColor = [UIColor grayColor];
     [self.view addSubview:recognitionBtn];
-    [recognitionBtn addTarget:self action:@selector(startVoiceRecognitionAction) forControlEvents:UIControlEventTouchUpInside];
+    [recognitionBtn addTarget:self action:@selector(sdkUIRecognitionAction) forControlEvents:UIControlEventTouchUpInside];
     
     [recognitionBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(100, 60));
@@ -45,9 +39,9 @@
         make.top.mas_equalTo(64);
     }];
 }
-//UI语音识别
-- (void)startRecognitionAction
+- (void)sdkUIRecognitionAction
 {
+    
     // 创建识别控件
     BDRecognizerViewController *tmpRecognizerViewController = [[BDRecognizerViewController alloc] initWithOrigin:CGPointMake(9, 128) withTheme:[BDVRSConfig sharedInstance].theme];
     
@@ -70,7 +64,7 @@
     paramsObject.isNeedNLU = [BDVRSConfig sharedInstance].isNeedNLU;
     
     // 设置识别语言
-    paramsObject.language = BDVoiceRecognitionLanguageChinese;
+    paramsObject.language = [BDVRSConfig sharedInstance].recognitionLanguage;
     
     // 设置识别模式，分为搜索和输入
     paramsObject.recogPropList = @[[BDVRSConfig sharedInstance].recognitionProperty];
@@ -79,7 +73,7 @@
     paramsObject.cityID = 1;
     
     // 开启联系人识别
-    //    paramsObject.enableContacts = YES;
+//    paramsObject.enableContacts = YES;
     
     // 设置显示效果，是否开启连续上屏
     if ([BDVRSConfig sharedInstance].resultContinuousShow)
@@ -119,51 +113,15 @@
                                     @"$song_CORE" : @"小苹果\n朋友\n",
                                     @"$app_CORE" : @"QQ\n百度\n微信\n百度地图\n",
                                     @"$artist_CORE" : @"刘德华\n周华健\n"};
-    DLog(@"%@",paramsObject);
     
     [_recognizerViewController startWithParams:paramsObject];
 }
 
-- (void)startVoiceRecognitionAction
-{
-    [[BDVoiceRecognitionClient sharedInstance] setApiKey:API_KEY withSecretKey:SECRET_KEY];
-    int startStatus = -1;
-    startStatus = [[BDVoiceRecognitionClient sharedInstance] startVoiceRecognition:self];
-    if (startStatus != EVoiceRecognitionStartWorking) {
-        DLog(@"启动出错");
-    }
-    
-}
-#pragma mark -MVoiceRecognitionClientDelegate
-- (void)VoiceRecognitionClientErrorStatus:(int)aStatus subStatus:(int)aSubStatus
-{
-    DLog(@"处理网络出错");
-}
 
-- (void)VoiceRecognitionClientNetWorkStatus:(int)aStatus
-{
-    DLog(@"处理网络状态变化");
-}
+#pragma mark - BDRecognizerViewDelegate
 
-- (void)VoiceRecognitionClientWorkStatus:(int)aStatus obj:(id)aObj
+- (void)onEndWithViews:(BDRecognizerViewController *)aBDRecognizerView withResults:(NSArray *)aResults
 {
-    DLog(@"处理网络状态变化");
-}
-#pragma mark -BDRecognizerViewDelegate
-/**
- * @brief 语音识别结果返回，搜索和输入模式结果返回的结构不相同
- *
- * @param aBDRecognizerView 弹窗UI
- * @param aResults 返回结果，搜索结果为数组，输入结果也为数组，但元素为字典
- */
-- (void)onEndWithViews:(BDRecognizerViewController *)aBDRecognizerViewController withResults:(NSArray *)aResults
-{
-    
-    DLog(@"%@",aResults);
-    
-    
-    
-    /*
     
     if ([[BDVoiceRecognitionClient sharedInstance] getRecognitionProperty] != EVoiceRecognitionPropertyInput)
     {
@@ -177,16 +135,12 @@
             [tmpString appendFormat:@"%@\r\n",[audioResultData objectAtIndex:i]];
         }
         
-
-        NSLog(@"%@",tmpString);
+        
     }
     else
     {
         NSString *tmpString = [[BDVRSConfig sharedInstance] composeInputModeResult:aResults];
-        NSLog(@"%@",tmpString);
         
     }
-     */
 }
-
 @end

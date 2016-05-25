@@ -1,43 +1,60 @@
 //
 //  BDVRSConfig.m
-//  CallMeASR
+//  BDVRClientSample
 //
-//  Created by ZengChanghuan on 16/5/24.
-//  Copyright © 2016年 ZengChanghuan. All rights reserved.
+//  Created by Baidu on 13-9-25.
+//  Copyright 2013 Baidu Inc. All rights reserved.
 //
 
+// 头文件
 #import "BDVRSConfig.h"
 #import "BDVoiceRecognitionClient.h"
+#import "BDTheme.h"
+
+// 类实现
 @implementation BDVRSConfig
-- (id)init
+@synthesize resultContinuousShow;
+@synthesize playStartMusicSwitch;
+@synthesize playEndMusicSwitch;
+//@synthesize recognitionLanguage;
+@synthesize voiceLevelMeter;
+@synthesize uiHintMusicSwitch;
+@synthesize isNeedNLU;
+@synthesize libVersion = _libVersion;
+
+#pragma mark - init & dealloc
+
+- (id)init 
 {
-    self = [super init];
-    if (self)
-    {
-        self.resultContinuousShow = YES;
-        self.playStartMusicSwitch = NO;
-        self.playEndMusicSwitch = NO;
+	self = [super init];
+	if (self) 
+	{
+        resultContinuousShow = YES;
+        playStartMusicSwitch = NO;
+        playEndMusicSwitch = NO;
         _recognitionProperty = [NSNumber numberWithInt: EVoiceRecognitionPropertyInput];
         self.recognitionLanguage = EVoiceRecognitionLanguageChinese;
-        self.voiceLevelMeter = NO;
-        self.uiHintMusicSwitch = YES;
-        self.isNeedNLU = NO;
+        voiceLevelMeter = NO;
+        uiHintMusicSwitch = YES;
+		isNeedNLU = NO;
         
-        NSString *tmpString = [[BDVoiceRecognitionClient sharedInstance] libVer];
-        _libVersion = [[NSString alloc] initWithString:tmpString];
+		NSString *tmpString = [[BDVoiceRecognitionClient sharedInstance] libVer];
+		_libVersion = [[NSString alloc] initWithString:tmpString];
         _theme = [BDTheme lightBlueTheme];
-    }
-    return self;
+	}
+	return self;
 }
+
+
 + (BDVRSConfig *)sharedInstance
 {
-    static BDVRSConfig *_sharedInstance = nil;
-    if (_sharedInstance == nil)
-    {
-        _sharedInstance = [[BDVRSConfig alloc] init];
-    }
+	static BDVRSConfig *_sharedInstance = nil;
+	if (_sharedInstance == nil)
+	{
+		_sharedInstance = [[BDVRSConfig alloc] init];
+	}
     
-    return _sharedInstance;
+	return _sharedInstance;
 }
 
 - (NSString *)composeInputModeResult:(id)aObj

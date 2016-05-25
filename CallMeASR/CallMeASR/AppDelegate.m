@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ASRViewController.h"
+#import "BDVRViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -20,7 +21,7 @@
     self.window = [[UIWindow alloc] init];
     self.window.frame = [UIScreen mainScreen].bounds;
     
-    ASRViewController *vc = [[ASRViewController alloc] init];
+    BDVRViewController *vc = [[BDVRViewController alloc] init];
     UINavigationController *na = [[UINavigationController alloc] initWithRootViewController:vc];
     [na setNavigationBarHidden:YES];
     self.window.rootViewController = na;

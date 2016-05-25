@@ -9,7 +9,6 @@
 #import "BDVRViewController.h"
 #import "BDVoiceRecognitionClient.h"
 #import "BDVRSConfig.h"
-#import "BDVRUIPromptTextCustom.h"
 
 //#error 请修改为您在百度开发者平台申请的API_KEY和SECRET_KEY
 #define API_KEY @"P2tajQOfTwTiuTviYGriU20W" // 请修改为您在百度开发者平台申请的API_KEY
@@ -23,9 +22,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    btn.backgroundColor = [UIColor purpleColor];
+    [btn addTarget:self action:@selector(sdkUIRecognitionAction) forControlEvents:UIControlEventTouchUpInside];
+    btn.frame = CGRectMake(100, 64, 200, 60);
+    [self.view addSubview:btn];
 }
 
-- (IBAction)sdkUIRecognitionAction
+- (void)sdkUIRecognitionAction
 {
     
     // 创建识别控件
@@ -110,7 +115,6 @@
 
 - (void)onEndWithViews:(BDRecognizerViewController *)aBDRecognizerView withResults:(NSArray *)aResults
 {
-    _resultView.text = nil;
     
     if ([[BDVoiceRecognitionClient sharedInstance] getRecognitionProperty] != EVoiceRecognitionPropertyInput)
     {
@@ -124,33 +128,13 @@
             [tmpString appendFormat:@"%@\r\n",[audioResultData objectAtIndex:i]];
         }
         
-        _resultView.text = [_resultView.text stringByAppendingString:tmpString];
-        _resultView.text = [_resultView.text stringByAppendingString:@"\n"];
+        
         
         [tmpString release];
     }
     else
     {
-        // 输入模式下的结果为带置信度的结果，示例如下：
-        //  [
-        //      [
-        //         {
-        //             "百度" = "0.6055192947387695";
-        //         },
-        //         {
-        //             "摆渡" = "0.3625582158565521";
-        //         },
-        //      ]
-        //      [
-        //         {
-        //             "一下" = "0.7665404081344604";
-        //         }
-        //      ],
-        //   ]
         NSString *tmpString = [[BDVRSConfig sharedInstance] composeInputModeResult:aResults];
-        
-        _resultView.text = [_resultView.text stringByAppendingString:tmpString];
-        _resultView.text = [_resultView.text stringByAppendingString:@"\n"];
     }
 }
 @end
