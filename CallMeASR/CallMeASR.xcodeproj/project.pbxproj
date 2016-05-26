@@ -47,6 +47,7 @@
 		8EA978A31CF5458F00651B69 /* libBDVoiceRecognitionClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA978A21CF5458F00651B69 /* libBDVoiceRecognitionClient.a */; };
 		8EA978A51CF545F500651B69 /* BDVoiceRecognitionClientResources in Resources */ = {isa = PBXBuildFile; fileRef = 8EA978A41CF545F500651B69 /* BDVoiceRecognitionClientResources */; };
 		8EA978AB1CF57DA300651B69 /* BDVRSConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA978AA1CF57DA300651B69 /* BDVRSConfig.m */; };
+		8EA978BC1CF6AA4400651B69 /* CBASRViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8EA978BB1CF6AA4400651B69 /* CBASRViewController.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,6 +125,8 @@
 		8EA978A41CF545F500651B69 /* BDVoiceRecognitionClientResources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = BDVoiceRecognitionClientResources; path = "Third-party/BDVoiceRecognitionClientResources"; sourceTree = "<group>"; };
 		8EA978A91CF57DA300651B69 /* BDVRSConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVRSConfig.h; sourceTree = "<group>"; };
 		8EA978AA1CF57DA300651B69 /* BDVRSConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDVRSConfig.m; sourceTree = "<group>"; };
+		8EA978BA1CF6AA4400651B69 /* CBASRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBASRViewController.h; sourceTree = "<group>"; };
+		8EA978BB1CF6AA4400651B69 /* CBASRViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CBASRViewController.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +200,8 @@
 				8E797C131CF3ED1500D775D8 /* AppDelegate.m */,
 				8E797C261CF3ED8200D775D8 /* ASRViewController.h */,
 				8E797C271CF3ED8200D775D8 /* ASRViewController.mm */,
+				8EA978BA1CF6AA4400651B69 /* CBASRViewController.h */,
+				8EA978BB1CF6AA4400651B69 /* CBASRViewController.mm */,
 				8EA978A91CF57DA300651B69 /* BDVRSConfig.h */,
 				8EA978AA1CF57DA300651B69 /* BDVRSConfig.m */,
 				8E797C1B1CF3ED1500D775D8 /* Assets.xcassets */,
@@ -397,6 +402,7 @@
 				8E797CC31CF4036700D775D8 /* MASConstraint.m in Sources */,
 				8E797C111CF3ED1500D775D8 /* main.m in Sources */,
 				8E797CC61CF4036700D775D8 /* MASViewAttribute.m in Sources */,
+				8EA978BC1CF6AA4400651B69 /* CBASRViewController.mm in Sources */,
 				8E797CC91CF4036700D775D8 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				8E797CA91CF3FDA100D775D8 /* TTTAttributedLabel.m in Sources */,
 				8E797CC21CF4036700D775D8 /* MASCompositeConstraint.m in Sources */,

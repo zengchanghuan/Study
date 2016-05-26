@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ASRViewController.h"
+#import "CBASRViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -20,7 +21,9 @@
     self.window = [[UIWindow alloc] init];
     self.window.frame = [UIScreen mainScreen].bounds;
     
-    ASRViewController *vc = [[ASRViewController alloc] init];
+//    ASRViewController *vc = [[ASRViewController alloc] init];
+    CBASRViewController *vc = [CBASRViewController new];
+
     UINavigationController *na = [[UINavigationController alloc] initWithRootViewController:vc];
     [na setNavigationBarHidden:YES];
     self.window.rootViewController = na;
