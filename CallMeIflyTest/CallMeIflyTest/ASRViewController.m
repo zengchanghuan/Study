@@ -13,6 +13,7 @@
 #import "XZTextView.h"
 #import "IATConfig.h"
 #import "PopupView.h"
+#import "ISRDataHelper.h"
 @interface ASRViewController ()<IFlySpeechRecognizerDelegate,IFlyRecognizerViewDelegate>
 {
     //不带界面的识别对象
@@ -20,10 +21,13 @@
     XZTextView *_textView;
     PopupView *_popUpView;
     IFlyRecognizerView *_iflyRecognizerView;//带界面的识别对象
+    UIButton *startBtn;
+    UIButton *stopBtn;
+    UIButton *cancelBtn;
 
 }
 @property (nonatomic, assign) BOOL isCanceled;
-
+@property (nonatomic, copy) NSString *result;
 @end
 
 @implementation ASRViewController
@@ -61,7 +65,7 @@
     }];
     [self.view addSubview:controlView];
     
-    UIButton *startBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    startBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [startBtn addTarget:self action:@selector(startRecoed) forControlEvents:UIControlEventTouchUpInside];
     [startBtn setTitle:@"开始识别" forState:UIControlStateNormal];
     [controlView addSubview:startBtn];
@@ -72,7 +76,7 @@
         make.left.mas_equalTo(10);
     }];
     
-    UIButton *stopBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    stopBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [stopBtn addTarget:self action:@selector(stopRecoed) forControlEvents:UIControlEventTouchUpInside];
     [stopBtn setTitle:@"停止识别" forState:UIControlStateNormal];
     [controlView addSubview:stopBtn];
@@ -84,7 +88,7 @@
         
     }];
     
-    UIButton *cancelBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    cancelBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [cancelBtn addTarget:self action:@selector(cancelRecoed) forControlEvents:UIControlEventTouchUpInside];
     [cancelBtn setTitle:@"取消" forState:UIControlStateNormal];
     cancelBtn.backgroundColor = [UIColor purpleColor];
@@ -184,14 +188,21 @@
 
 }
 
+/**
+ *  停止录音
+ */
 - (void)stopRecoed
 {
-    
+    [_iFlySpeechRecognizer stopListening];
+    [_textView resignFirstResponder];
 }
 
 - (void)cancelRecoed
 {
-    
+    self.isCanceled = YES;
+    [_iFlySpeechRecognizer cancel];
+    [_popUpView removeFromSuperview];
+    [_textView resignFirstResponder];
 }
 #pragma mark -IFlyRecognizerViewDelegate
 /*!
@@ -200,42 +211,133 @@
  *  @param resultArray 识别结果，NSArray的第一个元素为NSDictionary，NSDictionary的key为识别结果，sc为识别结果的置信度
  *  @param isLast      -[out] 是否最后一个结果
  */
+
+- (void)onResult:(NSArray *)resultArray isLast:(BOOL) isLast
+{
+    NSMutableString *result = [[NSMutableString alloc] init];
+    NSDictionary *dic = [resultArray objectAtIndex:0];
+    
+    for (NSString *key in dic) {
+        [result appendFormat:@"%@",key];
+    }
+    _textView.text = [NSString stringWithFormat:@"%@ %@",_textView.text, result];
+}
+#pragma mark -IFlySpeechRecognizerDelegate
+/**
+ *  识别结果返回代理
+ *
+ *  @param results 识别结果
+ *  @param isLast  表示是否最后一次结果
+ */
+- (void) onResults:(NSArray *) results isLast:(BOOL)isLast
+{
+    NSLog(@"%s[IN]",__func__);
+    
+    NSMutableString *resultString = [[NSMutableString alloc] init];
+    NSDictionary *dic = results[0];
+    for (NSString *key in dic) {
+        [resultString appendFormat:@"%@",key];
+    }
+    
+    _result = [NSString stringWithFormat:@"%@%@",_textView.text,resultString];
+    NSString *resultFromJson = [ISRDataHelper stringFromJson:resultString];
+    _textView.text = [NSString stringWithFormat:@"%@%@",_textView.text,resultFromJson];
+    
+    if (isLast) {
+        NSLog(@"听写结果(json)：%@测试",  self.result);
+    }
+    
+    NSLog(@"_result=%@",_result);
+    NSLog(@"resultFromJson=%@",resultFromJson);
+    NSLog(@"isLast=%d,_textView.text=%@",isLast,_textView.text);
+
+
+}
 /*!
  *  识别结束回调
  *
- *  @param error 识别结束错误码
+ *  @param error 识别结束错误码 0表示正常结束 非0表示发生错误
  */
 - (void)onError: (IFlySpeechError *) error
 {
+    NSLog(@"%s[IN]",__func__);
+    
+    if ([IATConfig sharedInstance].haveView == NO) {
+        NSString *text = @"";
+        
+        if (self.isCanceled) {
+            text = @"识别取消";
+        } else if (error.errorCode == 0) {
+            if (_result.length == 0) {
+                text = @"无识别结果";
+            } else {
+                text = @"识别成功";
+            }
+        }else {
+            text = [NSString stringWithFormat:@"发生错误：%d %@",error.errorCode,error.errorDesc];
+            NSLog(@"%@",text);
+        }
+        [_popUpView showText:text];
+    } else {
+        [_popUpView showText:@"识别结束"];
+        NSLog(@"errorCode:%d",[error errorCode]);
+    }
+
+    startBtn.enabled = YES;
     
 }
-- (void)onResult:(NSArray *)resultArray isLast:(BOOL) isLast
-{
+
+/**
+ *  开如识别回调
+ */
+- (void) onBeginOfSpeech{
+    NSLog(@"%s[IN]",__func__);
+    [_popUpView showText:@"正在录音"];
+}
+/**
+ *  停止录音回调
+ */
+- (void) onEndOfSpeech{
+    NSLog(@"%s[IN]",__func__);
+    [_popUpView showText:@"停止录音"];
     
 }
-#pragma mark -IFlySpeechRecognizerDelegate
-- (void) onResults:(NSArray *) results isLast:(BOOL)isLast
-{
-    
-}
+
+/**
+ *  在录音过程中，回调音频的音量
+ *
+ *  @param volume  -[out] 音量，范围从0-30
+ */
 - (void) onVolumeChanged: (int)volume
 {
-    
+    NSLog(@"%s[IN]",__func__);
+    if (self.isCanceled) {
+        [_popUpView removeFromSuperview];
+        return;
+        
+    }
+    NSString *vol = [NSString stringWithFormat:@"音量 %d",volume];
+    [_popUpView showText:vol];
+
 }
 
-- (void) onBeginOfSpeech{
-    
-}
-
-- (void) onEndOfSpeech{
-    
-}
+/**
+ *  取消识别回调
+ */
 - (void) onCancel
 {
-    
+    NSLog(@"%s[IN]",__func__);
+
 }
+
+/**
+ *  返回音频Key
+ *
+ *  @param key 音频Key
+ */
 - (void) getAudioKey:(NSString *)key{
-    
+    NSLog(@"%s[IN]",__func__);
+
 }
 
 

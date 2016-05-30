@@ -47,6 +47,7 @@
 		8EA979881CF864A800651B69 /* SBJson4StreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA9797C1CF864A800651B69 /* SBJson4StreamWriter.m */; };
 		8EA979891CF864A800651B69 /* SBJson4StreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA9797E1CF864A800651B69 /* SBJson4StreamWriterState.m */; };
 		8EA9798A1CF864A800651B69 /* SBJson4Writer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA979801CF864A800651B69 /* SBJson4Writer.m */; };
+		8EA979B31CFC0ED900651B69 /* ISRDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA979B21CFC0ED900651B69 /* ISRDataHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,8 +101,8 @@
 		8EA979601CF853F200651B69 /* UIView+Masonry_LJC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Masonry_LJC.m"; sourceTree = "<group>"; };
 		8EA979621CF8608E00651B69 /* XZTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTextView.h; sourceTree = "<group>"; };
 		8EA979631CF8608E00651B69 /* XZTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTextView.m; sourceTree = "<group>"; };
-		8EA979651CF862AA00651B69 /* IATConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IATConfig.h; sourceTree = "<group>"; };
-		8EA979661CF862B200651B69 /* IATConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IATConfig.m; sourceTree = "<group>"; };
+		8EA979651CF862AA00651B69 /* IATConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IATConfig.h; path = ../../IATConfig.h; sourceTree = "<group>"; };
+		8EA979661CF862B200651B69 /* IATConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IATConfig.m; path = ../../IATConfig.m; sourceTree = "<group>"; };
 		8EA979691CF864A800651B69 /* AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertView.h; sourceTree = "<group>"; };
 		8EA9796A1CF864A800651B69 /* AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertView.m; sourceTree = "<group>"; };
 		8EA9796C1CF864A800651B69 /* PcmPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PcmPlayer.h; sourceTree = "<group>"; };
@@ -124,6 +125,8 @@
 		8EA9797E1CF864A800651B69 /* SBJson4StreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJson4StreamWriterState.m; sourceTree = "<group>"; };
 		8EA9797F1CF864A800651B69 /* SBJson4Writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson4Writer.h; sourceTree = "<group>"; };
 		8EA979801CF864A800651B69 /* SBJson4Writer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJson4Writer.m; sourceTree = "<group>"; };
+		8EA979B11CFC0ED900651B69 /* ISRDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISRDataHelper.h; path = ../../ISRDataHelper.h; sourceTree = "<group>"; };
+		8EA979B21CFC0ED900651B69 /* ISRDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISRDataHelper.m; path = ../../ISRDataHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,8 +192,6 @@
 				8EA979201CF8494D00651B69 /* ASRViewController.m */,
 				8EA979621CF8608E00651B69 /* XZTextView.h */,
 				8EA979631CF8608E00651B69 /* XZTextView.m */,
-				8EA979651CF862AA00651B69 /* IATConfig.h */,
-				8EA979661CF862B200651B69 /* IATConfig.m */,
 				8EA979141CF8489800651B69 /* Assets.xcassets */,
 				8EA979161CF8489800651B69 /* LaunchScreen.storyboard */,
 				8EA979191CF8489800651B69 /* Info.plist */,
@@ -252,6 +253,10 @@
 		8EA979681CF864A800651B69 /* tools */ = {
 			isa = PBXGroup;
 			children = (
+				8EA979651CF862AA00651B69 /* IATConfig.h */,
+				8EA979661CF862B200651B69 /* IATConfig.m */,
+				8EA979B11CFC0ED900651B69 /* ISRDataHelper.h */,
+				8EA979B21CFC0ED900651B69 /* ISRDataHelper.m */,
 				8EA979691CF864A800651B69 /* AlertView.h */,
 				8EA9796A1CF864A800651B69 /* AlertView.m */,
 				8EA9796B1CF864A800651B69 /* pcmPlayerCode */,
@@ -364,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EA979B31CFC0ED900651B69 /* ISRDataHelper.m in Sources */,
 				8EA979851CF864A800651B69 /* SBJson4StreamParser.m in Sources */,
 				8EA9795D1CF8525100651B69 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				8EA9795B1CF8525100651B69 /* MASViewConstraint.m in Sources */,

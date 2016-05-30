@@ -273,10 +273,10 @@
             [self createRunLogWithStatus:aStatus];
             if ([BDVRSConfig sharedInstance].voiceLevelMeter)
             {
-                //[self freeVoiceLevelMeterTimerTimer];
+                [self freeVoiceLevelMeterTimerTimer];
             }
             
-            //[self createRecognitionView];
+            [self createRecognitionView];
             
             break;
         }
@@ -284,7 +284,7 @@
         {
             if ([BDVRSConfig sharedInstance].voiceLevelMeter)
             {
-                //[self freeVoiceLevelMeterTimerTimer];
+                [self freeVoiceLevelMeterTimerTimer];
             }
             
             [self createRunLogWithStatus:aStatus];
@@ -330,7 +330,7 @@
             [self createRunLogWithStatus:aStatus];
             if ([BDVRSConfig sharedInstance].voiceLevelMeter)
             {
-                //[self freeVoiceLevelMeterTimerTimer];
+                [self freeVoiceLevelMeterTimerTimer];
             }
             if (self.view.superview)
             {
@@ -498,6 +498,7 @@
 
 - (void)createRecordView
 {
+    /*
     UIView *tmpView = [[UIView alloc] init];
     tmpView.backgroundColor = [UIColor purpleColor];
     [self.view addSubview:tmpView];
@@ -505,8 +506,8 @@
         make.center.mas_equalTo(self.view);
         make.size.mas_equalTo(CGSizeMake(200, 200));
     }];
+    */
     
-    /*
     if (_dialog && _dialog.superview)
         [_dialog removeFromSuperview];
     
@@ -549,7 +550,7 @@
     [_dialog addSubview:tmpButton];
     [tmpButton addTarget:self action:@selector(finishRecord:) forControlEvents:UIControlEventTouchUpInside];
     tmpButton.showsTouchWhenHighlighted = YES;
-    */
+    
 }
 
 - (void)createRecognitionView
@@ -559,7 +560,7 @@
     
     UIImageView *tmpImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"recognitionBackground.png"]];
     tmpImageView.userInteractionEnabled = YES;
-    tmpImageView.alpha = 0.6; /* He Liqiang, TAG-130729 */
+    tmpImageView.alpha = 0.6;
     _dialog = tmpImageView;
     _dialog.center = self.view.center;
     [self.view addSubview:_dialog];
@@ -673,17 +674,9 @@
     }
     
     if (statusMsg)
-    {/*
-      NSString *logString = self.clientSampleViewController.logCatView.text;
-      if (logString && [logString isEqualToString:@""] == NO)
-      {
-      self.clientSampleViewController.logCatView.text = [logString stringByAppendingFormat:@"\r\n%@", statusMsg];
-      }
-      else
-      {
-      self.clientSampleViewController.logCatView.text = statusMsg;
-      }
-      */
+    {
+        _outTextView.text = statusMsg;
+
     }
 }
 #pragma mark - VoiceLevelMeterTimer methods
@@ -714,7 +707,7 @@
     
     NSString *statusMsg = [NSLocalizedString(@"StringLogVoiceLevel", nil) stringByAppendingFormat:@": %d", voiceLevel];
     DLog(@"%@",statusMsg);
-//    [clientSampleViewController logOutToLogView:statusMsg];
+    _outTextView.text = statusMsg;
 }
 
 #pragma mark - animation finish

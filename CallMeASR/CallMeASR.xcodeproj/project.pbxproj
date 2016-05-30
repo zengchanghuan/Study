@@ -48,6 +48,35 @@
 		8EA978A51CF545F500651B69 /* BDVoiceRecognitionClientResources in Resources */ = {isa = PBXBuildFile; fileRef = 8EA978A41CF545F500651B69 /* BDVoiceRecognitionClientResources */; };
 		8EA978AB1CF57DA300651B69 /* BDVRSConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA978AA1CF57DA300651B69 /* BDVRSConfig.m */; };
 		8EA978BC1CF6AA4400651B69 /* CBASRViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8EA978BB1CF6AA4400651B69 /* CBASRViewController.mm */; };
+		8EA978BF1CF6DD8D00651B69 /* BDVRClientUIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA978BE1CF6DD8D00651B69 /* BDVRClientUIManager.m */; };
+		8EA978C21CF71AC600651B69 /* XZTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA978C11CF71AC600651B69 /* XZTextView.m */; };
+		8EA978E01CF8203A00651B69 /* microphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA978C51CF8203A00651B69 /* microphone.png */; };
+		8EA978E11CF8203A00651B69 /* microphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA978C61CF8203A00651B69 /* microphone@2x.png */; };
+		8EA978E21CF8203A00651B69 /* recognitionBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA978C71CF8203A00651B69 /* recognitionBackground.png */; };
+		8EA978E31CF8203A00651B69 /* recognitionBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA978C81CF8203A00651B69 /* recognitionBackground@2x.png */; };
+		8EA978E41CF8203A00651B69 /* recognitionIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA978C91CF8203A00651B69 /* recognitionIcon.png */; };
+		8EA978E51CF8203A00651B69 /* recognitionIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA978CA1CF8203A00651B69 /* recognitionIcon@2x.png */; };
+		8EA978E61CF8203A00651B69 /* recordBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA978CB1CF8203A00651B69 /* recordBackground.png */; };
+		8EA978E71CF8203A00651B69 /* recordBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA978CC1CF8203A00651B69 /* recordBackground@2x.png */; };
+		8EA978E81CF8203A00651B69 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA978CD1CF8203A00651B69 /* icon.png */; };
+		8EA978E91CF8203A00651B69 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA978CE1CF8203A00651B69 /* icon@2x.png */; };
+		8EA978EA1CF8203A00651B69 /* bdvrclosed.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA978D01CF8203A00651B69 /* bdvrclosed.png */; };
+		8EA978EB1CF8203A00651B69 /* bdvrclosed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA978D11CF8203A00651B69 /* bdvrclosed@2x.png */; };
+		8EA978EC1CF8203A00651B69 /* bdvrclosed_highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA978D21CF8203A00651B69 /* bdvrclosed_highlight.png */; };
+		8EA978ED1CF8203A00651B69 /* bdvrclosed_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA978D31CF8203A00651B69 /* bdvrclosed_highlight@2x.png */; };
+		8EA978EE1CF8203A00651B69 /* bdvrdialoganmition_mask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA978D41CF8203A00651B69 /* bdvrdialoganmition_mask@2x.png */; };
+		8EA978EF1CF8203A00651B69 /* bdvrdialogbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA978D51CF8203A00651B69 /* bdvrdialogbg@2x.png */; };
+		8EA978F01CF8203A00651B69 /* bdvrleftbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA978D61CF8203A00651B69 /* bdvrleftbutton@2x.png */; };
+		8EA978F11CF8203A00651B69 /* bdvrleftbutton_highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA978D71CF8203A00651B69 /* bdvrleftbutton_highlight.png */; };
+		8EA978F21CF8203A00651B69 /* bdvrleftbutton_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA978D81CF8203A00651B69 /* bdvrleftbutton_highlight@2x.png */; };
+		8EA978F31CF8203A00651B69 /* bdvrrightbtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA978D91CF8203A00651B69 /* bdvrrightbtn.png */; };
+		8EA978F41CF8203A00651B69 /* bdvrrightbtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA978DA1CF8203A00651B69 /* bdvrrightbtn@2x.png */; };
+		8EA978F51CF8203A00651B69 /* bdvrrightbtn_highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA978DB1CF8203A00651B69 /* bdvrrightbtn_highlight.png */; };
+		8EA978F61CF8203A00651B69 /* bdvrrightbtn_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA978DC1CF8203A00651B69 /* bdvrrightbtn_highlight@2x.png */; };
+		8EA978F71CF8203A00651B69 /* bdvrwholebtb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA978DD1CF8203A00651B69 /* bdvrwholebtb@2x.png */; };
+		8EA978F81CF8203A00651B69 /* bdvrwholebtn_highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA978DE1CF8203A00651B69 /* bdvrwholebtn_highlight.png */; };
+		8EA978F91CF8203A00651B69 /* bdvrwholebtn_highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EA978DF1CF8203A00651B69 /* bdvrwholebtn_highlight@2x.png */; };
+		8EA978FB1CF8215100651B69 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8EA978FA1CF8215100651B69 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -127,6 +156,37 @@
 		8EA978AA1CF57DA300651B69 /* BDVRSConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDVRSConfig.m; sourceTree = "<group>"; };
 		8EA978BA1CF6AA4400651B69 /* CBASRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBASRViewController.h; sourceTree = "<group>"; };
 		8EA978BB1CF6AA4400651B69 /* CBASRViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CBASRViewController.mm; sourceTree = "<group>"; };
+		8EA978BD1CF6DD8D00651B69 /* BDVRClientUIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVRClientUIManager.h; sourceTree = "<group>"; };
+		8EA978BE1CF6DD8D00651B69 /* BDVRClientUIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDVRClientUIManager.m; sourceTree = "<group>"; };
+		8EA978C01CF71AC600651B69 /* XZTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTextView.h; sourceTree = "<group>"; };
+		8EA978C11CF71AC600651B69 /* XZTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTextView.m; sourceTree = "<group>"; };
+		8EA978C51CF8203A00651B69 /* microphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = microphone.png; sourceTree = "<group>"; };
+		8EA978C61CF8203A00651B69 /* microphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "microphone@2x.png"; sourceTree = "<group>"; };
+		8EA978C71CF8203A00651B69 /* recognitionBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recognitionBackground.png; sourceTree = "<group>"; };
+		8EA978C81CF8203A00651B69 /* recognitionBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recognitionBackground@2x.png"; sourceTree = "<group>"; };
+		8EA978C91CF8203A00651B69 /* recognitionIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recognitionIcon.png; sourceTree = "<group>"; };
+		8EA978CA1CF8203A00651B69 /* recognitionIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recognitionIcon@2x.png"; sourceTree = "<group>"; };
+		8EA978CB1CF8203A00651B69 /* recordBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recordBackground.png; sourceTree = "<group>"; };
+		8EA978CC1CF8203A00651B69 /* recordBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recordBackground@2x.png"; sourceTree = "<group>"; };
+		8EA978CD1CF8203A00651B69 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		8EA978CE1CF8203A00651B69 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		8EA978D01CF8203A00651B69 /* bdvrclosed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bdvrclosed.png; sourceTree = "<group>"; };
+		8EA978D11CF8203A00651B69 /* bdvrclosed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bdvrclosed@2x.png"; sourceTree = "<group>"; };
+		8EA978D21CF8203A00651B69 /* bdvrclosed_highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bdvrclosed_highlight.png; sourceTree = "<group>"; };
+		8EA978D31CF8203A00651B69 /* bdvrclosed_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bdvrclosed_highlight@2x.png"; sourceTree = "<group>"; };
+		8EA978D41CF8203A00651B69 /* bdvrdialoganmition_mask@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bdvrdialoganmition_mask@2x.png"; sourceTree = "<group>"; };
+		8EA978D51CF8203A00651B69 /* bdvrdialogbg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bdvrdialogbg@2x.png"; sourceTree = "<group>"; };
+		8EA978D61CF8203A00651B69 /* bdvrleftbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bdvrleftbutton@2x.png"; sourceTree = "<group>"; };
+		8EA978D71CF8203A00651B69 /* bdvrleftbutton_highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bdvrleftbutton_highlight.png; sourceTree = "<group>"; };
+		8EA978D81CF8203A00651B69 /* bdvrleftbutton_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bdvrleftbutton_highlight@2x.png"; sourceTree = "<group>"; };
+		8EA978D91CF8203A00651B69 /* bdvrrightbtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bdvrrightbtn.png; sourceTree = "<group>"; };
+		8EA978DA1CF8203A00651B69 /* bdvrrightbtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bdvrrightbtn@2x.png"; sourceTree = "<group>"; };
+		8EA978DB1CF8203A00651B69 /* bdvrrightbtn_highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bdvrrightbtn_highlight.png; sourceTree = "<group>"; };
+		8EA978DC1CF8203A00651B69 /* bdvrrightbtn_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bdvrrightbtn_highlight@2x.png"; sourceTree = "<group>"; };
+		8EA978DD1CF8203A00651B69 /* bdvrwholebtb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bdvrwholebtb@2x.png"; sourceTree = "<group>"; };
+		8EA978DE1CF8203A00651B69 /* bdvrwholebtn_highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bdvrwholebtn_highlight.png; sourceTree = "<group>"; };
+		8EA978DF1CF8203A00651B69 /* bdvrwholebtn_highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bdvrwholebtn_highlight@2x.png"; sourceTree = "<group>"; };
+		8EA978FA1CF8215100651B69 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +250,8 @@
 		8E797C0E1CF3ED1500D775D8 /* CallMeASR */ = {
 			isa = PBXGroup;
 			children = (
+				8EA978FA1CF8215100651B69 /* Localizable.strings */,
+				8EA978C31CF8203A00651B69 /* images */,
 				8EA978A41CF545F500651B69 /* BDVoiceRecognitionClientResources */,
 				8E797CD71CF432A600D775D8 /* Data */,
 				8E797CDB1CF432A600D775D8 /* License */,
@@ -202,8 +264,12 @@
 				8E797C271CF3ED8200D775D8 /* ASRViewController.mm */,
 				8EA978BA1CF6AA4400651B69 /* CBASRViewController.h */,
 				8EA978BB1CF6AA4400651B69 /* CBASRViewController.mm */,
+				8EA978BD1CF6DD8D00651B69 /* BDVRClientUIManager.h */,
+				8EA978BE1CF6DD8D00651B69 /* BDVRClientUIManager.m */,
 				8EA978A91CF57DA300651B69 /* BDVRSConfig.h */,
 				8EA978AA1CF57DA300651B69 /* BDVRSConfig.m */,
+				8EA978C01CF71AC600651B69 /* XZTextView.h */,
+				8EA978C11CF71AC600651B69 /* XZTextView.m */,
 				8E797C1B1CF3ED1500D775D8 /* Assets.xcassets */,
 				8E797C1D1CF3ED1500D775D8 /* LaunchScreen.storyboard */,
 				8E797C201CF3ED1500D775D8 /* Info.plist */,
@@ -318,6 +384,55 @@
 			path = License;
 			sourceTree = "<group>";
 		};
+		8EA978C31CF8203A00651B69 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				8EA978C41CF8203A00651B69 /* customRecognitionView */,
+				8EA978CD1CF8203A00651B69 /* icon.png */,
+				8EA978CE1CF8203A00651B69 /* icon@2x.png */,
+				8EA978CF1CF8203A00651B69 /* recognizerview */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		8EA978C41CF8203A00651B69 /* customRecognitionView */ = {
+			isa = PBXGroup;
+			children = (
+				8EA978C51CF8203A00651B69 /* microphone.png */,
+				8EA978C61CF8203A00651B69 /* microphone@2x.png */,
+				8EA978C71CF8203A00651B69 /* recognitionBackground.png */,
+				8EA978C81CF8203A00651B69 /* recognitionBackground@2x.png */,
+				8EA978C91CF8203A00651B69 /* recognitionIcon.png */,
+				8EA978CA1CF8203A00651B69 /* recognitionIcon@2x.png */,
+				8EA978CB1CF8203A00651B69 /* recordBackground.png */,
+				8EA978CC1CF8203A00651B69 /* recordBackground@2x.png */,
+			);
+			path = customRecognitionView;
+			sourceTree = "<group>";
+		};
+		8EA978CF1CF8203A00651B69 /* recognizerview */ = {
+			isa = PBXGroup;
+			children = (
+				8EA978D01CF8203A00651B69 /* bdvrclosed.png */,
+				8EA978D11CF8203A00651B69 /* bdvrclosed@2x.png */,
+				8EA978D21CF8203A00651B69 /* bdvrclosed_highlight.png */,
+				8EA978D31CF8203A00651B69 /* bdvrclosed_highlight@2x.png */,
+				8EA978D41CF8203A00651B69 /* bdvrdialoganmition_mask@2x.png */,
+				8EA978D51CF8203A00651B69 /* bdvrdialogbg@2x.png */,
+				8EA978D61CF8203A00651B69 /* bdvrleftbutton@2x.png */,
+				8EA978D71CF8203A00651B69 /* bdvrleftbutton_highlight.png */,
+				8EA978D81CF8203A00651B69 /* bdvrleftbutton_highlight@2x.png */,
+				8EA978D91CF8203A00651B69 /* bdvrrightbtn.png */,
+				8EA978DA1CF8203A00651B69 /* bdvrrightbtn@2x.png */,
+				8EA978DB1CF8203A00651B69 /* bdvrrightbtn_highlight.png */,
+				8EA978DC1CF8203A00651B69 /* bdvrrightbtn_highlight@2x.png */,
+				8EA978DD1CF8203A00651B69 /* bdvrwholebtb@2x.png */,
+				8EA978DE1CF8203A00651B69 /* bdvrwholebtn_highlight.png */,
+				8EA978DF1CF8203A00651B69 /* bdvrwholebtn_highlight@2x.png */,
+			);
+			path = recognizerview;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -376,12 +491,39 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EA978E61CF8203A00651B69 /* recordBackground.png in Resources */,
+				8EA978EE1CF8203A00651B69 /* bdvrdialoganmition_mask@2x.png in Resources */,
+				8EA978F91CF8203A00651B69 /* bdvrwholebtn_highlight@2x.png in Resources */,
 				8E797CDD1CF432A600D775D8 /* s_1 in Resources */,
+				8EA978E21CF8203A00651B69 /* recognitionBackground.png in Resources */,
+				8EA978F41CF8203A00651B69 /* bdvrrightbtn@2x.png in Resources */,
+				8EA978E91CF8203A00651B69 /* icon@2x.png in Resources */,
+				8EA978ED1CF8203A00651B69 /* bdvrclosed_highlight@2x.png in Resources */,
+				8EA978E31CF8203A00651B69 /* recognitionBackground@2x.png in Resources */,
+				8EA978E81CF8203A00651B69 /* icon.png in Resources */,
+				8EA978F71CF8203A00651B69 /* bdvrwholebtb@2x.png in Resources */,
+				8EA978EB1CF8203A00651B69 /* bdvrclosed@2x.png in Resources */,
 				8EA978A51CF545F500651B69 /* BDVoiceRecognitionClientResources in Resources */,
+				8EA978EF1CF8203A00651B69 /* bdvrdialogbg@2x.png in Resources */,
+				8EA978F51CF8203A00651B69 /* bdvrrightbtn_highlight.png in Resources */,
+				8EA978EA1CF8203A00651B69 /* bdvrclosed.png in Resources */,
+				8EA978E41CF8203A00651B69 /* recognitionIcon.png in Resources */,
+				8EA978FB1CF8215100651B69 /* Localizable.strings in Resources */,
+				8EA978E11CF8203A00651B69 /* microphone@2x.png in Resources */,
+				8EA978F21CF8203A00651B69 /* bdvrleftbutton_highlight@2x.png in Resources */,
+				8EA978E51CF8203A00651B69 /* recognitionIcon@2x.png in Resources */,
+				8EA978F01CF8203A00651B69 /* bdvrleftbutton@2x.png in Resources */,
 				8E797CDE1CF432A600D775D8 /* s_2_InputMethod in Resources */,
+				8EA978F81CF8203A00651B69 /* bdvrwholebtn_highlight.png in Resources */,
+				8EA978E71CF8203A00651B69 /* recordBackground@2x.png in Resources */,
+				8EA978F61CF8203A00651B69 /* bdvrrightbtn_highlight@2x.png in Resources */,
+				8EA978EC1CF8203A00651B69 /* bdvrclosed_highlight.png in Resources */,
 				8E797C1F1CF3ED1500D775D8 /* LaunchScreen.storyboard in Resources */,
+				8EA978F31CF8203A00651B69 /* bdvrrightbtn.png in Resources */,
 				8E797CE01CF432A600D775D8 /* bdasr_temp_license.dat in Resources */,
+				8EA978E01CF8203A00651B69 /* microphone.png in Resources */,
 				8E797CDF1CF432A600D775D8 /* s_2_Navi in Resources */,
+				8EA978F11CF8203A00651B69 /* bdvrleftbutton_highlight.png in Resources */,
 				8E797C1C1CF3ED1500D775D8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,6 +543,8 @@
 				8E797C141CF3ED1500D775D8 /* AppDelegate.m in Sources */,
 				8E797CC31CF4036700D775D8 /* MASConstraint.m in Sources */,
 				8E797C111CF3ED1500D775D8 /* main.m in Sources */,
+				8EA978BF1CF6DD8D00651B69 /* BDVRClientUIManager.m in Sources */,
+				8EA978C21CF71AC600651B69 /* XZTextView.m in Sources */,
 				8E797CC61CF4036700D775D8 /* MASViewAttribute.m in Sources */,
 				8EA978BC1CF6AA4400651B69 /* CBASRViewController.mm in Sources */,
 				8E797CC91CF4036700D775D8 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
