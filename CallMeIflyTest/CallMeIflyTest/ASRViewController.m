@@ -14,6 +14,10 @@
 #import "IATConfig.h"
 #import "PopupView.h"
 #import "ISRDataHelper.h"
+#import "HttpManager.h"
+#import "AFNetworking.h"
+#import "MJExtension.h"
+#import "Calendar.h"
 @interface ASRViewController ()<IFlySpeechRecognizerDelegate,IFlyRecognizerViewDelegate>
 {
     //不带界面的识别对象
@@ -34,15 +38,44 @@
 
 #pragma mark - lifeCycle
 - (void)viewDidLoad {
-    [super viewDidLoad];
+    [super viewDidLoad];    
     
+    NSString *tmp = @"今天下午两点在金苑大厦会议室开会";
+    NSString *stringUrl = [NSString stringWithFormat:@"http://192.168.0.198:8080/cube/nlp/normal?c=%@",tmp];
+    stringUrl = [stringUrl stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+//    NSLog(@"stringUrl = %@",stringUrl);
+    NSURL *url = [NSURL URLWithString:stringUrl];
+    NSURLRequest *req = [NSURLRequest requestWithURL:url];
+    
+    
+    
+    [NSURLConnection sendAsynchronousRequest:req queue:[[NSOperationQueue alloc] init] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+//        NSString *jsonString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+//        NSLog(@"jsonString = %@",jsonString);
+        
+        NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
+        NSDictionary *dataDic = [dic objectForKey:@"data"];
+        Calendar *calendar = [Calendar mj_objectWithKeyValues:dataDic];
+        NSLog(@"content = %@",calendar.content);
+        NSLog(@"calendar.year = %@",calendar.year);
+//        NSDictionary *dataDic = [dic objectForKey:@"data"];
+//        NSString *content = [[dataDic objectForKey:@"content"] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+//        NSLog(@"content = %@",content);
+    }];
+
+    
+    /*
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    
+    
     [self creartBtn];
     [self createTextView];
     CGFloat posY = _textView.frame.origin.y+_textView.frame.size.height/6;
     
     _popUpView = [[PopupView alloc] initWithFrame:CGRectMake(100, posY, 0, 0) withParentView:self.view];
 
+     */
 }
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -214,6 +247,7 @@
 
 - (void)onResult:(NSArray *)resultArray isLast:(BOOL) isLast
 {
+    
     NSMutableString *result = [[NSMutableString alloc] init];
     NSDictionary *dic = [resultArray objectAtIndex:0];
     
@@ -244,13 +278,11 @@
     _textView.text = [NSString stringWithFormat:@"%@%@",_textView.text,resultFromJson];
     
     if (isLast) {
-        NSLog(@"听写结果(json)：%@测试",  self.result);
+        NSLog(@"听写结果(json)：%@测试",  _result);
+        
+
     }
     
-    NSLog(@"_result=%@",_result);
-    NSLog(@"resultFromJson=%@",resultFromJson);
-    NSLog(@"isLast=%d,_textView.text=%@",isLast,_textView.text);
-
 
 }
 /*!
