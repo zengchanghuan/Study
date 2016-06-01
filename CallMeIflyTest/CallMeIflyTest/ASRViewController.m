@@ -58,9 +58,15 @@
         Calendar *calendar = [Calendar mj_objectWithKeyValues:dataDic];
         NSLog(@"content = %@",calendar.content);
         NSLog(@"calendar.year = %@",calendar.year);
-//        NSDictionary *dataDic = [dic objectForKey:@"data"];
-//        NSString *content = [[dataDic objectForKey:@"content"] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-//        NSLog(@"content = %@",content);
+        
+        for (Segment *segment in calendar.segments) {
+            NSString *nature = segment.nature;
+            NSString *word = segment.word;
+            NSNumber *offset = segment.offset;
+            MJExtensionLog(@"nature=%@, word=%@, offset=%@", nature, word, offset);
+
+        }
+
     }];
 
     
