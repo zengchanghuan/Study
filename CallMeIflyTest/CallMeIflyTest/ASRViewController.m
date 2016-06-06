@@ -18,6 +18,7 @@
 #import "AFNetworking.h"
 #import "MJExtension.h"
 #import "Calendar.h"
+ #import <pop/POP.h>
 @interface ASRViewController ()<IFlySpeechRecognizerDelegate,IFlyRecognizerViewDelegate>
 {
     //不带界面的识别对象
@@ -28,6 +29,8 @@
     UIButton *startBtn;
     UIButton *stopBtn;
     UIButton *cancelBtn;
+    CALayer *layer;
+    POPSpringAnimation *anim;
 
 }
 @property (nonatomic, assign) BOOL isCanceled;
@@ -38,8 +41,27 @@
 
 #pragma mark - lifeCycle
 - (void)viewDidLoad {
-    [super viewDidLoad];    
+    [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
+
+    // 创建layer
+    layer  = [CALayer layer];
+    layer.frame = CGRectMake(0, 0, 50, 50);
+    layer.backgroundColor = [UIColor cyanColor].CGColor;
+    layer.cornerRadius = 25.f;
+    layer.position = self.view.center;
+    [self.view.layer addSublayer:layer];
     
+    // 执行Spring动画
+    anim = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerScaleXY];
+    anim.toValue = [NSValue valueWithCGPoint:CGPointMake(3.f, 3.f)];
+    anim.springSpeed = 0.f;
+    NSTimer *timer = [NSTimer timerWithTimeInterval:0.0 target:self selector:@selector(run) userInfo:nil repeats:YES];
+    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
+    
+
+
+     /*
     NSString *tmp = @"今天下午两点在金苑大厦会议室开会";
     NSString *stringUrl = [NSString stringWithFormat:@"http://192.168.0.198:8080/cube/nlp/normal?c=%@",tmp];
     stringUrl = [stringUrl stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
@@ -70,7 +92,7 @@
     }];
 
     
-    /*
+   
     self.view.backgroundColor = [UIColor whiteColor];
     
     
@@ -82,6 +104,11 @@
     _popUpView = [[PopupView alloc] initWithFrame:CGRectMake(100, posY, 0, 0) withParentView:self.view];
 
      */
+}
+- (void)run
+{
+    [layer pop_addAnimation:anim forKey:@"ScaleXY"];
+
 }
 - (void)viewWillAppear:(BOOL)animated
 {
