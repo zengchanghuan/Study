@@ -19,6 +19,7 @@
 		8E06A7071CFEFE8800AE86F4 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E06A6FA1CFEFE8800AE86F4 /* NSObject+MJKeyValue.m */; };
 		8E06A7081CFEFE8800AE86F4 /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E06A6FC1CFEFE8800AE86F4 /* NSObject+MJProperty.m */; };
 		8E06A7091CFEFE8800AE86F4 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E06A6FE1CFEFE8800AE86F4 /* NSString+MJExtension.m */; };
+		8E1211451D06E7A30066E061 /* ASRDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1211441D06E7A30066E061 /* ASRDetailViewController.m */; };
 		8EA9790A1CF8489700651B69 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA979091CF8489700651B69 /* main.m */; };
 		8EA9790D1CF8489800651B69 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA9790C1CF8489800651B69 /* AppDelegate.m */; };
 		8EA979151CF8489800651B69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EA979141CF8489800651B69 /* Assets.xcassets */; };
@@ -100,6 +101,8 @@
 		8E06A6FC1CFEFE8800AE86F4 /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
 		8E06A6FD1CFEFE8800AE86F4 /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
 		8E06A6FE1CFEFE8800AE86F4 /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
+		8E1211431D06E7A30066E061 /* ASRDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASRDetailViewController.h; sourceTree = "<group>"; };
+		8E1211441D06E7A30066E061 /* ASRDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASRDetailViewController.m; sourceTree = "<group>"; };
 		8EA979051CF8489700651B69 /* CallMeIflyTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallMeIflyTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EA979091CF8489700651B69 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8EA9790B1CF8489800651B69 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -313,6 +316,8 @@
 				8EA9790C1CF8489800651B69 /* AppDelegate.m */,
 				8EA9791F1CF8494D00651B69 /* ASRViewController.h */,
 				8EA979201CF8494D00651B69 /* ASRViewController.m */,
+				8E1211431D06E7A30066E061 /* ASRDetailViewController.h */,
+				8E1211441D06E7A30066E061 /* ASRDetailViewController.m */,
 				8EA979621CF8608E00651B69 /* XZTextView.h */,
 				8EA979631CF8608E00651B69 /* XZTextView.m */,
 				8EA979D51CFD29DE00651B69 /* Calendar.h */,
@@ -594,6 +599,7 @@
 				8E06A7041CFEFE8800AE86F4 /* MJPropertyType.m in Sources */,
 				8EA979851CF864A800651B69 /* SBJson4StreamParser.m in Sources */,
 				8EA9795D1CF8525100651B69 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				8E1211451D06E7A30066E061 /* ASRDetailViewController.m in Sources */,
 				8E06A7091CFEFE8800AE86F4 /* NSString+MJExtension.m in Sources */,
 				8EA9795B1CF8525100651B69 /* MASViewConstraint.m in Sources */,
 				8EA979561CF8525100651B69 /* MASCompositeConstraint.m in Sources */,

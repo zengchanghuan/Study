@@ -7,21 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8E12112E1D0591CE0066E061 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E12112D1D0591CE0066E061 /* main.m */; };
-		8E1211311D0591CE0066E061 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1211301D0591CE0066E061 /* AppDelegate.m */; };
+		8E0BDF781D0CFE5C00827767 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0BDF6D1D0CFE5C00827767 /* AppDelegate.m */; };
+		8E0BDF791D0CFE5C00827767 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0BDF6E1D0CFE5C00827767 /* main.m */; };
+		8E0BDF801D0D019700827767 /* XZTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0BDF7F1D0D019700827767 /* XZTabBarViewController.m */; };
 		8E1211391D0591CE0066E061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E1211381D0591CE0066E061 /* Assets.xcassets */; };
-		8E1211481D07CFFC0066E061 /* SCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1211471D07CFFC0066E061 /* SCViewController.m */; };
+		8E83965C1D0D083500059703 /* XZHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E83965B1D0D083500059703 /* XZHomeViewController.m */; };
+		8E83965F1D0D085700059703 /* XZDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E83965E1D0D085700059703 /* XZDiscoverViewController.m */; };
+		8E8396621D0D086B00059703 /* XZComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8396611D0D086B00059703 /* XZComposeViewController.m */; };
+		8E8396651D0D088300059703 /* XZLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8396641D0D088300059703 /* XZLiveViewController.m */; };
+		8E8396681D0D08B400059703 /* XZStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8396671D0D08B400059703 /* XZStoreViewController.m */; };
+		8E83966B1D0D099000059703 /* XZUITabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E83966A1D0D099000059703 /* XZUITabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E0BDF6C1D0CFE5C00827767 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8E0BDF6D1D0CFE5C00827767 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8E0BDF6E1D0CFE5C00827767 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8E0BDF7A1D0CFFC400827767 /* SportClubPrefix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SportClubPrefix.h; sourceTree = "<group>"; };
+		8E0BDF7E1D0D019700827767 /* XZTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTabBarViewController.h; sourceTree = "<group>"; };
+		8E0BDF7F1D0D019700827767 /* XZTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTabBarViewController.m; sourceTree = "<group>"; };
 		8E1211291D0591CE0066E061 /* SportClub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportClub.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E12112D1D0591CE0066E061 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8E12112F1D0591CE0066E061 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8E1211301D0591CE0066E061 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8E1211381D0591CE0066E061 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E12113D1D0591CE0066E061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8E1211461D07CFFC0066E061 /* SCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCViewController.h; sourceTree = "<group>"; };
-		8E1211471D07CFFC0066E061 /* SCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCViewController.m; sourceTree = "<group>"; };
+		8E83965A1D0D083500059703 /* XZHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZHomeViewController.h; sourceTree = "<group>"; };
+		8E83965B1D0D083500059703 /* XZHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZHomeViewController.m; sourceTree = "<group>"; };
+		8E83965D1D0D085700059703 /* XZDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZDiscoverViewController.h; sourceTree = "<group>"; };
+		8E83965E1D0D085700059703 /* XZDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZDiscoverViewController.m; sourceTree = "<group>"; };
+		8E8396601D0D086B00059703 /* XZComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZComposeViewController.h; sourceTree = "<group>"; };
+		8E8396611D0D086B00059703 /* XZComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZComposeViewController.m; sourceTree = "<group>"; };
+		8E8396631D0D088300059703 /* XZLiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLiveViewController.h; sourceTree = "<group>"; };
+		8E8396641D0D088300059703 /* XZLiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLiveViewController.m; sourceTree = "<group>"; };
+		8E8396661D0D08B400059703 /* XZStoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZStoreViewController.h; sourceTree = "<group>"; };
+		8E8396671D0D08B400059703 /* XZStoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZStoreViewController.m; sourceTree = "<group>"; };
+		8E8396691D0D099000059703 /* XZUITabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZUITabBar.h; sourceTree = "<group>"; };
+		8E83966A1D0D099000059703 /* XZUITabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZUITabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +54,246 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E0BDF591D0CFE5C00827767 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8E0BDF621D0CFE5C00827767 /* Home */,
+				8E0BDF5A1D0CFE5C00827767 /* Compose */,
+				8E0BDF5E1D0CFE5C00827767 /* Discover */,
+				8E0BDF661D0CFE5C00827767 /* live */,
+				8E0BDF741D0CFE5C00827767 /* Store */,
+				8E0BDF6A1D0CFE5C00827767 /* Main */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8E0BDF5A1D0CFE5C00827767 /* Compose */ = {
+			isa = PBXGroup;
+			children = (
+				8E0BDF5B1D0CFE5C00827767 /* Controller */,
+				8E0BDF5C1D0CFE5C00827767 /* Model */,
+				8E0BDF5D1D0CFE5C00827767 /* View */,
+			);
+			path = Compose;
+			sourceTree = "<group>";
+		};
+		8E0BDF5B1D0CFE5C00827767 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E8396601D0D086B00059703 /* XZComposeViewController.h */,
+				8E8396611D0D086B00059703 /* XZComposeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8E0BDF5C1D0CFE5C00827767 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E0BDF5D1D0CFE5C00827767 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E0BDF5E1D0CFE5C00827767 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				8E0BDF5F1D0CFE5C00827767 /* Controller */,
+				8E0BDF601D0CFE5C00827767 /* Model */,
+				8E0BDF611D0CFE5C00827767 /* View */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		8E0BDF5F1D0CFE5C00827767 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E83965D1D0D085700059703 /* XZDiscoverViewController.h */,
+				8E83965E1D0D085700059703 /* XZDiscoverViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8E0BDF601D0CFE5C00827767 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E0BDF611D0CFE5C00827767 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E0BDF621D0CFE5C00827767 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8E0BDF631D0CFE5C00827767 /* Controller */,
+				8E0BDF641D0CFE5C00827767 /* Model */,
+				8E0BDF651D0CFE5C00827767 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8E0BDF631D0CFE5C00827767 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E83965A1D0D083500059703 /* XZHomeViewController.h */,
+				8E83965B1D0D083500059703 /* XZHomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8E0BDF641D0CFE5C00827767 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E0BDF651D0CFE5C00827767 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E0BDF661D0CFE5C00827767 /* live */ = {
+			isa = PBXGroup;
+			children = (
+				8E0BDF671D0CFE5C00827767 /* Controller */,
+				8E0BDF681D0CFE5C00827767 /* Model */,
+				8E0BDF691D0CFE5C00827767 /* View */,
+			);
+			path = live;
+			sourceTree = "<group>";
+		};
+		8E0BDF671D0CFE5C00827767 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E8396631D0D088300059703 /* XZLiveViewController.h */,
+				8E8396641D0D088300059703 /* XZLiveViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8E0BDF681D0CFE5C00827767 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E0BDF691D0CFE5C00827767 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E0BDF6A1D0CFE5C00827767 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8E0BDF6B1D0CFE5C00827767 /* AppDelegate */,
+				8E0BDF6F1D0CFE5C00827767 /* Category */,
+				8E0BDF701D0CFE5C00827767 /* Controller */,
+				8E0BDF711D0CFE5C00827767 /* Lib */,
+				8E0BDF721D0CFE5C00827767 /* Model */,
+				8E0BDF731D0CFE5C00827767 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8E0BDF6B1D0CFE5C00827767 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				8E0BDF6C1D0CFE5C00827767 /* AppDelegate.h */,
+				8E0BDF6D1D0CFE5C00827767 /* AppDelegate.m */,
+				8E0BDF6E1D0CFE5C00827767 /* main.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		8E0BDF6F1D0CFE5C00827767 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		8E0BDF701D0CFE5C00827767 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E0BDF7E1D0D019700827767 /* XZTabBarViewController.h */,
+				8E0BDF7F1D0D019700827767 /* XZTabBarViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8E0BDF711D0CFE5C00827767 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		8E0BDF721D0CFE5C00827767 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E0BDF731D0CFE5C00827767 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E8396691D0D099000059703 /* XZUITabBar.h */,
+				8E83966A1D0D099000059703 /* XZUITabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E0BDF741D0CFE5C00827767 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				8E0BDF751D0CFE5C00827767 /* Controller */,
+				8E0BDF761D0CFE5C00827767 /* Model */,
+				8E0BDF771D0CFE5C00827767 /* View */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		8E0BDF751D0CFE5C00827767 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E8396661D0D08B400059703 /* XZStoreViewController.h */,
+				8E8396671D0D08B400059703 /* XZStoreViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8E0BDF761D0CFE5C00827767 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E0BDF771D0CFE5C00827767 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		8E1211201D0591CE0066E061 = {
 			isa = PBXGroup;
 			children = (
@@ -54,10 +313,7 @@
 		8E12112B1D0591CE0066E061 /* SportClub */ = {
 			isa = PBXGroup;
 			children = (
-				8E12112F1D0591CE0066E061 /* AppDelegate.h */,
-				8E1211301D0591CE0066E061 /* AppDelegate.m */,
-				8E1211461D07CFFC0066E061 /* SCViewController.h */,
-				8E1211471D07CFFC0066E061 /* SCViewController.m */,
+				8E0BDF591D0CFE5C00827767 /* Classes */,
 				8E1211381D0591CE0066E061 /* Assets.xcassets */,
 				8E12113D1D0591CE0066E061 /* Info.plist */,
 				8E12112C1D0591CE0066E061 /* Supporting Files */,
@@ -68,7 +324,7 @@
 		8E12112C1D0591CE0066E061 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8E12112D1D0591CE0066E061 /* main.m */,
+				8E0BDF7A1D0CFFC400827767 /* SportClubPrefix.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -141,9 +397,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E1211311D0591CE0066E061 /* AppDelegate.m in Sources */,
-				8E1211481D07CFFC0066E061 /* SCViewController.m in Sources */,
-				8E12112E1D0591CE0066E061 /* main.m in Sources */,
+				8E8396681D0D08B400059703 /* XZStoreViewController.m in Sources */,
+				8E0BDF801D0D019700827767 /* XZTabBarViewController.m in Sources */,
+				8E83966B1D0D099000059703 /* XZUITabBar.m in Sources */,
+				8E0BDF791D0CFE5C00827767 /* main.m in Sources */,
+				8E83965F1D0D085700059703 /* XZDiscoverViewController.m in Sources */,
+				8E8396651D0D088300059703 /* XZLiveViewController.m in Sources */,
+				8E0BDF781D0CFE5C00827767 /* AppDelegate.m in Sources */,
+				8E83965C1D0D083500059703 /* XZHomeViewController.m in Sources */,
+				8E8396621D0D086B00059703 /* XZComposeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +438,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ./SportClub/SportClubPrefix.h;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -217,6 +481,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ./SportClub/SportClubPrefix.h;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -273,6 +539,7 @@
 				8E1211421D0591CE0066E061 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

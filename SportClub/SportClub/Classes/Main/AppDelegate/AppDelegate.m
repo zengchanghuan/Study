@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "SCViewController.h"
+#import "XZTabBarViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -19,8 +20,7 @@
     // Override point for customization after application launch.
     self.window = [UIWindow new];
     self.window.frame = [UIScreen mainScreen].bounds;
-    UINavigationController *na = [[UINavigationController alloc] initWithRootViewController:[SCViewController new]];
-    self.window.rootViewController = na;
+    self.window.rootViewController = [XZTabBarViewController new];
     [self.window makeKeyAndVisible];
     return YES;
 }

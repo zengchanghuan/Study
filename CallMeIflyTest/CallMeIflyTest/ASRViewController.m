@@ -18,7 +18,7 @@
 #import "AFNetworking.h"
 #import "MJExtension.h"
 #import "Calendar.h"
- #import <pop/POP.h>
+#import "ASRDetailViewController.h"
 @interface ASRViewController ()<IFlySpeechRecognizerDelegate,IFlyRecognizerViewDelegate>
 {
     //不带界面的识别对象
@@ -29,12 +29,12 @@
     UIButton *startBtn;
     UIButton *stopBtn;
     UIButton *cancelBtn;
-    CALayer *layer;
-    POPSpringAnimation *anim;
 
 }
 @property (nonatomic, assign) BOOL isCanceled;
 @property (nonatomic, copy) NSString *result;
+@property (nonatomic, strong) CABasicAnimation *animation;
+@property (nonatomic, strong) UIView *animationView;
 @end
 
 @implementation ASRViewController
@@ -43,24 +43,35 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-
-    // 创建layer
-    layer  = [CALayer layer];
-    layer.frame = CGRectMake(0, 0, 50, 50);
-    layer.backgroundColor = [UIColor cyanColor].CGColor;
-    layer.cornerRadius = 25.f;
-    layer.position = self.view.center;
-    [self.view.layer addSublayer:layer];
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(self.view.center.x-40, self.view.center.y+200, 80, 80);
+    btn.backgroundColor = [UIColor redColor];
+    btn.layer.cornerRadius = btn.frame.size.height/2;
+    btn.layer.masksToBounds = YES;
+    [btn addTarget:self action:@selector(target) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
     
-    // 执行Spring动画
-    anim = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerScaleXY];
-    anim.toValue = [NSValue valueWithCGPoint:CGPointMake(3.f, 3.f)];
-    anim.springSpeed = 0.f;
-    NSTimer *timer = [NSTimer timerWithTimeInterval:0.0 target:self selector:@selector(run) userInfo:nil repeats:YES];
-    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
     
-
-
+    
+    
+/*
+    UIView *animationView = [UIView new];
+    animationView.frame = CGRectMake(0, 0, 100, 100);
+    animationView.center = self.view.center;
+    animationView.backgroundColor = [UIColor grayColor];
+    animationView.layer.cornerRadius = CGRectGetWidth(animationView.frame) * 0.5;
+    [self.view addSubview:animationView];
+    
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+    animation.duration = 1.0;
+    animation.repeatCount = 9999;
+    animation.autoreverses = YES;
+    animation.fromValue = @(1.0);
+    animation.toValue = @(2.0);
+    
+    [animationView.layer addAnimation:animation forKey:@"animationView.scale"];
+    
+*/
      /*
     NSString *tmp = @"今天下午两点在金苑大厦会议室开会";
     NSString *stringUrl = [NSString stringWithFormat:@"http://192.168.0.198:8080/cube/nlp/normal?c=%@",tmp];
@@ -91,12 +102,8 @@
 
     }];
 
-    
-   
-    self.view.backgroundColor = [UIColor whiteColor];
-    
-    
-    
+    */
+   /*
     [self creartBtn];
     [self createTextView];
     CGFloat posY = _textView.frame.origin.y+_textView.frame.size.height/6;
@@ -105,9 +112,20 @@
 
      */
 }
+- (void)target
+{
+    ASRDetailViewController *detailVC = [ASRDetailViewController new];
+    [self.navigationController pushViewController:detailVC animated:YES];
+//    [self.navigationController presentViewController:detailVC animated:YES completion:nil];
+}
+- (void)touchUI{
+    //声音小放小倍数，时间长，就会缓
+    _animation.duration = arc4random_uniform(100) / 100.0 + 0.1;
+    _animation.toValue = @(arc4random_uniform(6) * 1.0 + 2.0);
+    [_animationView.layer addAnimation:_animation forKey:@"animationView.scale"];
+}
 - (void)run
 {
-    [layer pop_addAnimation:anim forKey:@"ScaleXY"];
 
 }
 - (void)viewWillAppear:(BOOL)animated
