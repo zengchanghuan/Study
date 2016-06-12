@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "SCViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [UIWindow new];
+    self.window.frame = [UIScreen mainScreen].bounds;
+    UINavigationController *na = [[UINavigationController alloc] initWithRootViewController:[SCViewController new]];
+    self.window.rootViewController = na;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
