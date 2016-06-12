@@ -56,6 +56,8 @@
 }
 -(void)tabBarDidClickPlusButton:(XZUITabBar *)tabBar
 {
-    
+    XZComposeViewController *compose = [XZComposeViewController new];
+    XZNavigationController *nav = [[XZNavigationController alloc] initWithRootViewController:compose];
+    [self presentViewController:nav animated:YES completion:nil];
 }
 @end
