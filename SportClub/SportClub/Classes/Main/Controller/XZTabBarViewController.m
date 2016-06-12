@@ -23,7 +23,10 @@
     [super viewDidLoad];
     XZHomeViewController *home = [XZHomeViewController new];
     XZLiveViewController *live = [XZLiveViewController new];
-    self.viewControllers = @[home,live];
+    XZComposeViewController *compose = [XZComposeViewController new];
+    XZDiscoverViewController *discover = [XZDiscoverViewController new];
+    XZStoreViewController *store = [XZStoreViewController new];
+    self.viewControllers = @[home,live,compose,discover,store];;
 }
 
 - (void)addChildVc:(UIViewController *)childVc title:(NSString *)title image:(NSString *)image selectedImage:(NSString *)selectedImage
