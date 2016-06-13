@@ -21,6 +21,7 @@
 		8E8396711D0D5E1A00059703 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8396701D0D5E1A00059703 /* UIBarButtonItem+Extension.m */; };
 		8E8396741D0D5E5100059703 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8396731D0D5E5100059703 /* UIView+Extension.m */; };
 		8E8396761D0D60A300059703 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8396751D0D60A300059703 /* Foundation+Log.m */; };
+		8E83967D1D0D764300059703 /* XZLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E83967C1D0D764300059703 /* XZLoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,8 @@
 		8E8396721D0D5E5100059703 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		8E8396731D0D5E5100059703 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		8E8396751D0D60A300059703 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		8E83967B1D0D764300059703 /* XZLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLoginViewController.h; sourceTree = "<group>"; };
+		8E83967C1D0D764300059703 /* XZLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,7 @@
 		8E0BDF591D0CFE5C00827767 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8E8396771D0D762C00059703 /* login */,
 				8E0BDF621D0CFE5C00827767 /* Home */,
 				8E0BDF5A1D0CFE5C00827767 /* Compose */,
 				8E0BDF5E1D0CFE5C00827767 /* Discover */,
@@ -347,6 +351,39 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8E8396771D0D762C00059703 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				8E8396781D0D762C00059703 /* Controller */,
+				8E8396791D0D762C00059703 /* Model */,
+				8E83967A1D0D762C00059703 /* View */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		8E8396781D0D762C00059703 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E83967B1D0D764300059703 /* XZLoginViewController.h */,
+				8E83967C1D0D764300059703 /* XZLoginViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8E8396791D0D762C00059703 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E83967A1D0D762C00059703 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -417,6 +454,7 @@
 			files = (
 				8E8396681D0D08B400059703 /* XZStoreViewController.m in Sources */,
 				8E0BDF801D0D019700827767 /* XZTabBarViewController.m in Sources */,
+				8E83967D1D0D764300059703 /* XZLoginViewController.m in Sources */,
 				8E83966B1D0D099000059703 /* XZUITabBar.m in Sources */,
 				8E0BDF791D0CFE5C00827767 /* main.m in Sources */,
 				8E83965F1D0D085700059703 /* XZDiscoverViewController.m in Sources */,
