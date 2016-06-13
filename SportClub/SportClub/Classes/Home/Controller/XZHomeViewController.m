@@ -31,7 +31,7 @@
 - (void)login
 {
     XZLoginViewController *login = [XZLoginViewController new];
-    [self presentViewController:login animated:YES completion:nil];
+    [self.navigationController pushViewController:login animated:YES];
 }
 
 - (void)search

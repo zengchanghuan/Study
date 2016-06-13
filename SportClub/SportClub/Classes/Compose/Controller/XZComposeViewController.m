@@ -17,6 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    UIView *v = [[UIView alloc] initWithFrame:CGRectMake(100, 80, 200, 60)];
+    v.backgroundColor = [UIColor redColor];
+    [self.view addSubview:v];
     [self setupNav];
 }
 

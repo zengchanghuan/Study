@@ -16,21 +16,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIButton *loginBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [loginBtn setTitle:@"登录" forState:UIControlStateNormal];
-    loginBtn.backgroundColor = [UIColor grayColor];
-    loginBtn.frame = CGRectMake(100, 100, 120, 100);
-    [self.view addSubview:loginBtn];
+    self.view.backgroundColor = [UIColor whiteColor];
+    UIView *v = [[UIView alloc] initWithFrame:CGRectMake(100, 80, 200, 60)];
+    v.backgroundColor = [UIColor redColor];
+    [self.view addSubview:v];
+    [self setupNav];
+  
 }
 
 - (void)setupNav
 {
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"取消" style:UIBarButtonItemStyleDone target:self action:@selector(cancel)];
-    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:self action:@selector(cancel)];
+
 }
 
 - (void)cancel
 {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popViewControllerAnimated:YES];
 }
+
+
 @end
