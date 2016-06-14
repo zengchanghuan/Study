@@ -18,33 +18,41 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="手机" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Vb-0D-48f">
-                                <rect key="frame" x="211" y="72" width="97" height="30"/>
+                                <rect key="frame" x="252" y="28" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="10.5" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YtA-X1-GCh">
-                                <rect key="frame" x="211" y="152" width="97" height="30"/>
+                                <rect key="frame" x="252" y="86" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojp-H4-sI1">
-                                <rect key="frame" x="219" y="241" width="30" height="30"/>
+                                <rect key="frame" x="285" y="130" width="30" height="30"/>
                                 <state key="normal" title="add"/>
                                 <connections>
                                     <action selector="insert" destination="BYZ-38-t0r" eventType="touchUpInside" id="9UE-BV-RK9"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="raS-md-apN">
+                                <rect key="frame" x="175" y="181" width="250" height="324"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="vlH-pP-wFG"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="nameField" destination="6Vb-0D-48f" id="4jn-8j-851"/>
                         <outlet property="priceField" destination="YtA-X1-GCh" id="NdD-Lr-eoC"/>
+                        <outlet property="tableView" destination="raS-md-apN" id="JF9-JJ-TEY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="363" y="366"/>
+            <point key="canvasLocation" x="318.5" y="350.5"/>
         </scene>
     </scenes>
 </document>
