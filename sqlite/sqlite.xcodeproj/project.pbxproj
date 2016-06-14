@@ -13,6 +13,7 @@
 		8E06A6DC1CFEF01A00AE86F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E06A6DA1CFEF01A00AE86F4 /* Main.storyboard */; };
 		8E06A6DE1CFEF01A00AE86F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E06A6DD1CFEF01A00AE86F4 /* Assets.xcassets */; };
 		8E06A6E11CFEF01A00AE86F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E06A6DF1CFEF01A00AE86F4 /* LaunchScreen.storyboard */; };
+		8E8396D51D0FA8FF00059703 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8396D41D0FA8FF00059703 /* libsqlite3.0.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8E06A6DD1CFEF01A00AE86F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E06A6E01CFEF01A00AE86F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E06A6E21CFEF01A00AE86F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E8396D41D0FA8FF00059703 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E8396D51D0FA8FF00059703 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +45,7 @@
 		8E06A6C51CFEF01A00AE86F4 = {
 			isa = PBXGroup;
 			children = (
+				8E8396D41D0FA8FF00059703 /* libsqlite3.0.tbd */,
 				8E06A6D01CFEF01A00AE86F4 /* sqlite */,
 				8E06A6CF1CFEF01A00AE86F4 /* Products */,
 			);
@@ -298,6 +302,7 @@
 				8E06A6E71CFEF01A00AE86F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
