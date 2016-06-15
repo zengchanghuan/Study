@@ -8,13 +8,7 @@
 
 #import "XZHomeViewController.h"
 #import "XZDock.h"
-//竖屏时的宽度
-const CGFloat XZDoctPW = 150;
-//横屏时宽度
-const CGFloat XZDoctLW = 180;
 
-const CGFloat XZScreenW = 768;
-const CGFloat XZScreenH = 1024;
 
 @interface XZHomeViewController ()
 @property (weak, nonatomic) XZDock *dock;
@@ -34,24 +28,22 @@ const CGFloat XZScreenH = 1024;
     [self willRotateToInterfaceOrientation:self.interfaceOrientation duration:0];
 }
 
--(void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
-{
-    
-}
+//-(void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
+//{
+//    
+//}
 
-/*
+
 -(void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
-    if (UIInterfaceOrientationIsLandscape(toInterfaceOrientation)) {
-        NSLog(@"横屏");
-        _dock.width = XZDoctLW;
-        _dock.height = XZScreenW;
-    } else {
-        NSLog(@"竖屏");
-        _dock.width = XZDoctPW;
-        _dock.height = XZScreenH;
+    if (UIInterfaceOrientationIsLandscape(toInterfaceOrientation)) { // 横屏
+        self.dock.width = HMDockLW;
+        self.dock.height = HMScreenPW;
+    } else { // 竖屏
+        self.dock.width = HMDockPW;
+        self.dock.height = HMScreenLW;
     }
 }
-*/
+
 
 @end
