@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  XZIconView.h
 //  Menu
 //
 //  Created by ZengChanghuan on 16/6/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface XZIconView : UIButton
 
 @end
-
