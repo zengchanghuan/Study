@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#define MAS_SHORTHAND
+#define MAS_SHORTHAND_GLOBALS
+
 #import "Masonry.h"
 @interface ViewController ()
 
@@ -21,10 +24,19 @@
     blueView.backgroundColor = [UIColor blueColor];
     [self.view addSubview:blueView];
     
-    [blueView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(self.view).insets(UIEdgeInsetsMake(50, 50, 50, 50));
-
+    
+    
+    
+    [blueView makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.left.offset(20);
+        make.right.offset(-20);
+        make.top.offset(20);
+        make.bottom.offset(-20);
+        
     }];
+    
+    
 }
 
 - (void)test2
