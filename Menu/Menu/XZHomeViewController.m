@@ -23,7 +23,6 @@
         XZDock *dock = [XZDock new];
         [self.view addSubview:dock];
         self.dock = dock;
-        
     }
     return _dock;
 }
