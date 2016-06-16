@@ -22,9 +22,33 @@
     [self.view addSubview:blueView];
     
     [blueView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(100, 100));
-        make.size.mas_equalTo(self.view);
+        make.edges.mas_equalTo(self.view).insets(UIEdgeInsetsMake(50, 50, 50, 50));
+
     }];
 }
 
+- (void)test2
+{
+    UIView *blueView = [UIView new];
+    blueView.backgroundColor = [UIColor blueColor];
+    [self.view addSubview:blueView];
+    
+    [blueView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(self.view).insets(UIEdgeInsetsMake(50, 50, 50, 50));
+        
+    }];
+}
+- (void)test1
+{
+    UIView *blueView = [UIView new];
+    blueView.backgroundColor = [UIColor blueColor];
+    [self.view addSubview:blueView];
+    
+    [blueView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.offset(50);
+        make.right.offset(-50);
+        make.top.offset(50);
+        make.bottom.offset(-50);
+    }];
+}
 @end
