@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "Masonry.h"
 @interface ViewController ()
 
 @end
@@ -16,12 +16,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    UIView *blueView = [UIView new];
+    blueView.backgroundColor = [UIColor blueColor];
+    [self.view addSubview:blueView];
+    
+    [blueView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(CGSizeMake(100, 100));
+        make.size.mas_equalTo(self.view);
+    }];
 }
 
 @end
