@@ -18,7 +18,15 @@
 
 @end
 @implementation XMGTableViewCell
-
++ (instancetype)cellWithTableView:(UITableView *)tableView
+{
+    static NSString *ID = @"deal";
+    XMGTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    if (cell == nil) {
+        cell = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([XMGTableViewCell class]) owner:nil options:nil] lastObject];
+    }
+    return cell;
+}
 -(void)setDeal:(XMGDeal *)deal
 {
     _deal = deal;

@@ -10,4 +10,6 @@
 @class XMGDeal;
 @interface XMGTableViewCell : UITableViewCell
 @property (nonatomic, strong) XMGDeal *deal;
++ (instancetype)cellWithTableView:(UITableView *)tableView;
+
 @end
