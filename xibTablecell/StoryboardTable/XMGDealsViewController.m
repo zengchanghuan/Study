@@ -39,7 +39,8 @@
 -(void)viewDidLoad
 {
     [super viewDidLoad];
-}
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([XMGTableViewCell class]) bundle:nil] forCellReuseIdentifier:@"deal"];
+ }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -52,9 +53,9 @@
     static NSString *ID = @"deal";
     XMGTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
 
-    if (cell == nil) {
-        cell = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([XMGTableViewCell class]) owner:nil options:nil] lastObject];
-    }
+//    if (cell == nil) {
+//        cell = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([XMGTableViewCell class]) owner:nil options:nil] lastObject];
+//    }
     
     cell.deal = self.deals[indexPath.row];
     
