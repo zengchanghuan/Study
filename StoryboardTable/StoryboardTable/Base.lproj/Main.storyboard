@@ -14,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="deal" rowHeight="70" id="cYi-7M-cHm">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="deal" rowHeight="70" id="cYi-7M-cHm" customClass="XMGTableViewCell">
                                 <rect key="frame" x="0.0" y="28" width="600" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cYi-7M-cHm" id="FNJ-hK-y4l">
@@ -63,6 +63,12 @@
                                         <constraint firstItem="hew-pP-HEK" firstAttribute="top" secondItem="FNJ-hK-y4l" secondAttribute="top" constant="10" id="xWf-VI-8cj"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="buy" destination="l0E-Qt-c1O" id="ueE-oa-yOA"/>
+                                    <outlet property="iconView" destination="hew-pP-HEK" id="K8D-Ls-7lv"/>
+                                    <outlet property="priceLable" destination="yOe-5q-II7" id="R5x-SI-sQF"/>
+                                    <outlet property="titleLable" destination="fvt-Bt-rIF" id="n5j-F2-ubz"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

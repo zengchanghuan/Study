@@ -15,6 +15,7 @@
 		8E95A9ED1D139DBD000EE838 /* XMGDealsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E95A9EC1D139DBD000EE838 /* XMGDealsViewController.m */; };
 		8E95A9EF1D13A132000EE838 /* deals.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E95A9EE1D13A132000EE838 /* deals.plist */; };
 		8E95A9F21D13A155000EE838 /* XMGDeal.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E95A9F11D13A155000EE838 /* XMGDeal.m */; };
+		8E95A9F51D13A657000EE838 /* XMGTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E95A9F41D13A657000EE838 /* XMGTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		8E95A9EE1D13A132000EE838 /* deals.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = deals.plist; sourceTree = "<group>"; };
 		8E95A9F01D13A155000EE838 /* XMGDeal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGDeal.h; sourceTree = "<group>"; };
 		8E95A9F11D13A155000EE838 /* XMGDeal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGDeal.m; sourceTree = "<group>"; };
+		8E95A9F31D13A657000EE838 /* XMGTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTableViewCell.h; sourceTree = "<group>"; };
+		8E95A9F41D13A657000EE838 /* XMGTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,8 @@
 				8E95A9F11D13A155000EE838 /* XMGDeal.m */,
 				8E95A9EB1D139DBD000EE838 /* XMGDealsViewController.h */,
 				8E95A9EC1D139DBD000EE838 /* XMGDealsViewController.m */,
+				8E95A9F31D13A657000EE838 /* XMGTableViewCell.h */,
+				8E95A9F41D13A657000EE838 /* XMGTableViewCell.m */,
 				8E95A9D41D139DA6000EE838 /* Supporting Files */,
 			);
 			path = StoryboardTable;
@@ -161,6 +166,7 @@
 				8E95A9ED1D139DBD000EE838 /* XMGDealsViewController.m in Sources */,
 				8E95A9D91D139DA6000EE838 /* AppDelegate.m in Sources */,
 				8E95A9F21D13A155000EE838 /* XMGDeal.m in Sources */,
+				8E95A9F51D13A657000EE838 /* XMGTableViewCell.m in Sources */,
 				8E95A9D61D139DA6000EE838 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

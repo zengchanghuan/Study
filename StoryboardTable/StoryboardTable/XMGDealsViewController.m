@@ -8,6 +8,7 @@
 
 #import "XMGDealsViewController.h"
 #import "XMGDeal.h"
+#import "XMGTableViewCell.h"
 @interface XMGDealsViewController()
 
 @property (nonatomic, strong) NSArray *deals;
@@ -49,21 +50,10 @@
 {
  
     static NSString *ID = @"deal";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    XMGDeal *deal = self.deals[indexPath.row];
+    XMGTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+
+    cell.deal = self.deals[indexPath.row];
     
-    //设置数据
-    UIImageView *iconView = (UIImageView *)[cell viewWithTag:10];
-    iconView.image = [UIImage imageNamed:deal.icon];
-    
-    UILabel *titleLabel = (UILabel *)[cell viewWithTag:20];
-    titleLabel.text = deal.title;
-    
-    UILabel *priceLable = (UILabel *)[cell viewWithTag:30];
-    priceLable.text = deal.price;
-    
-    UILabel *buy = (UILabel *)[cell viewWithTag:40];
-    buy.text = deal.buyCount;
     return cell;
 }
 @end
