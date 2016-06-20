@@ -9,7 +9,7 @@
 #import "XZLogRegisterViewController.h"
 #import "XZRegisterUserViewController.h"
 #import "XZNavigationController.h"
-
+#import "XZForgetPasswordViewController.h"
 @interface XZLogRegisterViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
 @property (weak, nonatomic) IBOutlet UITextField *phoneField;
@@ -42,5 +42,7 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 - (IBAction)forgetPassword:(id)sender {
+    
+    [self.navigationController pushViewController:[XZForgetPasswordViewController new] animated:YES];
 }
 @end
