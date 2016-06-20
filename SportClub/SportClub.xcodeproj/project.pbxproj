@@ -21,13 +21,15 @@
 		8E8396711D0D5E1A00059703 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8396701D0D5E1A00059703 /* UIBarButtonItem+Extension.m */; };
 		8E8396741D0D5E5100059703 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8396731D0D5E5100059703 /* UIView+Extension.m */; };
 		8E8396761D0D60A300059703 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8396751D0D60A300059703 /* Foundation+Log.m */; };
-		8E83967D1D0D764300059703 /* XZLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E83967C1D0D764300059703 /* XZLoginViewController.m */; };
 		8E8396841D0E55FD00059703 /* HyPopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E83967F1D0E55FD00059703 /* HyPopMenuView.m */; };
 		8E8396851D0E55FD00059703 /* MenuLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8396811D0E55FD00059703 /* MenuLabel.m */; };
 		8E8396861D0E55FD00059703 /* UIColor+ImageGetColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8396831D0E55FD00059703 /* UIColor+ImageGetColor.m */; };
 		8E8396D11D0E8DFD00059703 /* composer_close.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8E8396CE1D0E8DFD00059703 /* composer_close.wav */; };
 		8E8396D21D0E8DFD00059703 /* composer_open.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8E8396CF1D0E8DFD00059703 /* composer_open.wav */; };
 		8E8396D31D0E8DFD00059703 /* composer_select.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8E8396D01D0E8DFD00059703 /* composer_select.wav */; };
+		8EA1C5D21D178FAA0015FFF2 /* XZLogRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA1C5D01D178FAA0015FFF2 /* XZLogRegisterViewController.m */; };
+		8EA1C5D31D178FAA0015FFF2 /* XZLogRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EA1C5D11D178FAA0015FFF2 /* XZLogRegisterViewController.xib */; };
+		8EA1C5D61D17D03D0015FFF2 /* XZVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA1C5D51D17D03D0015FFF2 /* XZVerticalButton.m */; };
 		AB98A9F240EBDE05DCE9C600 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6695B6AE4D835D693BEBBC4E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -63,8 +65,6 @@
 		8E8396721D0D5E5100059703 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		8E8396731D0D5E5100059703 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		8E8396751D0D60A300059703 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
-		8E83967B1D0D764300059703 /* XZLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLoginViewController.h; sourceTree = "<group>"; };
-		8E83967C1D0D764300059703 /* XZLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLoginViewController.m; sourceTree = "<group>"; };
 		8E83967E1D0E55FD00059703 /* HyPopMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyPopMenuView.h; sourceTree = "<group>"; };
 		8E83967F1D0E55FD00059703 /* HyPopMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyPopMenuView.m; sourceTree = "<group>"; };
 		8E8396801D0E55FD00059703 /* MenuLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuLabel.h; sourceTree = "<group>"; };
@@ -74,6 +74,11 @@
 		8E8396CE1D0E8DFD00059703 /* composer_close.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = composer_close.wav; sourceTree = "<group>"; };
 		8E8396CF1D0E8DFD00059703 /* composer_open.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = composer_open.wav; sourceTree = "<group>"; };
 		8E8396D01D0E8DFD00059703 /* composer_select.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = composer_select.wav; sourceTree = "<group>"; };
+		8EA1C5CF1D178FAA0015FFF2 /* XZLogRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLogRegisterViewController.h; sourceTree = "<group>"; };
+		8EA1C5D01D178FAA0015FFF2 /* XZLogRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLogRegisterViewController.m; sourceTree = "<group>"; };
+		8EA1C5D11D178FAA0015FFF2 /* XZLogRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZLogRegisterViewController.xib; sourceTree = "<group>"; };
+		8EA1C5D41D17D03D0015FFF2 /* XZVerticalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZVerticalButton.h; sourceTree = "<group>"; };
+		8EA1C5D51D17D03D0015FFF2 /* XZVerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZVerticalButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -412,8 +417,9 @@
 		8E8396781D0D762C00059703 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8E83967B1D0D764300059703 /* XZLoginViewController.h */,
-				8E83967C1D0D764300059703 /* XZLoginViewController.m */,
+				8EA1C5CF1D178FAA0015FFF2 /* XZLogRegisterViewController.h */,
+				8EA1C5D01D178FAA0015FFF2 /* XZLogRegisterViewController.m */,
+				8EA1C5D11D178FAA0015FFF2 /* XZLogRegisterViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -428,6 +434,8 @@
 		8E83967A1D0D762C00059703 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8EA1C5D41D17D03D0015FFF2 /* XZVerticalButton.h */,
+				8EA1C5D51D17D03D0015FFF2 /* XZVerticalButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -494,6 +502,7 @@
 			files = (
 				8E1211391D0591CE0066E061 /* Assets.xcassets in Resources */,
 				8E8396D11D0E8DFD00059703 /* composer_close.wav in Resources */,
+				8EA1C5D31D178FAA0015FFF2 /* XZLogRegisterViewController.xib in Resources */,
 				8E8396D31D0E8DFD00059703 /* composer_select.wav in Resources */,
 				8E8396D21D0E8DFD00059703 /* composer_open.wav in Resources */,
 			);
@@ -556,15 +565,16 @@
 			files = (
 				8E8396681D0D08B400059703 /* XZStoreViewController.m in Sources */,
 				8E0BDF801D0D019700827767 /* XZTabBarViewController.m in Sources */,
-				8E83967D1D0D764300059703 /* XZLoginViewController.m in Sources */,
 				8E83966B1D0D099000059703 /* XZUITabBar.m in Sources */,
 				8E0BDF791D0CFE5C00827767 /* main.m in Sources */,
+				8EA1C5D61D17D03D0015FFF2 /* XZVerticalButton.m in Sources */,
 				8E83965F1D0D085700059703 /* XZDiscoverViewController.m in Sources */,
 				8E8396651D0D088300059703 /* XZLiveViewController.m in Sources */,
 				8E8396861D0E55FD00059703 /* UIColor+ImageGetColor.m in Sources */,
 				8E8396741D0D5E5100059703 /* UIView+Extension.m in Sources */,
 				8E8396841D0E55FD00059703 /* HyPopMenuView.m in Sources */,
 				8E8396711D0D5E1A00059703 /* UIBarButtonItem+Extension.m in Sources */,
+				8EA1C5D21D178FAA0015FFF2 /* XZLogRegisterViewController.m in Sources */,
 				8E0BDF781D0CFE5C00827767 /* AppDelegate.m in Sources */,
 				8E8396851D0E55FD00059703 /* MenuLabel.m in Sources */,
 				8E83965C1D0D083500059703 /* XZHomeViewController.m in Sources */,
