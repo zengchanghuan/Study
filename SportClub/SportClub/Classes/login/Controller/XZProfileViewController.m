@@ -1,19 +1,18 @@
 //
-//  XZRegisterUserViewController.m
+//  XZProfileViewController.m
 //  SportClub
 //
 //  Created by ZengChanghuan on 16/6/20.
 //  Copyright © 2016年 ZengChanghuan. All rights reserved.
 //
 
-#import "XZRegisterUserViewController.h"
-#import "XZAgreementViewController.h"
 #import "XZProfileViewController.h"
-@interface XZRegisterUserViewController ()
+
+@interface XZProfileViewController ()
 
 @end
 
-@implementation XZRegisterUserViewController
+@implementation XZProfileViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -23,12 +22,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-- (IBAction)agreement:(id)sender {
-    [self.navigationController pushViewController:[XZAgreementViewController new] animated:YES];
-}
-- (IBAction)nextStep:(id)sender {
-    [self.navigationController pushViewController:[XZProfileViewController new] animated:YES];
 }
 
 /*

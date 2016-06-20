@@ -33,6 +33,10 @@
 		8EA1C5D91D1800FB0015FFF2 /* XZTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA1C5D81D1800FB0015FFF2 /* XZTextField.m */; };
 		8EA1C5DD1D1806BE0015FFF2 /* XZRegisterUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA1C5DB1D1806BE0015FFF2 /* XZRegisterUserViewController.m */; };
 		8EA1C5DE1D1806BE0015FFF2 /* XZRegisterUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EA1C5DC1D1806BE0015FFF2 /* XZRegisterUserViewController.xib */; };
+		8EA1C5E21D180FC70015FFF2 /* XZAgreementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA1C5E01D180FC70015FFF2 /* XZAgreementViewController.m */; };
+		8EA1C5E31D180FC70015FFF2 /* XZAgreementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EA1C5E11D180FC70015FFF2 /* XZAgreementViewController.xib */; };
+		8EA1C5E71D1810000015FFF2 /* XZProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA1C5E51D1810000015FFF2 /* XZProfileViewController.m */; };
+		8EA1C5E81D1810000015FFF2 /* XZProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EA1C5E61D1810000015FFF2 /* XZProfileViewController.xib */; };
 		AB98A9F240EBDE05DCE9C600 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6695B6AE4D835D693BEBBC4E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +91,12 @@
 		8EA1C5DA1D1806BE0015FFF2 /* XZRegisterUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZRegisterUserViewController.h; sourceTree = "<group>"; };
 		8EA1C5DB1D1806BE0015FFF2 /* XZRegisterUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZRegisterUserViewController.m; sourceTree = "<group>"; };
 		8EA1C5DC1D1806BE0015FFF2 /* XZRegisterUserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZRegisterUserViewController.xib; sourceTree = "<group>"; };
+		8EA1C5DF1D180FC70015FFF2 /* XZAgreementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZAgreementViewController.h; sourceTree = "<group>"; };
+		8EA1C5E01D180FC70015FFF2 /* XZAgreementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZAgreementViewController.m; sourceTree = "<group>"; };
+		8EA1C5E11D180FC70015FFF2 /* XZAgreementViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZAgreementViewController.xib; sourceTree = "<group>"; };
+		8EA1C5E41D1810000015FFF2 /* XZProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZProfileViewController.h; sourceTree = "<group>"; };
+		8EA1C5E51D1810000015FFF2 /* XZProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZProfileViewController.m; sourceTree = "<group>"; };
+		8EA1C5E61D1810000015FFF2 /* XZProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZProfileViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -431,6 +441,12 @@
 				8EA1C5DA1D1806BE0015FFF2 /* XZRegisterUserViewController.h */,
 				8EA1C5DB1D1806BE0015FFF2 /* XZRegisterUserViewController.m */,
 				8EA1C5DC1D1806BE0015FFF2 /* XZRegisterUserViewController.xib */,
+				8EA1C5DF1D180FC70015FFF2 /* XZAgreementViewController.h */,
+				8EA1C5E01D180FC70015FFF2 /* XZAgreementViewController.m */,
+				8EA1C5E11D180FC70015FFF2 /* XZAgreementViewController.xib */,
+				8EA1C5E41D1810000015FFF2 /* XZProfileViewController.h */,
+				8EA1C5E51D1810000015FFF2 /* XZProfileViewController.m */,
+				8EA1C5E61D1810000015FFF2 /* XZProfileViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -517,7 +533,9 @@
 				8E8396D11D0E8DFD00059703 /* composer_close.wav in Resources */,
 				8EA1C5D31D178FAA0015FFF2 /* XZLogRegisterViewController.xib in Resources */,
 				8E8396D31D0E8DFD00059703 /* composer_select.wav in Resources */,
+				8EA1C5E31D180FC70015FFF2 /* XZAgreementViewController.xib in Resources */,
 				8EA1C5DE1D1806BE0015FFF2 /* XZRegisterUserViewController.xib in Resources */,
+				8EA1C5E81D1810000015FFF2 /* XZProfileViewController.xib in Resources */,
 				8E8396D21D0E8DFD00059703 /* composer_open.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -577,6 +595,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EA1C5E71D1810000015FFF2 /* XZProfileViewController.m in Sources */,
 				8E8396681D0D08B400059703 /* XZStoreViewController.m in Sources */,
 				8E0BDF801D0D019700827767 /* XZTabBarViewController.m in Sources */,
 				8E83966B1D0D099000059703 /* XZUITabBar.m in Sources */,
@@ -584,6 +603,7 @@
 				8EA1C5D61D17D03D0015FFF2 /* XZVerticalButton.m in Sources */,
 				8E83965F1D0D085700059703 /* XZDiscoverViewController.m in Sources */,
 				8EA1C5DD1D1806BE0015FFF2 /* XZRegisterUserViewController.m in Sources */,
+				8EA1C5E21D180FC70015FFF2 /* XZAgreementViewController.m in Sources */,
 				8E8396651D0D088300059703 /* XZLiveViewController.m in Sources */,
 				8E8396861D0E55FD00059703 /* UIColor+ImageGetColor.m in Sources */,
 				8E8396741D0D5E5100059703 /* UIView+Extension.m in Sources */,
