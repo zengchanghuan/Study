@@ -60,7 +60,7 @@
                             <state key="highlighted" image="login_QQ_icon_click"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A2G-vl-fGp" customClass="XZVerticalButton">
-                            <rect key="frame" x="375" y="37" width="70" height="90"/>
+                            <rect key="frame" x="510" y="37" width="70" height="90"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="70" id="Oa2-CK-da7"/>
                                 <constraint firstAttribute="height" constant="90" id="ilV-TP-Z9i"/>
@@ -70,7 +70,7 @@
                             <state key="highlighted" image="login_sina_icon_click"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRw-tv-Zy2" customClass="XZVerticalButton">
-                            <rect key="frame" x="155" y="37" width="70" height="90"/>
+                            <rect key="frame" x="20" y="37" width="70" height="90"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="90" id="GAr-L9-r4M"/>
                                 <constraint firstAttribute="width" constant="70" id="tR4-ee-Gp6"/>
@@ -87,15 +87,15 @@
                         <constraint firstItem="wzy-2d-IEQ" firstAttribute="centerX" secondItem="u5f-4L-AhW" secondAttribute="centerX" id="Dwh-bf-n9X"/>
                         <constraint firstItem="Doh-bA-RoC" firstAttribute="leading" secondItem="Wen-2S-sLW" secondAttribute="trailing" constant="5" id="EAG-Jx-gxb"/>
                         <constraint firstItem="Wen-2S-sLW" firstAttribute="centerX" secondItem="u5f-4L-AhW" secondAttribute="centerX" id="Fth-4t-qM7"/>
-                        <constraint firstItem="wzy-2d-IEQ" firstAttribute="leading" secondItem="IRw-tv-Zy2" secondAttribute="trailing" constant="40" id="G4x-XC-AUg"/>
                         <constraint firstItem="wzy-2d-IEQ" firstAttribute="top" secondItem="Wen-2S-sLW" secondAttribute="bottom" constant="20" id="KIt-30-K6k"/>
                         <constraint firstItem="Doh-bA-RoC" firstAttribute="centerY" secondItem="Wen-2S-sLW" secondAttribute="centerY" id="RoR-Ge-hpk"/>
                         <constraint firstItem="Wen-2S-sLW" firstAttribute="leading" secondItem="7uM-5v-eia" secondAttribute="trailing" constant="5" id="W9U-te-WOK"/>
-                        <constraint firstItem="A2G-vl-fGp" firstAttribute="leading" secondItem="wzy-2d-IEQ" secondAttribute="trailing" constant="40" id="X43-aL-7vo"/>
                         <constraint firstItem="A2G-vl-fGp" firstAttribute="centerY" secondItem="wzy-2d-IEQ" secondAttribute="centerY" id="XBs-jz-ueC"/>
+                        <constraint firstItem="IRw-tv-Zy2" firstAttribute="leading" secondItem="u5f-4L-AhW" secondAttribute="leading" constant="20" id="dJO-lT-EA5"/>
                         <constraint firstItem="A2G-vl-fGp" firstAttribute="top" secondItem="wzy-2d-IEQ" secondAttribute="top" id="dsF-9u-oUw"/>
                         <constraint firstItem="Wen-2S-sLW" firstAttribute="top" secondItem="u5f-4L-AhW" secondAttribute="top" id="gcb-Fa-4sG"/>
                         <constraint firstItem="IRw-tv-Zy2" firstAttribute="top" secondItem="wzy-2d-IEQ" secondAttribute="top" id="t9y-CC-wrg"/>
+                        <constraint firstAttribute="trailing" secondItem="A2G-vl-fGp" secondAttribute="trailing" constant="20" id="yak-lh-gvR"/>
                     </constraints>
                 </view>
             </subviews>
