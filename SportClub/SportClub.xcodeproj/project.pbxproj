@@ -31,6 +31,8 @@
 		8EA1C5D31D178FAA0015FFF2 /* XZLogRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EA1C5D11D178FAA0015FFF2 /* XZLogRegisterViewController.xib */; };
 		8EA1C5D61D17D03D0015FFF2 /* XZVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA1C5D51D17D03D0015FFF2 /* XZVerticalButton.m */; };
 		8EA1C5D91D1800FB0015FFF2 /* XZTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA1C5D81D1800FB0015FFF2 /* XZTextField.m */; };
+		8EA1C5DD1D1806BE0015FFF2 /* XZRegisterUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA1C5DB1D1806BE0015FFF2 /* XZRegisterUserViewController.m */; };
+		8EA1C5DE1D1806BE0015FFF2 /* XZRegisterUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EA1C5DC1D1806BE0015FFF2 /* XZRegisterUserViewController.xib */; };
 		AB98A9F240EBDE05DCE9C600 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6695B6AE4D835D693BEBBC4E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +84,9 @@
 		8EA1C5D51D17D03D0015FFF2 /* XZVerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZVerticalButton.m; sourceTree = "<group>"; };
 		8EA1C5D71D1800FB0015FFF2 /* XZTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTextField.h; sourceTree = "<group>"; };
 		8EA1C5D81D1800FB0015FFF2 /* XZTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTextField.m; sourceTree = "<group>"; };
+		8EA1C5DA1D1806BE0015FFF2 /* XZRegisterUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZRegisterUserViewController.h; sourceTree = "<group>"; };
+		8EA1C5DB1D1806BE0015FFF2 /* XZRegisterUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZRegisterUserViewController.m; sourceTree = "<group>"; };
+		8EA1C5DC1D1806BE0015FFF2 /* XZRegisterUserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZRegisterUserViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -423,6 +428,9 @@
 				8EA1C5CF1D178FAA0015FFF2 /* XZLogRegisterViewController.h */,
 				8EA1C5D01D178FAA0015FFF2 /* XZLogRegisterViewController.m */,
 				8EA1C5D11D178FAA0015FFF2 /* XZLogRegisterViewController.xib */,
+				8EA1C5DA1D1806BE0015FFF2 /* XZRegisterUserViewController.h */,
+				8EA1C5DB1D1806BE0015FFF2 /* XZRegisterUserViewController.m */,
+				8EA1C5DC1D1806BE0015FFF2 /* XZRegisterUserViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -509,6 +517,7 @@
 				8E8396D11D0E8DFD00059703 /* composer_close.wav in Resources */,
 				8EA1C5D31D178FAA0015FFF2 /* XZLogRegisterViewController.xib in Resources */,
 				8E8396D31D0E8DFD00059703 /* composer_select.wav in Resources */,
+				8EA1C5DE1D1806BE0015FFF2 /* XZRegisterUserViewController.xib in Resources */,
 				8E8396D21D0E8DFD00059703 /* composer_open.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -574,6 +583,7 @@
 				8E0BDF791D0CFE5C00827767 /* main.m in Sources */,
 				8EA1C5D61D17D03D0015FFF2 /* XZVerticalButton.m in Sources */,
 				8E83965F1D0D085700059703 /* XZDiscoverViewController.m in Sources */,
+				8EA1C5DD1D1806BE0015FFF2 /* XZRegisterUserViewController.m in Sources */,
 				8E8396651D0D088300059703 /* XZLiveViewController.m in Sources */,
 				8E8396861D0E55FD00059703 /* UIColor+ImageGetColor.m in Sources */,
 				8E8396741D0D5E5100059703 /* UIView+Extension.m in Sources */,

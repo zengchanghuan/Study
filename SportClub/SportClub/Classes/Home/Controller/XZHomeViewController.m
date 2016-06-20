@@ -8,6 +8,7 @@
 
 #import "XZHomeViewController.h"
 #import "XZLogRegisterViewController.h"
+#import "XZNavigationController.h"
 @interface XZHomeViewController ()
 
 @end
@@ -31,8 +32,8 @@
 - (void)login
 {
     XZLogRegisterViewController *login = [XZLogRegisterViewController new];
-//    [self.navigationController pushViewController:login animated:YES];
-    [self presentViewController:login animated:YES completion:nil];
+    XZNavigationController *na = [[XZNavigationController alloc] initWithRootViewController:login];
+    [self presentViewController:na animated:YES completion:nil];
 }
 
 - (void)search

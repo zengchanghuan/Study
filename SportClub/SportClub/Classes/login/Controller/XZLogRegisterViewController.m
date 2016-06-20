@@ -7,6 +7,8 @@
 //
 
 #import "XZLogRegisterViewController.h"
+#import "XZRegisterUserViewController.h"
+#import "XZNavigationController.h"
 
 @interface XZLogRegisterViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
@@ -32,5 +34,13 @@
 }
 - (IBAction)closed:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+- (IBAction)registerUser:(id)sender {
+    XZRegisterUserViewController *vc = [[XZRegisterUserViewController alloc] init];
+//    XZNavigationController *na = [[XZNavigationController alloc] initWithRootViewController:vc];
+//    [self.navigationController pushViewController:na animated:YES];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+- (IBAction)forgetPassword:(id)sender {
 }
 @end

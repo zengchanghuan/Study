@@ -104,7 +104,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RNP-nf-RQF" userLabel="登录框">
                     <rect key="frame" x="0.0" y="70" width="600" height="250"/>
                     <subviews>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入手机号码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bsX-a4-UyO" userLabel="手机输入" customClass="XZTextField">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入手机号码" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="bsX-a4-UyO" userLabel="手机输入" customClass="XZTextField">
                             <rect key="frame" x="12" y="0.0" width="576" height="50"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="8P7-oE-bi6"/>
@@ -113,7 +113,7 @@
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZRO-ym-ufv" userLabel="密码输入" customClass="XZTextField">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入密码" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="ZRO-ym-ufv" userLabel="密码输入" customClass="XZTextField">
                             <rect key="frame" x="12" y="50" width="576" height="46"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="46" id="Vf3-dq-AOC"/>
@@ -139,6 +139,9 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opi-RQ-Eny">
                             <rect key="frame" x="528" y="190" width="60" height="30"/>
                             <state key="normal" title="忘记密码"/>
+                            <connections>
+                                <action selector="forgetPassword:" destination="-1" eventType="touchUpInside" id="rzx-bF-zVX"/>
+                            </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="还没有账号？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYR-6e-i0p">
                             <rect key="frame" x="12" y="196" width="84" height="17"/>
@@ -149,6 +152,9 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5a0-TO-hbc">
                             <rect key="frame" x="104" y="190" width="60" height="30"/>
                             <state key="normal" title="立即注册"/>
+                            <connections>
+                                <action selector="registerUser:" destination="-1" eventType="touchUpInside" id="pyV-LN-tAG"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
