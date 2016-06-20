@@ -30,6 +30,7 @@
 		8EA1C5D21D178FAA0015FFF2 /* XZLogRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA1C5D01D178FAA0015FFF2 /* XZLogRegisterViewController.m */; };
 		8EA1C5D31D178FAA0015FFF2 /* XZLogRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EA1C5D11D178FAA0015FFF2 /* XZLogRegisterViewController.xib */; };
 		8EA1C5D61D17D03D0015FFF2 /* XZVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA1C5D51D17D03D0015FFF2 /* XZVerticalButton.m */; };
+		8EA1C5D91D1800FB0015FFF2 /* XZTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA1C5D81D1800FB0015FFF2 /* XZTextField.m */; };
 		AB98A9F240EBDE05DCE9C600 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6695B6AE4D835D693BEBBC4E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,8 @@
 		8EA1C5D11D178FAA0015FFF2 /* XZLogRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZLogRegisterViewController.xib; sourceTree = "<group>"; };
 		8EA1C5D41D17D03D0015FFF2 /* XZVerticalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZVerticalButton.h; sourceTree = "<group>"; };
 		8EA1C5D51D17D03D0015FFF2 /* XZVerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZVerticalButton.m; sourceTree = "<group>"; };
+		8EA1C5D71D1800FB0015FFF2 /* XZTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTextField.h; sourceTree = "<group>"; };
+		8EA1C5D81D1800FB0015FFF2 /* XZTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -436,6 +439,8 @@
 			children = (
 				8EA1C5D41D17D03D0015FFF2 /* XZVerticalButton.h */,
 				8EA1C5D51D17D03D0015FFF2 /* XZVerticalButton.m */,
+				8EA1C5D71D1800FB0015FFF2 /* XZTextField.h */,
+				8EA1C5D81D1800FB0015FFF2 /* XZTextField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -572,6 +577,7 @@
 				8E8396651D0D088300059703 /* XZLiveViewController.m in Sources */,
 				8E8396861D0E55FD00059703 /* UIColor+ImageGetColor.m in Sources */,
 				8E8396741D0D5E5100059703 /* UIView+Extension.m in Sources */,
+				8EA1C5D91D1800FB0015FFF2 /* XZTextField.m in Sources */,
 				8E8396841D0E55FD00059703 /* HyPopMenuView.m in Sources */,
 				8E8396711D0D5E1A00059703 /* UIBarButtonItem+Extension.m in Sources */,
 				8EA1C5D21D178FAA0015FFF2 /* XZLogRegisterViewController.m in Sources */,
