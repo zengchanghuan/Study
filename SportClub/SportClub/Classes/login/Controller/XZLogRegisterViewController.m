@@ -21,6 +21,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"账号登录";
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(closed)image:@"navigationButtonReturn"highImage:@"navigationButtonReturnClick"];
+    
     
 }
 
@@ -32,7 +35,7 @@
 {
     return UIStatusBarStyleLightContent;
 }
-- (IBAction)closed:(id)sender {
+- (void)closed {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (IBAction)registerUser:(id)sender {

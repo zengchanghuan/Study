@@ -20,6 +20,7 @@
 }
 
 - (IBAction)newPasswordSucceed:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 
