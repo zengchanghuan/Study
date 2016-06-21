@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XZRegisterUserViewController">
             <connections>
+                <outlet property="timeBtn" destination="R33-2Q-7tJ" id="zgM-Bb-wX5"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,7 +19,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nSa-fz-wuj">
                     <rect key="frame" x="0.0" y="64" width="600" height="250"/>
                     <subviews>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="13121551579" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="vbI-KM-83A" userLabel="注册手机号" customClass="XZTextField">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入您的手机号" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="vbI-KM-83A" userLabel="注册手机号" customClass="XZTextField">
                             <rect key="frame" x="12" y="0.0" width="576" height="50"/>
                             <constraints>
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="V0T-4x-Tuc"/>
@@ -72,10 +73,17 @@
                                 <action selector="nextStep:" destination="-1" eventType="touchUpInside" id="bmO-Ta-kkE"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R33-2Q-7tJ">
+                            <rect key="frame" x="498" y="4" width="90" height="34"/>
+                            <state key="normal" title="发送验证码">
+                                <color key="titleColor" red="0.8980392157" green="0.69019607839999997" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="vbI-KM-83A" secondAttribute="trailing" constant="12" id="38j-AI-baU"/>
+                        <constraint firstAttribute="trailing" secondItem="R33-2Q-7tJ" secondAttribute="trailing" constant="12" id="Fz1-Wc-TPp"/>
                         <constraint firstItem="vbI-KM-83A" firstAttribute="top" secondItem="nSa-fz-wuj" secondAttribute="top" id="KV4-tx-krb"/>
                         <constraint firstItem="RSs-Vc-1dd" firstAttribute="top" secondItem="6Rc-hW-kCx" secondAttribute="bottom" constant="15" id="MlP-74-Y8z"/>
                         <constraint firstAttribute="height" constant="250" id="N2m-hc-BBj"/>
@@ -87,6 +95,7 @@
                         <constraint firstItem="6Rc-hW-kCx" firstAttribute="top" secondItem="dwB-YB-PAN" secondAttribute="bottom" constant="15" id="ZO7-Bk-DWk"/>
                         <constraint firstItem="oRc-cT-Poh" firstAttribute="top" secondItem="dwB-YB-PAN" secondAttribute="bottom" constant="15" id="cHq-bt-1K0"/>
                         <constraint firstItem="6Rc-hW-kCx" firstAttribute="centerY" secondItem="oRc-cT-Poh" secondAttribute="centerY" id="fYD-Mn-8rL"/>
+                        <constraint firstItem="vbI-KM-83A" firstAttribute="top" secondItem="R33-2Q-7tJ" secondAttribute="bottom" constant="-38" id="nUn-Sx-RAE"/>
                         <constraint firstItem="dwB-YB-PAN" firstAttribute="top" secondItem="vbI-KM-83A" secondAttribute="bottom" id="rPE-5G-IUC"/>
                         <constraint firstAttribute="trailing" secondItem="dwB-YB-PAN" secondAttribute="trailing" constant="12" id="w4g-C1-Ije"/>
                         <constraint firstItem="vbI-KM-83A" firstAttribute="leading" secondItem="nSa-fz-wuj" secondAttribute="leading" constant="12" id="wpT-OC-wei"/>
@@ -99,6 +108,7 @@
                 <constraint firstAttribute="trailing" secondItem="nSa-fz-wuj" secondAttribute="trailing" id="XEU-VW-32v"/>
                 <constraint firstItem="nSa-fz-wuj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tKx-er-l5h"/>
             </constraints>
+            <point key="canvasLocation" x="360" y="304"/>
         </view>
     </objects>
 </document>
