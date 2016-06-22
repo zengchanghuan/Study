@@ -11,12 +11,14 @@
 #import "XZProfileViewController.h"
 #import "XZAccountManager.h"
 
-#define SERVERURL @"https://callme.shixinyun.com"
 
+//服务器地址
+#define SERVERURL @"http://114.112.98.72:8089"
 @interface XZRegisterUserViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *timeBtn;
 @property (weak, nonatomic) IBOutlet UITextField *phoneNubmer;
-
+@property (weak, nonatomic) IBOutlet UITextField *codeField;
+@property (copy, nonatomic) NSString *phone;
 @end
 
 @implementation XZRegisterUserViewController
@@ -31,7 +33,34 @@
     [self.navigationController pushViewController:[XZAgreementViewController new] animated:YES];
 }
 - (IBAction)nextStep:(id)sender {
-    [self.navigationController pushViewController:[XZProfileViewController new] animated:YES];
+    
+    
+    if (self.codeField.text == nil || [self.codeField.text isEqualToString:@""] || _phone == nil || [_phone isEqualToString:@""]) {
+        [MBProgressHUD showError:@"请检查您的手机和验证码是否正确"];
+
+        return;
+    } else {
+        
+        NSMutableDictionary *params = [[NSMutableDictionary alloc] initWithCapacity:2];
+        [params setObject:_phone forKey:@"phone"];
+        NSLog(@"%@",self.codeField.text);
+        [params setObject:self.codeField.text forKey:@"code"];
+        
+        
+        
+        NSString *urlSring = [NSString stringWithFormat:@"%@%@",SERVERURL,@"/v1/account/validate/code"];
+        
+        [XZNetManager post:urlSring params:params success:^(id json) {
+            [self.navigationController pushViewController:[XZProfileViewController new] animated:YES];
+            
+        } failure:^(NSError *error) {
+            XZLog(@"%@",error);
+        }];
+
+        
+    }
+    
+    
 }
 
 - (void)startTime
@@ -68,22 +97,28 @@
 
 - (void)getIdentifyingCode{
     
+    
+    [self startTime];
+
     if (![self validatePhone:self.phoneNubmer.text]) {
         [MBProgressHUD showError:@"手机格式不正确"];
+    } else {
+        _phone = self.phoneNubmer.text;
+        NSLog(@"%@",self.phoneNubmer.text);
+        NSMutableDictionary *params = [[NSMutableDictionary alloc] initWithCapacity:1];
+        
+        [params setObject:self.phoneNubmer.text forKey:@"phone"];
+        
+        NSString *url = [NSString stringWithFormat:@"%@%@",SERVERURL,@"/v1/sendCode"];
+        
+        [XZNetManager post:url params:params success:^(id json) {
+//            [self startTime];
+        } failure:^(NSError *error) {
+            XZLog(@"%@",error);
+        }];
+
     }
     
-    NSLog(@"%@",self.phoneNubmer.text);
-    NSMutableDictionary *params = [[NSMutableDictionary alloc] initWithCapacity:1];
-
-    [params setObject:@"13121551578" forKey:@"mobile"];
-
-    NSString *url = [NSString stringWithFormat:@"%@%@",SERVERURL,@"/auth/sms/send"];
-
-    [XZNetManager post:url params:params success:^(id json) {
-        [self startTime];
-    } failure:^(NSError *error) {
-        XZLog(@"%@",error);
-    }];
     
 }
 
