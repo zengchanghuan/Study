@@ -9,6 +9,8 @@
 #import "XZProfileViewController.h"
 
 @interface XZProfileViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *userPhotoBtn;
+@property (weak, nonatomic) IBOutlet UIButton *showPasswordBtn;
 
 @end
 
@@ -16,22 +18,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark -Button Method
+/**
+ *  上传用户头像
+ *
+ */
+- (IBAction)userPhotoBtnClick:(id)sender {
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+/**
+ *  是否显示密码
+ *
+ */
+- (IBAction)isShowPassword:(id)sender {
 }
-*/
+
+/**
+ *  完成注册
+ *
+ */
+- (IBAction)completedRegister:(id)sender {
+    
+    
+}
 
 @end

@@ -34,7 +34,7 @@
 }
 - (IBAction)nextStep:(id)sender {
     
-    
+    /*
     if (self.codeField.text == nil || [self.codeField.text isEqualToString:@""] || _phone == nil || [_phone isEqualToString:@""]) {
         [MBProgressHUD showError:@"请检查您的手机和验证码是否正确"];
 
@@ -59,6 +59,9 @@
 
         
     }
+     */
+    [self.navigationController pushViewController:[XZProfileViewController new] animated:YES];
+
     
     
 }
