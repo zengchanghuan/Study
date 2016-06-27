@@ -7,7 +7,8 @@
 //
 
 #import "XZProfileViewController.h"
-
+#import "NSString+MD5.h"
+#import "AFNetworking.h"
 @interface XZProfileViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *userPhotoBtn;
 @property (weak, nonatomic) IBOutlet UIButton *showPasswordBtn;
@@ -40,8 +41,33 @@
  *
  */
 - (IBAction)completedRegister:(id)sender {
-    
+    NSString *urlSring = [NSString stringWithFormat:@"%@%@",SERVERURL,@"/v1/account/register"];
+
+    NSLog(@"url = %@", urlSring);
+    NSMutableDictionary *params = [[NSMutableDictionary alloc] initWithCapacity:3];
+    [params setObject:@"13121551578" forKey:@"phone"];
+    [params setObject:[@"518103" MD5] forKey:@"pwd"];
+    [params setObject:@"Tristan" forKey:@"nickname"];
+
+    UIImage *img = [UIImage imageNamed:@"set_user_photo"];
+    NSData *imaData = UIImagePNGRepresentation(img);
+    __weak XZProfileViewController *weakself = self;
+    AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];
+    [mgr POST:urlSring parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+        [formData appendPartWithFileData:imaData name:@"avatar" fileName:@"set_user_photo.png" mimeType:@"image/png"];
+
+    } success:^(NSURLSessionDataTask *task, id responseObject) {
+        XZLog(@"-------%@", responseObject);
+        [weakself login];
+
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        XZLog(@"_______%@",error);
+    }];
     
 }
 
+- (void)login
+{
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
 @end

@@ -26,6 +26,7 @@
 		8E18E03A1D1944640074FB65 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E18E0361D1944640074FB65 /* MBProgressHUD+MJ.m */; };
 		8E18E03B1D1944640074FB65 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8E18E0371D1944640074FB65 /* MBProgressHUD.bundle */; };
 		8E18E03C1D1944640074FB65 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E18E0391D1944640074FB65 /* MBProgressHUD.m */; };
+		8E18E06E1D1BBE590074FB65 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E18E06D1D1BBE590074FB65 /* NSString+MD5.m */; };
 		8E83965C1D0D083500059703 /* XZHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E83965B1D0D083500059703 /* XZHomeViewController.m */; };
 		8E83965F1D0D085700059703 /* XZDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E83965E1D0D085700059703 /* XZDiscoverViewController.m */; };
 		8E8396621D0D086B00059703 /* XZComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8396611D0D086B00059703 /* XZComposeViewController.m */; };
@@ -104,6 +105,8 @@
 		8E18E0371D1944640074FB65 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
 		8E18E0381D1944640074FB65 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		8E18E0391D1944640074FB65 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		8E18E06C1D1BBE590074FB65 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		8E18E06D1D1BBE590074FB65 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		8E83965A1D0D083500059703 /* XZHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZHomeViewController.h; sourceTree = "<group>"; };
 		8E83965B1D0D083500059703 /* XZHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZHomeViewController.m; sourceTree = "<group>"; };
 		8E83965D1D0D085700059703 /* XZDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZDiscoverViewController.h; sourceTree = "<group>"; };
@@ -373,6 +376,8 @@
 				8E8396701D0D5E1A00059703 /* UIBarButtonItem+Extension.m */,
 				8E8396721D0D5E5100059703 /* UIView+Extension.h */,
 				8E8396731D0D5E5100059703 /* UIView+Extension.m */,
+				8E18E06C1D1BBE590074FB65 /* NSString+MD5.h */,
+				8E18E06D1D1BBE590074FB65 /* NSString+MD5.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -732,6 +737,7 @@
 			files = (
 				8E18E01D1D1928D10074FB65 /* AFHTTPRequestOperation.m in Sources */,
 				8EA1C5E71D1810000015FFF2 /* XZProfileViewController.m in Sources */,
+				8E18E06E1D1BBE590074FB65 /* NSString+MD5.m in Sources */,
 				8E8396681D0D08B400059703 /* XZStoreViewController.m in Sources */,
 				8E0BDF801D0D019700827767 /* XZTabBarViewController.m in Sources */,
 				8E18E0241D1928D10074FB65 /* AFURLResponseSerialization.m in Sources */,

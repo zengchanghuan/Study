@@ -12,8 +12,6 @@
 #import "XZAccountManager.h"
 
 
-//服务器地址
-#define SERVERURL @"http://114.112.98.72:8089"
 @interface XZRegisterUserViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *timeBtn;
 @property (weak, nonatomic) IBOutlet UITextField *phoneNubmer;
