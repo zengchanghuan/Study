@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XZVerifyViewController">
             <connections>
+                <outlet property="codeField" destination="Z6a-tW-vvV" id="e15-El-4Pc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,21 +16,44 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="请输入收到的验证码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNH-CJ-SNp">
-                    <rect key="frame" x="115" y="139" width="153" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAx-DI-XCW">
-                    <rect key="frame" x="116" y="209" width="45" height="30"/>
-                    <state key="normal" title="下一步"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入收到的验证码" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Z6a-tW-vvV" userLabel="密码输入" customClass="XZTextField">
+                    <rect key="frame" x="12" y="64" width="576" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="n48-SE-Hjr"/>
+                    </constraints>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAx-DI-XCW">
+                    <rect key="frame" x="12" y="125" width="576" height="50"/>
+                    <color key="backgroundColor" red="0.94245689659999998" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="T0u-0A-ZRV"/>
+                    </constraints>
+                    <state key="normal" title="下一步">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="phoneSucced:" destination="-1" eventType="touchUpInside" id="q8u-B7-WhZ"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="SAx-DI-XCW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="55I-vs-3r4"/>
+                <constraint firstItem="SAx-DI-XCW" firstAttribute="top" secondItem="Z6a-tW-vvV" secondAttribute="bottom" constant="15" id="B3q-X4-ltC"/>
+                <constraint firstItem="Z6a-tW-vvV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="TJy-CA-cKm"/>
+                <constraint firstAttribute="trailing" secondItem="Z6a-tW-vvV" secondAttribute="trailing" constant="12" id="fsh-V2-CC3"/>
+                <constraint firstAttribute="trailing" secondItem="SAx-DI-XCW" secondAttribute="trailing" constant="12" id="mZ1-1z-E6A"/>
+                <constraint firstItem="Z6a-tW-vvV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="tDO-RO-GeM"/>
+            </constraints>
         </view>
     </objects>
 </document>

@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface XZVerifyViewController : UIViewController
-
+@property (nonatomic, copy) NSString *phone;
 @end
