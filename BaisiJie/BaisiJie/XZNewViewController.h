@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  XZNewViewController.h
 //  BaisiJie
 //
 //  Created by ZengChanghuan on 16/6/27.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface XZNewViewController : UIViewController
 
 @end
-

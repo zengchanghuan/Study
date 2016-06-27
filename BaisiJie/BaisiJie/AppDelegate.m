@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "XZTabBarController.h"
 @interface AppDelegate ()
 
 @end
@@ -20,7 +20,7 @@
     self.window = [[UIWindow alloc] init];
     self.window.frame = [UIScreen mainScreen].bounds;
     
-    self.window.rootViewController = [ViewController new];
+    self.window.rootViewController = [XZTabBarController new];
     
     [self.window makeKeyAndVisible];
     
