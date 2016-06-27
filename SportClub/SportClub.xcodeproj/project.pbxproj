@@ -59,6 +59,7 @@
 		8EA1C5F21D1817DC0015FFF2 /* XZVerifyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EA1C5F01D1817DC0015FFF2 /* XZVerifyViewController.xib */; };
 		8EA1C5F61D1818110015FFF2 /* XZNewPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA1C5F41D1818110015FFF2 /* XZNewPasswordViewController.m */; };
 		8EA1C5F71D1818110015FFF2 /* XZNewPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EA1C5F51D1818110015FFF2 /* XZNewPasswordViewController.xib */; };
+		8EB638011D20FC3B0025DCEB /* Software_agreement.html in Resources */ = {isa = PBXBuildFile; fileRef = 8EB638001D20FC3B0025DCEB /* Software_agreement.html */; };
 		AB98A9F240EBDE05DCE9C600 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6695B6AE4D835D693BEBBC4E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -160,6 +161,7 @@
 		8EA1C5F31D1818110015FFF2 /* XZNewPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZNewPasswordViewController.h; sourceTree = "<group>"; };
 		8EA1C5F41D1818110015FFF2 /* XZNewPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZNewPasswordViewController.m; sourceTree = "<group>"; };
 		8EA1C5F51D1818110015FFF2 /* XZNewPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZNewPasswordViewController.xib; sourceTree = "<group>"; };
+		8EB638001D20FC3B0025DCEB /* Software_agreement.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Software_agreement.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -568,6 +570,7 @@
 				8EA1C5DC1D1806BE0015FFF2 /* XZRegisterUserViewController.xib */,
 				8EA1C5DF1D180FC70015FFF2 /* XZAgreementViewController.h */,
 				8EA1C5E01D180FC70015FFF2 /* XZAgreementViewController.m */,
+				8EB638001D20FC3B0025DCEB /* Software_agreement.html */,
 				8EA1C5E11D180FC70015FFF2 /* XZAgreementViewController.xib */,
 				8EA1C5E41D1810000015FFF2 /* XZProfileViewController.h */,
 				8EA1C5E51D1810000015FFF2 /* XZProfileViewController.m */,
@@ -665,6 +668,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EB638011D20FC3B0025DCEB /* Software_agreement.html in Resources */,
 				8E1211391D0591CE0066E061 /* Assets.xcassets in Resources */,
 				8EA1C5F21D1817DC0015FFF2 /* XZVerifyViewController.xib in Resources */,
 				8E8396D11D0E8DFD00059703 /* composer_close.wav in Resources */,
