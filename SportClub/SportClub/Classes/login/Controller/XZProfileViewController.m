@@ -58,7 +58,7 @@
 
     } success:^(NSURLSessionDataTask *task, id responseObject) {
         XZLog(@"-------%@", responseObject);
-        [weakself login];
+        [weakself toLoginVC];
 
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         XZLog(@"_______%@",error);
@@ -66,7 +66,7 @@
     
 }
 
-- (void)login
+- (void)toLoginVC
 {
     [self.navigationController popToRootViewControllerAnimated:YES];
 }

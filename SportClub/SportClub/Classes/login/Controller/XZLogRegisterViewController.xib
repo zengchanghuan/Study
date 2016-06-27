@@ -125,6 +125,9 @@
                                 </userDefinedRuntimeAttribute>
                                 <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="login:" destination="-1" eventType="touchUpInside" id="wia-T5-A6n"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opi-RQ-Eny">
                             <rect key="frame" x="528" y="190" width="60" height="30"/>
@@ -189,6 +192,6 @@
         <image name="login_register_right_line" width="103" height="1"/>
         <image name="login_sina_icon" width="70" height="70"/>
         <image name="login_sina_icon_click" width="70" height="70"/>
-        <image name="login_wechat" width="44" height="45"/>
+        <image name="login_wechat" width="35" height="35"/>
     </resources>
 </document>
