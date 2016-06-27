@@ -62,7 +62,6 @@
             child.width = tabbarButtonW;
             // 设置x
             child.x = tabbarButtonIndex * tabbarButtonW;
-            
             // 增加索引
             tabbarButtonIndex++;
             if (tabbarButtonIndex == 2) {
