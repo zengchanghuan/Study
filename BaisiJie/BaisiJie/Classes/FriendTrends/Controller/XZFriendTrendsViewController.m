@@ -7,7 +7,7 @@
 //
 
 #import "XZFriendTrendsViewController.h"
-
+#import "XZRecommendViewController.h"
 @interface XZFriendTrendsViewController ()
 
 @end
@@ -26,7 +26,7 @@
 
 - (void)friendsClick
 {
-    XZLogFunc;
+    [self.navigationController pushViewController:[XZRecommendViewController new] animated:YES];
 }
 
 

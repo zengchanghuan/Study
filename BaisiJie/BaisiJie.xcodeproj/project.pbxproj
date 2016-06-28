@@ -21,6 +21,9 @@
 		8EB638921D2204E40025DCEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB638851D2204E40025DCEB /* main.m */; };
 		8EB638931D2204E40025DCEB /* XZTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB638891D2204E40025DCEB /* XZTabBar.m */; };
 		8EDC57B61D22177000CE06D7 /* XZFriendTrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EDC57B51D22177000CE06D7 /* XZFriendTrendsViewController.xib */; };
+		8EDC57BA1D22258400CE06D7 /* XZRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC57B81D22258400CE06D7 /* XZRecommendViewController.m */; };
+		8EDC57BB1D22258400CE06D7 /* XZRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EDC57B91D22258400CE06D7 /* XZRecommendViewController.xib */; };
+		8EDC57BD1D22294E00CE06D7 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC57BC1D22294E00CE06D7 /* Foundation+Log.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +54,10 @@
 		8EB638881D2204E40025DCEB /* XZTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTabBar.h; sourceTree = "<group>"; };
 		8EB638891D2204E40025DCEB /* XZTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTabBar.m; sourceTree = "<group>"; };
 		8EDC57B51D22177000CE06D7 /* XZFriendTrendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZFriendTrendsViewController.xib; sourceTree = "<group>"; };
+		8EDC57B71D22258400CE06D7 /* XZRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZRecommendViewController.h; sourceTree = "<group>"; };
+		8EDC57B81D22258400CE06D7 /* XZRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZRecommendViewController.m; sourceTree = "<group>"; };
+		8EDC57B91D22258400CE06D7 /* XZRecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZRecommendViewController.xib; sourceTree = "<group>"; };
+		8EDC57BC1D22294E00CE06D7 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		C4576295679433F2D8E3B9F5 /* libPods-BaisiJie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaisiJie.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE41D86C0D976397871C578F /* Pods-BaisiJie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaisiJie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaisiJie/Pods-BaisiJie.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -165,6 +172,9 @@
 				8EB6386A1D2204E40025DCEB /* XZFriendTrendsViewController.h */,
 				8EDC57B51D22177000CE06D7 /* XZFriendTrendsViewController.xib */,
 				8EB6386B1D2204E40025DCEB /* XZFriendTrendsViewController.m */,
+				8EDC57B71D22258400CE06D7 /* XZRecommendViewController.h */,
+				8EDC57B81D22258400CE06D7 /* XZRecommendViewController.m */,
+				8EDC57B91D22258400CE06D7 /* XZRecommendViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -266,6 +276,7 @@
 		8EB6387D1D2204E40025DCEB /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				8EDC57BC1D22294E00CE06D7 /* Foundation+Log.m */,
 				8EB6387E1D2204E40025DCEB /* UIBarButtonItem+XZExtension.h */,
 				8EB6387F1D2204E40025DCEB /* UIBarButtonItem+XZExtension.m */,
 				8EB638801D2204E40025DCEB /* UIView+Extension.h */,
@@ -380,6 +391,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EDC57B61D22177000CE06D7 /* XZFriendTrendsViewController.xib in Resources */,
+				8EDC57BB1D22258400CE06D7 /* XZRecommendViewController.xib in Resources */,
 				8EB6383E1D214F230025DCEB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,6 +460,8 @@
 				8EB6388A1D2204E40025DCEB /* XZEssenceViewController.m in Sources */,
 				8EB6388D1D2204E40025DCEB /* XZNewViewController.m in Sources */,
 				8EB638921D2204E40025DCEB /* main.m in Sources */,
+				8EDC57BA1D22258400CE06D7 /* XZRecommendViewController.m in Sources */,
+				8EDC57BD1D22294E00CE06D7 /* Foundation+Log.m in Sources */,
 				8E6C07F91D22066D00206550 /* XZNavigationController.m in Sources */,
 				8EB6388E1D2204E40025DCEB /* AppDelegate.m in Sources */,
 			);
