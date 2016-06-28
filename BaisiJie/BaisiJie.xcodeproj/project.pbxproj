@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E6C07F91D22066D00206550 /* XZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6C07F81D22066D00206550 /* XZNavigationController.m */; };
 		8EB6383E1D214F230025DCEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EB6383D1D214F230025DCEB /* Assets.xcassets */; };
 		8EB6388A1D2204E40025DCEB /* XZEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB638651D2204E40025DCEB /* XZEssenceViewController.m */; };
 		8EB6388B1D2204E40025DCEB /* XZFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB6386B1D2204E40025DCEB /* XZFriendTrendsViewController.m */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E6C07F71D22066D00206550 /* XZNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZNavigationController.h; sourceTree = "<group>"; };
+		8E6C07F81D22066D00206550 /* XZNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZNavigationController.m; sourceTree = "<group>"; };
 		8EB6382E1D214F230025DCEB /* BaisiJie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaisiJie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB6383D1D214F230025DCEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EB638421D214F230025DCEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -266,6 +269,8 @@
 			children = (
 				8EB638831D2204E40025DCEB /* XZTabBarController.h */,
 				8EB638841D2204E40025DCEB /* XZTabBarController.m */,
+				8E6C07F71D22066D00206550 /* XZNavigationController.h */,
+				8E6C07F81D22066D00206550 /* XZNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -364,6 +369,7 @@
 				8EB6388A1D2204E40025DCEB /* XZEssenceViewController.m in Sources */,
 				8EB6388D1D2204E40025DCEB /* XZNewViewController.m in Sources */,
 				8EB638921D2204E40025DCEB /* main.m in Sources */,
+				8E6C07F91D22066D00206550 /* XZNavigationController.m in Sources */,
 				8EB6388E1D2204E40025DCEB /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,6 +506,7 @@
 				8EB638471D214F230025DCEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
