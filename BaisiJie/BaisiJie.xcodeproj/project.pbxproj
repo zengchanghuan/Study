@@ -17,6 +17,7 @@
 		8EB638561D21528B0025DCEB /* XZMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB638551D21528B0025DCEB /* XZMeViewController.m */; };
 		8EB638591D21530F0025DCEB /* XZTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB638581D21530F0025DCEB /* XZTabBar.m */; };
 		8EB6385C1D21556E0025DCEB /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB6385B1D21556E0025DCEB /* UIView+Extension.m */; };
+		8EB638601D22028B0025DCEB /* UIBarButtonItem+XZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB6385F1D22028B0025DCEB /* UIBarButtonItem+XZExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,8 @@
 		8EB6385A1D21556E0025DCEB /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		8EB6385B1D21556E0025DCEB /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		8EB6385D1D2155900025DCEB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		8EB6385E1D22028B0025DCEB /* UIBarButtonItem+XZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+XZExtension.h"; sourceTree = "<group>"; };
+		8EB6385F1D22028B0025DCEB /* UIBarButtonItem+XZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+XZExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				8EB638491D2151700025DCEB /* XZTabBarController.m */,
 				8EB638571D21530F0025DCEB /* XZTabBar.h */,
 				8EB638581D21530F0025DCEB /* XZTabBar.m */,
+				8EB6385E1D22028B0025DCEB /* UIBarButtonItem+XZExtension.h */,
+				8EB6385F1D22028B0025DCEB /* UIBarButtonItem+XZExtension.m */,
 				8EB638311D214F230025DCEB /* Supporting Files */,
 			);
 			path = BaisiJie;
@@ -180,6 +185,7 @@
 				8EB638531D2152770025DCEB /* XZFriendTrendsViewController.m in Sources */,
 				8EB638591D21530F0025DCEB /* XZTabBar.m in Sources */,
 				8EB638361D214F230025DCEB /* AppDelegate.m in Sources */,
+				8EB638601D22028B0025DCEB /* UIBarButtonItem+XZExtension.m in Sources */,
 				8EB638561D21528B0025DCEB /* XZMeViewController.m in Sources */,
 				8EB638331D214F230025DCEB /* main.m in Sources */,
 				8EB6384D1D21524C0025DCEB /* XZEssenceViewController.m in Sources */,
