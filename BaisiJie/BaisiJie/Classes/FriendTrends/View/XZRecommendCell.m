@@ -7,13 +7,17 @@
 //
 
 #import "XZRecommendCell.h"
+@interface XZRecommendCell()
+@property (weak, nonatomic) IBOutlet UIView *selectedIndicator;
 
+
+@end
 @implementation XZRecommendCell
 
 - (void)awakeFromNib {
     // Initialization code
     self.backgroundColor = XZRGBColor(244, 244, 244);
-//    self.selectedIndicator.backgroundColor = XZRGBColor(219, 21, 26);
+    self.selectedIndicator.backgroundColor = XZRGBColor(219, 21, 26);
 }
 
 
@@ -34,8 +38,8 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
-//    self.selectedIndicator.hidden = !selected;
-//    self.textLabel.textColor = selected ? self.selectedIndicator.backgroundColor : XZRGBColor(78, 78, 78);
+    self.selectedIndicator.hidden = !selected;
+    self.textLabel.textColor = selected ? self.selectedIndicator.backgroundColor : XZRGBColor(78, 78, 78);
 }
 
 @end
