@@ -19,6 +19,7 @@
 		8EB638911D2204E40025DCEB /* XZTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB638841D2204E40025DCEB /* XZTabBarController.m */; };
 		8EB638921D2204E40025DCEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB638851D2204E40025DCEB /* main.m */; };
 		8EB638931D2204E40025DCEB /* XZTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB638891D2204E40025DCEB /* XZTabBar.m */; };
+		8EDC57B61D22177000CE06D7 /* XZFriendTrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EDC57B51D22177000CE06D7 /* XZFriendTrendsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		8EB638851D2204E40025DCEB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8EB638881D2204E40025DCEB /* XZTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTabBar.h; sourceTree = "<group>"; };
 		8EB638891D2204E40025DCEB /* XZTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTabBar.m; sourceTree = "<group>"; };
+		8EDC57B51D22177000CE06D7 /* XZFriendTrendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZFriendTrendsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				8EB6386A1D2204E40025DCEB /* XZFriendTrendsViewController.h */,
+				8EDC57B51D22177000CE06D7 /* XZFriendTrendsViewController.xib */,
 				8EB6386B1D2204E40025DCEB /* XZFriendTrendsViewController.m */,
 			);
 			path = Controller;
@@ -349,6 +352,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EDC57B61D22177000CE06D7 /* XZFriendTrendsViewController.xib in Resources */,
 				8EB6383E1D214F230025DCEB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

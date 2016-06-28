@@ -19,10 +19,8 @@
 
 @implementation XZTabBarController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    [UINavigationBar appearance];
-
++ (void)initialize
+{
     // 通过appearance统一设置所有UITabBarItem的文字属性
     // 后面带有UI_APPEARANCE_SELECTOR的方法, 都可以通过appearance对象来统一设置
     NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
@@ -36,6 +34,11 @@
     UITabBarItem *item = [UITabBarItem appearance];
     [item setTitleTextAttributes:attrs forState:UIControlStateNormal];
     [item setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
     
     // 添加子控制器
     [self setupChildVc:[[XZEssenceViewController alloc] init] title:@"精华" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
@@ -45,9 +48,14 @@
     [self setupChildVc:[[XZFriendTrendsViewController alloc] init] title:@"关注" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
     
     [self setupChildVc:[[XZMeViewController alloc] init] title:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
+    
+    // 更换tabBar
     [self setValue:[[XZTabBar alloc] init] forKeyPath:@"tabBar"];
 }
 
+/**
+ * 初始化子控制器
+ */
 - (void)setupChildVc:(UIViewController *)vc title:(NSString *)title image:(NSString *)image selectedImage:(NSString *)selectedImage
 {
     // 设置文字和图片
@@ -56,12 +64,8 @@
     vc.tabBarItem.image = [UIImage imageNamed:image];
     vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
     
-    
+    // 包装一个导航控制器, 添加导航控制器为tabbarcontroller的子控制器
     XZNavigationController *nav = [[XZNavigationController alloc] initWithRootViewController:vc];
-    [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
-    [self addChildViewController:nav];
-
-    // 添加为子控制器
     [self addChildViewController:nav];
 }
 
