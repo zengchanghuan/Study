@@ -23,13 +23,12 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJQ-Qg-hQT">
-                    <rect key="frame" x="165" y="290" width="270" height="20.5"/>
+                    <rect key="frame" x="165" y="290" width="270" height="21"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="270" id="nbr-iU-MdY"/>
                     </constraints>
                     <string key="text">快快登录吧, 关注百思最in牛人
-好友动态让你过把瘾儿~
-欧耶~~~~!</string>
+好友动态让你过把瘾儿~欧耶~~~~!</string>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
