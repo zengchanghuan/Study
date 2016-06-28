@@ -7,43 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8EB638331D214F230025DCEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB638321D214F230025DCEB /* main.m */; };
-		8EB638361D214F230025DCEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB638351D214F230025DCEB /* AppDelegate.m */; };
 		8EB6383E1D214F230025DCEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EB6383D1D214F230025DCEB /* Assets.xcassets */; };
-		8EB6384A1D2151700025DCEB /* XZTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB638491D2151700025DCEB /* XZTabBarController.m */; };
-		8EB6384D1D21524C0025DCEB /* XZEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB6384C1D21524C0025DCEB /* XZEssenceViewController.m */; };
-		8EB638501D2152630025DCEB /* XZNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB6384F1D2152630025DCEB /* XZNewViewController.m */; };
-		8EB638531D2152770025DCEB /* XZFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB638521D2152770025DCEB /* XZFriendTrendsViewController.m */; };
-		8EB638561D21528B0025DCEB /* XZMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB638551D21528B0025DCEB /* XZMeViewController.m */; };
-		8EB638591D21530F0025DCEB /* XZTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB638581D21530F0025DCEB /* XZTabBar.m */; };
-		8EB6385C1D21556E0025DCEB /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB6385B1D21556E0025DCEB /* UIView+Extension.m */; };
-		8EB638601D22028B0025DCEB /* UIBarButtonItem+XZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB6385F1D22028B0025DCEB /* UIBarButtonItem+XZExtension.m */; };
+		8EB6388A1D2204E40025DCEB /* XZEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB638651D2204E40025DCEB /* XZEssenceViewController.m */; };
+		8EB6388B1D2204E40025DCEB /* XZFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB6386B1D2204E40025DCEB /* XZFriendTrendsViewController.m */; };
+		8EB6388C1D2204E40025DCEB /* XZMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB638711D2204E40025DCEB /* XZMeViewController.m */; };
+		8EB6388D1D2204E40025DCEB /* XZNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB638771D2204E40025DCEB /* XZNewViewController.m */; };
+		8EB6388E1D2204E40025DCEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB6387C1D2204E40025DCEB /* AppDelegate.m */; };
+		8EB6388F1D2204E40025DCEB /* UIBarButtonItem+XZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB6387F1D2204E40025DCEB /* UIBarButtonItem+XZExtension.m */; };
+		8EB638901D2204E40025DCEB /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB638811D2204E40025DCEB /* UIView+Extension.m */; };
+		8EB638911D2204E40025DCEB /* XZTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB638841D2204E40025DCEB /* XZTabBarController.m */; };
+		8EB638921D2204E40025DCEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB638851D2204E40025DCEB /* main.m */; };
+		8EB638931D2204E40025DCEB /* XZTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB638891D2204E40025DCEB /* XZTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8EB6382E1D214F230025DCEB /* BaisiJie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaisiJie.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8EB638321D214F230025DCEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8EB638341D214F230025DCEB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8EB638351D214F230025DCEB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8EB6383D1D214F230025DCEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EB638421D214F230025DCEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8EB638481D2151700025DCEB /* XZTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTabBarController.h; sourceTree = "<group>"; };
-		8EB638491D2151700025DCEB /* XZTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTabBarController.m; sourceTree = "<group>"; };
-		8EB6384B1D21524C0025DCEB /* XZEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZEssenceViewController.h; sourceTree = "<group>"; };
-		8EB6384C1D21524C0025DCEB /* XZEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZEssenceViewController.m; sourceTree = "<group>"; };
-		8EB6384E1D2152630025DCEB /* XZNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZNewViewController.h; sourceTree = "<group>"; };
-		8EB6384F1D2152630025DCEB /* XZNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZNewViewController.m; sourceTree = "<group>"; };
-		8EB638511D2152770025DCEB /* XZFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZFriendTrendsViewController.h; sourceTree = "<group>"; };
-		8EB638521D2152770025DCEB /* XZFriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZFriendTrendsViewController.m; sourceTree = "<group>"; };
-		8EB638541D21528B0025DCEB /* XZMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZMeViewController.h; sourceTree = "<group>"; };
-		8EB638551D21528B0025DCEB /* XZMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZMeViewController.m; sourceTree = "<group>"; };
-		8EB638571D21530F0025DCEB /* XZTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTabBar.h; sourceTree = "<group>"; };
-		8EB638581D21530F0025DCEB /* XZTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTabBar.m; sourceTree = "<group>"; };
-		8EB6385A1D21556E0025DCEB /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
-		8EB6385B1D21556E0025DCEB /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		8EB6385D1D2155900025DCEB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		8EB6385E1D22028B0025DCEB /* UIBarButtonItem+XZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+XZExtension.h"; sourceTree = "<group>"; };
-		8EB6385F1D22028B0025DCEB /* UIBarButtonItem+XZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+XZExtension.m"; sourceTree = "<group>"; };
+		8EB638641D2204E40025DCEB /* XZEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZEssenceViewController.h; sourceTree = "<group>"; };
+		8EB638651D2204E40025DCEB /* XZEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZEssenceViewController.m; sourceTree = "<group>"; };
+		8EB6386A1D2204E40025DCEB /* XZFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZFriendTrendsViewController.h; sourceTree = "<group>"; };
+		8EB6386B1D2204E40025DCEB /* XZFriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZFriendTrendsViewController.m; sourceTree = "<group>"; };
+		8EB638701D2204E40025DCEB /* XZMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZMeViewController.h; sourceTree = "<group>"; };
+		8EB638711D2204E40025DCEB /* XZMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZMeViewController.m; sourceTree = "<group>"; };
+		8EB638761D2204E40025DCEB /* XZNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZNewViewController.h; sourceTree = "<group>"; };
+		8EB638771D2204E40025DCEB /* XZNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZNewViewController.m; sourceTree = "<group>"; };
+		8EB6387B1D2204E40025DCEB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8EB6387C1D2204E40025DCEB /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8EB6387E1D2204E40025DCEB /* UIBarButtonItem+XZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+XZExtension.h"; sourceTree = "<group>"; };
+		8EB6387F1D2204E40025DCEB /* UIBarButtonItem+XZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+XZExtension.m"; sourceTree = "<group>"; };
+		8EB638801D2204E40025DCEB /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		8EB638811D2204E40025DCEB /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		8EB638831D2204E40025DCEB /* XZTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTabBarController.h; sourceTree = "<group>"; };
+		8EB638841D2204E40025DCEB /* XZTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTabBarController.m; sourceTree = "<group>"; };
+		8EB638851D2204E40025DCEB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8EB638881D2204E40025DCEB /* XZTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTabBar.h; sourceTree = "<group>"; };
+		8EB638891D2204E40025DCEB /* XZTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,24 +76,7 @@
 		8EB638301D214F230025DCEB /* BaisiJie */ = {
 			isa = PBXGroup;
 			children = (
-				8EB6385A1D21556E0025DCEB /* UIView+Extension.h */,
-				8EB6385B1D21556E0025DCEB /* UIView+Extension.m */,
-				8EB638341D214F230025DCEB /* AppDelegate.h */,
-				8EB638351D214F230025DCEB /* AppDelegate.m */,
-				8EB6384B1D21524C0025DCEB /* XZEssenceViewController.h */,
-				8EB6384C1D21524C0025DCEB /* XZEssenceViewController.m */,
-				8EB6384E1D2152630025DCEB /* XZNewViewController.h */,
-				8EB6384F1D2152630025DCEB /* XZNewViewController.m */,
-				8EB638511D2152770025DCEB /* XZFriendTrendsViewController.h */,
-				8EB638521D2152770025DCEB /* XZFriendTrendsViewController.m */,
-				8EB638541D21528B0025DCEB /* XZMeViewController.h */,
-				8EB638551D21528B0025DCEB /* XZMeViewController.m */,
-				8EB638481D2151700025DCEB /* XZTabBarController.h */,
-				8EB638491D2151700025DCEB /* XZTabBarController.m */,
-				8EB638571D21530F0025DCEB /* XZTabBar.h */,
-				8EB638581D21530F0025DCEB /* XZTabBar.m */,
-				8EB6385E1D22028B0025DCEB /* UIBarButtonItem+XZExtension.h */,
-				8EB6385F1D22028B0025DCEB /* UIBarButtonItem+XZExtension.m */,
+				8EB638611D2204E40025DCEB /* Classes */,
 				8EB638311D214F230025DCEB /* Supporting Files */,
 			);
 			path = BaisiJie;
@@ -104,10 +87,203 @@
 			children = (
 				8EB6383D1D214F230025DCEB /* Assets.xcassets */,
 				8EB638421D214F230025DCEB /* Info.plist */,
-				8EB638321D214F230025DCEB /* main.m */,
 				8EB6385D1D2155900025DCEB /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8EB638611D2204E40025DCEB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8EB638621D2204E40025DCEB /* Essence */,
+				8EB638681D2204E40025DCEB /* FriendTrends */,
+				8EB6386E1D2204E40025DCEB /* Me */,
+				8EB638741D2204E40025DCEB /* New */,
+				8EB6387A1D2204E40025DCEB /* Other */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8EB638621D2204E40025DCEB /* Essence */ = {
+			isa = PBXGroup;
+			children = (
+				8EB638631D2204E40025DCEB /* Controller */,
+				8EB638661D2204E40025DCEB /* Model */,
+				8EB638671D2204E40025DCEB /* View */,
+			);
+			path = Essence;
+			sourceTree = "<group>";
+		};
+		8EB638631D2204E40025DCEB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8EB638641D2204E40025DCEB /* XZEssenceViewController.h */,
+				8EB638651D2204E40025DCEB /* XZEssenceViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8EB638661D2204E40025DCEB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8EB638671D2204E40025DCEB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8EB638681D2204E40025DCEB /* FriendTrends */ = {
+			isa = PBXGroup;
+			children = (
+				8EB638691D2204E40025DCEB /* Controller */,
+				8EB6386C1D2204E40025DCEB /* Model */,
+				8EB6386D1D2204E40025DCEB /* View */,
+			);
+			path = FriendTrends;
+			sourceTree = "<group>";
+		};
+		8EB638691D2204E40025DCEB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8EB6386A1D2204E40025DCEB /* XZFriendTrendsViewController.h */,
+				8EB6386B1D2204E40025DCEB /* XZFriendTrendsViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8EB6386C1D2204E40025DCEB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8EB6386D1D2204E40025DCEB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8EB6386E1D2204E40025DCEB /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				8EB6386F1D2204E40025DCEB /* Controller */,
+				8EB638721D2204E40025DCEB /* Model */,
+				8EB638731D2204E40025DCEB /* View */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		8EB6386F1D2204E40025DCEB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8EB638701D2204E40025DCEB /* XZMeViewController.h */,
+				8EB638711D2204E40025DCEB /* XZMeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8EB638721D2204E40025DCEB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8EB638731D2204E40025DCEB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8EB638741D2204E40025DCEB /* New */ = {
+			isa = PBXGroup;
+			children = (
+				8EB638751D2204E40025DCEB /* Controller */,
+				8EB638781D2204E40025DCEB /* Model */,
+				8EB638791D2204E40025DCEB /* View */,
+			);
+			path = New;
+			sourceTree = "<group>";
+		};
+		8EB638751D2204E40025DCEB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8EB638761D2204E40025DCEB /* XZNewViewController.h */,
+				8EB638771D2204E40025DCEB /* XZNewViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8EB638781D2204E40025DCEB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8EB638791D2204E40025DCEB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8EB6387A1D2204E40025DCEB /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				8EB6387B1D2204E40025DCEB /* AppDelegate.h */,
+				8EB6387C1D2204E40025DCEB /* AppDelegate.m */,
+				8EB6387D1D2204E40025DCEB /* Category */,
+				8EB638821D2204E40025DCEB /* Controller */,
+				8EB638851D2204E40025DCEB /* main.m */,
+				8EB638861D2204E40025DCEB /* Model */,
+				8EB638871D2204E40025DCEB /* View */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		8EB6387D1D2204E40025DCEB /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				8EB6387E1D2204E40025DCEB /* UIBarButtonItem+XZExtension.h */,
+				8EB6387F1D2204E40025DCEB /* UIBarButtonItem+XZExtension.m */,
+				8EB638801D2204E40025DCEB /* UIView+Extension.h */,
+				8EB638811D2204E40025DCEB /* UIView+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		8EB638821D2204E40025DCEB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8EB638831D2204E40025DCEB /* XZTabBarController.h */,
+				8EB638841D2204E40025DCEB /* XZTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8EB638861D2204E40025DCEB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8EB638871D2204E40025DCEB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8EB638881D2204E40025DCEB /* XZTabBar.h */,
+				8EB638891D2204E40025DCEB /* XZTabBar.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,16 +355,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EB6385C1D21556E0025DCEB /* UIView+Extension.m in Sources */,
-				8EB6384A1D2151700025DCEB /* XZTabBarController.m in Sources */,
-				8EB638501D2152630025DCEB /* XZNewViewController.m in Sources */,
-				8EB638531D2152770025DCEB /* XZFriendTrendsViewController.m in Sources */,
-				8EB638591D21530F0025DCEB /* XZTabBar.m in Sources */,
-				8EB638361D214F230025DCEB /* AppDelegate.m in Sources */,
-				8EB638601D22028B0025DCEB /* UIBarButtonItem+XZExtension.m in Sources */,
-				8EB638561D21528B0025DCEB /* XZMeViewController.m in Sources */,
-				8EB638331D214F230025DCEB /* main.m in Sources */,
-				8EB6384D1D21524C0025DCEB /* XZEssenceViewController.m in Sources */,
+				8EB6388C1D2204E40025DCEB /* XZMeViewController.m in Sources */,
+				8EB638911D2204E40025DCEB /* XZTabBarController.m in Sources */,
+				8EB6388B1D2204E40025DCEB /* XZFriendTrendsViewController.m in Sources */,
+				8EB638931D2204E40025DCEB /* XZTabBar.m in Sources */,
+				8EB6388F1D2204E40025DCEB /* UIBarButtonItem+XZExtension.m in Sources */,
+				8EB638901D2204E40025DCEB /* UIView+Extension.m in Sources */,
+				8EB6388A1D2204E40025DCEB /* XZEssenceViewController.m in Sources */,
+				8EB6388D1D2204E40025DCEB /* XZNewViewController.m in Sources */,
+				8EB638921D2204E40025DCEB /* main.m in Sources */,
+				8EB6388E1D2204E40025DCEB /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
