@@ -34,6 +34,11 @@
     self.textLabel.y = 2;
     self.textLabel.height = self.contentView.height - 2 * self.textLabel.y;
 }
+
+/**
+ *  可以在这个方法中监听cell的选中和取消选中
+ *
+ */
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 

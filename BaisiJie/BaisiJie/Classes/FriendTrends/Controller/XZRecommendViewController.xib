@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XZRecommendViewController">
             <connections>
                 <outlet property="recommendTableView" destination="vMM-mM-mCe" id="a1d-0p-OtX"/>
+                <outlet property="userTableView" destination="siB-4r-Y9C" id="YAN-SC-3De"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -27,12 +28,24 @@
                         <outlet property="delegate" destination="-1" id="kKC-Pp-yyF"/>
                     </connections>
                 </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="siB-4r-Y9C">
+                    <rect key="frame" x="70" y="0.0" width="530" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="S2n-vT-ng4"/>
+                        <outlet property="delegate" destination="-1" id="02Y-du-aAM"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="vMM-mM-mCe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="7xv-rc-th0"/>
                 <constraint firstItem="vMM-mM-mCe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Bwf-8x-ggx"/>
+                <constraint firstAttribute="bottom" secondItem="siB-4r-Y9C" secondAttribute="bottom" id="K1z-v9-e7S"/>
                 <constraint firstAttribute="bottom" secondItem="vMM-mM-mCe" secondAttribute="bottom" id="ZKt-xm-nTJ"/>
+                <constraint firstItem="siB-4r-Y9C" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="f3E-RW-otn"/>
+                <constraint firstAttribute="trailing" secondItem="siB-4r-Y9C" secondAttribute="trailing" id="iy1-hj-do6"/>
+                <constraint firstItem="siB-4r-Y9C" firstAttribute="leading" secondItem="vMM-mM-mCe" secondAttribute="trailing" id="rG9-UB-iYR"/>
             </constraints>
         </view>
     </objects>

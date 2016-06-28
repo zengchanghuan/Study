@@ -27,6 +27,9 @@
 		8EDC57C01D222C1500CE06D7 /* XZRecommend.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC57BF1D222C1500CE06D7 /* XZRecommend.m */; };
 		8EDC57C71D2246FF00CE06D7 /* XZRecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC57C51D2246FF00CE06D7 /* XZRecommendCell.m */; };
 		8EDC57C81D2246FF00CE06D7 /* XZRecommendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EDC57C61D2246FF00CE06D7 /* XZRecommendCell.xib */; };
+		8EDC57CB1D22700100CE06D7 /* XZRecommendUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC57CA1D22700100CE06D7 /* XZRecommendUser.m */; };
+		8EDC57CF1D2271C800CE06D7 /* XZRecommendUserCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC57CD1D2271C800CE06D7 /* XZRecommendUserCellTableViewCell.m */; };
+		8EDC57D01D2271C800CE06D7 /* XZRecommendUserCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EDC57CE1D2271C800CE06D7 /* XZRecommendUserCellTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +69,11 @@
 		8EDC57C41D2246FF00CE06D7 /* XZRecommendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZRecommendCell.h; sourceTree = "<group>"; };
 		8EDC57C51D2246FF00CE06D7 /* XZRecommendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZRecommendCell.m; sourceTree = "<group>"; };
 		8EDC57C61D2246FF00CE06D7 /* XZRecommendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZRecommendCell.xib; sourceTree = "<group>"; };
+		8EDC57C91D22700100CE06D7 /* XZRecommendUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZRecommendUser.h; sourceTree = "<group>"; };
+		8EDC57CA1D22700100CE06D7 /* XZRecommendUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZRecommendUser.m; sourceTree = "<group>"; };
+		8EDC57CC1D2271C800CE06D7 /* XZRecommendUserCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZRecommendUserCellTableViewCell.h; sourceTree = "<group>"; };
+		8EDC57CD1D2271C800CE06D7 /* XZRecommendUserCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZRecommendUserCellTableViewCell.m; sourceTree = "<group>"; };
+		8EDC57CE1D2271C800CE06D7 /* XZRecommendUserCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZRecommendUserCellTableViewCell.xib; sourceTree = "<group>"; };
 		C4576295679433F2D8E3B9F5 /* libPods-BaisiJie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaisiJie.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE41D86C0D976397871C578F /* Pods-BaisiJie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaisiJie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaisiJie/Pods-BaisiJie.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -192,6 +200,8 @@
 			children = (
 				8EDC57BE1D222C1500CE06D7 /* XZRecommend.h */,
 				8EDC57BF1D222C1500CE06D7 /* XZRecommend.m */,
+				8EDC57C91D22700100CE06D7 /* XZRecommendUser.h */,
+				8EDC57CA1D22700100CE06D7 /* XZRecommendUser.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -202,6 +212,9 @@
 				8EDC57C41D2246FF00CE06D7 /* XZRecommendCell.h */,
 				8EDC57C51D2246FF00CE06D7 /* XZRecommendCell.m */,
 				8EDC57C61D2246FF00CE06D7 /* XZRecommendCell.xib */,
+				8EDC57CC1D2271C800CE06D7 /* XZRecommendUserCellTableViewCell.h */,
+				8EDC57CD1D2271C800CE06D7 /* XZRecommendUserCellTableViewCell.m */,
+				8EDC57CE1D2271C800CE06D7 /* XZRecommendUserCellTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -407,6 +420,7 @@
 				8EDC57B61D22177000CE06D7 /* XZFriendTrendsViewController.xib in Resources */,
 				8EDC57BB1D22258400CE06D7 /* XZRecommendViewController.xib in Resources */,
 				8EB6383E1D214F230025DCEB /* Assets.xcassets in Resources */,
+				8EDC57D01D2271C800CE06D7 /* XZRecommendUserCellTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +481,7 @@
 			files = (
 				8EB6388C1D2204E40025DCEB /* XZMeViewController.m in Sources */,
 				8EB638911D2204E40025DCEB /* XZTabBarController.m in Sources */,
+				8EDC57CB1D22700100CE06D7 /* XZRecommendUser.m in Sources */,
 				8EB6388B1D2204E40025DCEB /* XZFriendTrendsViewController.m in Sources */,
 				8EB638931D2204E40025DCEB /* XZTabBar.m in Sources */,
 				8EB6388F1D2204E40025DCEB /* UIBarButtonItem+XZExtension.m in Sources */,
@@ -475,6 +490,7 @@
 				8EB6388D1D2204E40025DCEB /* XZNewViewController.m in Sources */,
 				8EDC57C71D2246FF00CE06D7 /* XZRecommendCell.m in Sources */,
 				8EDC57C01D222C1500CE06D7 /* XZRecommend.m in Sources */,
+				8EDC57CF1D2271C800CE06D7 /* XZRecommendUserCellTableViewCell.m in Sources */,
 				8EB638921D2204E40025DCEB /* main.m in Sources */,
 				8EDC57BA1D22258400CE06D7 /* XZRecommendViewController.m in Sources */,
 				8EDC57BD1D22294E00CE06D7 /* Foundation+Log.m in Sources */,
