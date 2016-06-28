@@ -16,6 +16,7 @@
 		8EB638531D2152770025DCEB /* XZFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB638521D2152770025DCEB /* XZFriendTrendsViewController.m */; };
 		8EB638561D21528B0025DCEB /* XZMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB638551D21528B0025DCEB /* XZMeViewController.m */; };
 		8EB638591D21530F0025DCEB /* XZTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB638581D21530F0025DCEB /* XZTabBar.m */; };
+		8EB6385C1D21556E0025DCEB /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB6385B1D21556E0025DCEB /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,9 @@
 		8EB638551D21528B0025DCEB /* XZMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZMeViewController.m; sourceTree = "<group>"; };
 		8EB638571D21530F0025DCEB /* XZTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTabBar.h; sourceTree = "<group>"; };
 		8EB638581D21530F0025DCEB /* XZTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTabBar.m; sourceTree = "<group>"; };
+		8EB6385A1D21556E0025DCEB /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		8EB6385B1D21556E0025DCEB /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		8EB6385D1D2155900025DCEB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 		8EB638301D214F230025DCEB /* BaisiJie */ = {
 			isa = PBXGroup;
 			children = (
+				8EB6385A1D21556E0025DCEB /* UIView+Extension.h */,
+				8EB6385B1D21556E0025DCEB /* UIView+Extension.m */,
 				8EB638341D214F230025DCEB /* AppDelegate.h */,
 				8EB638351D214F230025DCEB /* AppDelegate.m */,
 				8EB6384B1D21524C0025DCEB /* XZEssenceViewController.h */,
@@ -94,6 +100,7 @@
 				8EB6383D1D214F230025DCEB /* Assets.xcassets */,
 				8EB638421D214F230025DCEB /* Info.plist */,
 				8EB638321D214F230025DCEB /* main.m */,
+				8EB6385D1D2155900025DCEB /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -167,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EB6385C1D21556E0025DCEB /* UIView+Extension.m in Sources */,
 				8EB6384A1D2151700025DCEB /* XZTabBarController.m in Sources */,
 				8EB638501D2152630025DCEB /* XZNewViewController.m in Sources */,
 				8EB638531D2152770025DCEB /* XZFriendTrendsViewController.m in Sources */,
@@ -266,6 +274,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ./BaisiJie/PrefixHeader.pch;
 				INFOPLIST_FILE = BaisiJie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -279,6 +289,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ./BaisiJie/PrefixHeader.pch;
 				INFOPLIST_FILE = BaisiJie/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
