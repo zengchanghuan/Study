@@ -109,7 +109,10 @@ static NSString * const XZRecommendUserId = @"user";
         params[@"a"] = @"list";
         params[@"c"] = @"subscribe";
         params[@"categoryzz_id"] = @(c.id);
-        [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
+        
+        [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
+            
+        } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             // 字典数组 -> 模型数组
             NSArray *users = [XZRecommendUser mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
             
@@ -121,9 +124,9 @@ static NSString * const XZRecommendUserId = @"user";
             }
             // 刷新右边的表格
             [self.userTableView reloadData];
-            
-        } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             XZLog(@"%@", error);
+
         }];
     }
 
