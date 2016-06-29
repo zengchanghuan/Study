@@ -9,7 +9,11 @@
 #import "XZHomeViewController.h"
 #import "XZLogRegisterViewController.h"
 #import "XZNavigationController.h"
-@interface XZHomeViewController ()
+@interface XZHomeViewController ()<UITableViewDataSource,UITableViewDelegate>
+{
+    
+}
+@property (nonatomic, strong) UITableView *tableView;
 
 @end
 
@@ -19,6 +23,14 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     [self setupNav];
+}
+
+- (void)loadView{
+    _tableView = [[UITableView alloc] initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
+    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"GroupCellID"];
+    self.view = _tableView;
 }
 
 #pragma mark -setupNav
@@ -39,5 +51,31 @@
 - (void)search
 {
     
+}
+
+
+#pragma mark UITableViewDataSource
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 2;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 10;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *cellId = @"GroupCellID";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    cell.textLabel.text = [NSString stringWithFormat:@"组%ld -- 行%ld", indexPath.section, indexPath.row];
+    return cell;
+}
+
+#pragma mark UITableViewDelegate
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    if (section == 0) return 0;
+    return 30;
 }
 @end
