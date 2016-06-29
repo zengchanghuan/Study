@@ -7,7 +7,6 @@
 //
 
 #import "XZAccountManager.h"
-#define SERVERURL @"https://callme.shixinyun.com"
 
 @implementation XZAccountManager
 -(void)getCheckCodeWithMobile:(NSString *)mobile Completed:(void(^)(CommonCallback *ccb, NSDictionary *data))callback

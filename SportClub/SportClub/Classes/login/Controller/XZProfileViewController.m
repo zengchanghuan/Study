@@ -41,33 +41,35 @@
  *
  */
 - (IBAction)completedRegister:(id)sender {
+    
     NSString *urlSring = [NSString stringWithFormat:@"%@%@",SERVERURL,@"/v1/account/register"];
 
-    NSLog(@"url = %@", urlSring);
     NSMutableDictionary *params = [[NSMutableDictionary alloc] initWithCapacity:3];
     [params setObject:@"13121551578" forKey:@"phone"];
     [params setObject:[@"518103" MD5] forKey:@"pwd"];
     [params setObject:@"Tristan" forKey:@"nickname"];
-
+    
     UIImage *img = [UIImage imageNamed:@"set_user_photo"];
-    NSData *imaData = UIImagePNGRepresentation(img);
-    __weak XZProfileViewController *weakself = self;
+    NSData *imaDaga = UIImagePNGRepresentation(img);
+    
+  
+    
     AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];
-    [mgr POST:urlSring parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
-        [formData appendPartWithFileData:imaData name:@"avatar" fileName:@"set_user_photo.png" mimeType:@"image/png"];
+    [mgr POST:urlSring parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+        [formData appendPartWithFileData:imaDaga name:@"avatar" fileName:@"set_user_photo" mimeType:@"image/png"];
 
-    } success:^(NSURLSessionDataTask *task, id responseObject) {
-        XZLog(@"-------%@", responseObject);
-        [weakself toLoginVC];
+        
+    } progress:^(NSProgress * _Nonnull uploadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        XZLog(@"註冊成功");
 
-    } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        XZLog(@"_______%@",error);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        XZLog(@"注册接口%@",error);
+
     }];
     
+
 }
 
-- (void)toLoginVC
-{
-    [self.navigationController popToRootViewControllerAnimated:YES];
-}
 @end

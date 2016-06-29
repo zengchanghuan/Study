@@ -10,8 +10,6 @@
 #import "XZRegisterUserViewController.h"
 #import "XZNavigationController.h"
 #import "XZForgetPasswordViewController.h"
-#import "NSString+MD5.h"
-
 @interface XZLogRegisterViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
 @property (weak, nonatomic) IBOutlet UITextField *phoneField;
@@ -42,27 +40,12 @@
 }
 - (IBAction)registerUser:(id)sender {
     XZRegisterUserViewController *vc = [[XZRegisterUserViewController alloc] init];
+//    XZNavigationController *na = [[XZNavigationController alloc] initWithRootViewController:vc];
+//    [self.navigationController pushViewController:na animated:YES];
     [self.navigationController pushViewController:vc animated:YES];
 }
 - (IBAction)forgetPassword:(id)sender {
     
     [self.navigationController pushViewController:[XZForgetPasswordViewController new] animated:YES];
 }
-- (IBAction)login:(id)sender {
-    __weak XZLogRegisterViewController *weakself = self;
-
-    NSString *url = [NSString stringWithFormat:@"%@%@",SERVERURL,@"/v1/account/login"];
-    NSMutableDictionary *params = [[NSMutableDictionary alloc] initWithCapacity:3];
-    [params setObject:@"13121551578" forKey:@"phone"];
-    [params setObject:[@"518103" MD5] forKey:@"pwd"];
-    
-    [XZNetManager post:url params:params success:^(id json) {
-        XZLog(@"登录成功%@",json);
-        [weakself dismissViewControllerAnimated:YES completion:nil];
-    } failure:^(NSError *error) {
-        XZLog(@"%@",error);
-    }];
-    
-}
-
 @end
