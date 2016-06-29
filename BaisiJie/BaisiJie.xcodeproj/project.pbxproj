@@ -30,6 +30,9 @@
 		8EDC57CB1D22700100CE06D7 /* XZRecommendUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC57CA1D22700100CE06D7 /* XZRecommendUser.m */; };
 		8EDC57CF1D2271C800CE06D7 /* XZRecommendUserCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC57CD1D2271C800CE06D7 /* XZRecommendUserCellTableViewCell.m */; };
 		8EDC57D01D2271C800CE06D7 /* XZRecommendUserCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EDC57CE1D2271C800CE06D7 /* XZRecommendUserCellTableViewCell.xib */; };
+		8EDC57D41D236A1800CE06D7 /* XZLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC57D21D236A1800CE06D7 /* XZLoginRegisterViewController.m */; };
+		8EDC57D51D236A1800CE06D7 /* XZLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EDC57D31D236A1800CE06D7 /* XZLoginRegisterViewController.xib */; };
+		8EDC57D81D23770D00CE06D7 /* XZVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC57D71D23770D00CE06D7 /* XZVerticalButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +77,11 @@
 		8EDC57CC1D2271C800CE06D7 /* XZRecommendUserCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZRecommendUserCellTableViewCell.h; sourceTree = "<group>"; };
 		8EDC57CD1D2271C800CE06D7 /* XZRecommendUserCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZRecommendUserCellTableViewCell.m; sourceTree = "<group>"; };
 		8EDC57CE1D2271C800CE06D7 /* XZRecommendUserCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZRecommendUserCellTableViewCell.xib; sourceTree = "<group>"; };
+		8EDC57D11D236A1800CE06D7 /* XZLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLoginRegisterViewController.h; sourceTree = "<group>"; };
+		8EDC57D21D236A1800CE06D7 /* XZLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLoginRegisterViewController.m; sourceTree = "<group>"; };
+		8EDC57D31D236A1800CE06D7 /* XZLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZLoginRegisterViewController.xib; sourceTree = "<group>"; };
+		8EDC57D61D23770D00CE06D7 /* XZVerticalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZVerticalButton.h; sourceTree = "<group>"; };
+		8EDC57D71D23770D00CE06D7 /* XZVerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZVerticalButton.m; sourceTree = "<group>"; };
 		C4576295679433F2D8E3B9F5 /* libPods-BaisiJie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaisiJie.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE41D86C0D976397871C578F /* Pods-BaisiJie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaisiJie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaisiJie/Pods-BaisiJie.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -191,6 +199,9 @@
 				8EDC57B71D22258400CE06D7 /* XZRecommendViewController.h */,
 				8EDC57B81D22258400CE06D7 /* XZRecommendViewController.m */,
 				8EDC57B91D22258400CE06D7 /* XZRecommendViewController.xib */,
+				8EDC57D11D236A1800CE06D7 /* XZLoginRegisterViewController.h */,
+				8EDC57D21D236A1800CE06D7 /* XZLoginRegisterViewController.m */,
+				8EDC57D31D236A1800CE06D7 /* XZLoginRegisterViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -215,6 +226,8 @@
 				8EDC57CC1D2271C800CE06D7 /* XZRecommendUserCellTableViewCell.h */,
 				8EDC57CD1D2271C800CE06D7 /* XZRecommendUserCellTableViewCell.m */,
 				8EDC57CE1D2271C800CE06D7 /* XZRecommendUserCellTableViewCell.xib */,
+				8EDC57D61D23770D00CE06D7 /* XZVerticalButton.h */,
+				8EDC57D71D23770D00CE06D7 /* XZVerticalButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -417,6 +430,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EDC57C81D2246FF00CE06D7 /* XZRecommendCell.xib in Resources */,
+				8EDC57D51D236A1800CE06D7 /* XZLoginRegisterViewController.xib in Resources */,
 				8EDC57B61D22177000CE06D7 /* XZFriendTrendsViewController.xib in Resources */,
 				8EDC57BB1D22258400CE06D7 /* XZRecommendViewController.xib in Resources */,
 				8EB6383E1D214F230025DCEB /* Assets.xcassets in Resources */,
@@ -487,11 +501,13 @@
 				8EB6388F1D2204E40025DCEB /* UIBarButtonItem+XZExtension.m in Sources */,
 				8EB638901D2204E40025DCEB /* UIView+Extension.m in Sources */,
 				8EB6388A1D2204E40025DCEB /* XZEssenceViewController.m in Sources */,
+				8EDC57D81D23770D00CE06D7 /* XZVerticalButton.m in Sources */,
 				8EB6388D1D2204E40025DCEB /* XZNewViewController.m in Sources */,
 				8EDC57C71D2246FF00CE06D7 /* XZRecommendCell.m in Sources */,
 				8EDC57C01D222C1500CE06D7 /* XZRecommend.m in Sources */,
 				8EDC57CF1D2271C800CE06D7 /* XZRecommendUserCellTableViewCell.m in Sources */,
 				8EB638921D2204E40025DCEB /* main.m in Sources */,
+				8EDC57D41D236A1800CE06D7 /* XZLoginRegisterViewController.m in Sources */,
 				8EDC57BA1D22258400CE06D7 /* XZRecommendViewController.m in Sources */,
 				8EDC57BD1D22294E00CE06D7 /* Foundation+Log.m in Sources */,
 				8E6C07F91D22066D00206550 /* XZNavigationController.m in Sources */,

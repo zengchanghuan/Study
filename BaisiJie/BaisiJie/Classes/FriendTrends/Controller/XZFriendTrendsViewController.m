@@ -8,6 +8,7 @@
 
 #import "XZFriendTrendsViewController.h"
 #import "XZRecommendViewController.h"
+#import "XZLoginRegisterViewController.h"
 @interface XZFriendTrendsViewController ()
 
 @end
@@ -22,6 +23,9 @@
     
     // 设置导航栏左边的按钮
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"friendsRecommentIcon" highImage:@"friendsRecommentIcon-click" target:self action:@selector(friendsClick)];
+}
+- (IBAction)loginRegister:(id)sender {
+    [self presentViewController:[XZLoginRegisterViewController new] animated:YES completion:nil];
 }
 
 - (void)friendsClick
