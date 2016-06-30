@@ -50,6 +50,14 @@
 		8EA1C5F21D1817DC0015FFF2 /* XZVerifyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EA1C5F01D1817DC0015FFF2 /* XZVerifyViewController.xib */; };
 		8EA1C5F61D1818110015FFF2 /* XZNewPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA1C5F41D1818110015FFF2 /* XZNewPasswordViewController.m */; };
 		8EA1C5F71D1818110015FFF2 /* XZNewPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EA1C5F51D1818110015FFF2 /* XZNewPasswordViewController.xib */; };
+		8EDC57F81D23C95100CE06D7 /* XZHomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC57F71D23C95100CE06D7 /* XZHomeHeaderView.m */; };
+		8EDC57FB1D23D0A000CE06D7 /* XZHomefooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC57FA1D23D0A000CE06D7 /* XZHomefooterView.m */; };
+		8EDC58081D23F3BD00CE06D7 /* XZHomeLiveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC58061D23F3BD00CE06D7 /* XZHomeLiveTableViewCell.m */; };
+		8EDC58091D23F3BD00CE06D7 /* XZHomeLiveTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EDC58071D23F3BD00CE06D7 /* XZHomeLiveTableViewCell.xib */; };
+		8EDC580D1D23F42600CE06D7 /* XZRedTimelineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC580B1D23F42600CE06D7 /* XZRedTimelineTableViewCell.m */; };
+		8EDC580E1D23F42600CE06D7 /* XZRedTimelineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EDC580C1D23F42600CE06D7 /* XZRedTimelineTableViewCell.xib */; };
+		8EDC58121D23F44300CE06D7 /* XZMomentsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC58101D23F44300CE06D7 /* XZMomentsTableViewCell.m */; };
+		8EDC58131D23F44300CE06D7 /* XZMomentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EDC58111D23F44300CE06D7 /* XZMomentsTableViewCell.xib */; };
 		F4ABDF121C39827EA4142BCB /* libPods-SportClub.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E3A53ADECF322E6CF2ABA1 /* libPods-SportClub.a */; };
 /* End PBXBuildFile section */
 
@@ -131,6 +139,19 @@
 		8EA1C5F31D1818110015FFF2 /* XZNewPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZNewPasswordViewController.h; sourceTree = "<group>"; };
 		8EA1C5F41D1818110015FFF2 /* XZNewPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZNewPasswordViewController.m; sourceTree = "<group>"; };
 		8EA1C5F51D1818110015FFF2 /* XZNewPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZNewPasswordViewController.xib; sourceTree = "<group>"; };
+		8EDC57F61D23C95100CE06D7 /* XZHomeHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZHomeHeaderView.h; sourceTree = "<group>"; };
+		8EDC57F71D23C95100CE06D7 /* XZHomeHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZHomeHeaderView.m; sourceTree = "<group>"; };
+		8EDC57F91D23D0A000CE06D7 /* XZHomefooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZHomefooterView.h; sourceTree = "<group>"; };
+		8EDC57FA1D23D0A000CE06D7 /* XZHomefooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZHomefooterView.m; sourceTree = "<group>"; };
+		8EDC58051D23F3BD00CE06D7 /* XZHomeLiveTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZHomeLiveTableViewCell.h; sourceTree = "<group>"; };
+		8EDC58061D23F3BD00CE06D7 /* XZHomeLiveTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZHomeLiveTableViewCell.m; sourceTree = "<group>"; };
+		8EDC58071D23F3BD00CE06D7 /* XZHomeLiveTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZHomeLiveTableViewCell.xib; sourceTree = "<group>"; };
+		8EDC580A1D23F42600CE06D7 /* XZRedTimelineTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZRedTimelineTableViewCell.h; sourceTree = "<group>"; };
+		8EDC580B1D23F42600CE06D7 /* XZRedTimelineTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZRedTimelineTableViewCell.m; sourceTree = "<group>"; };
+		8EDC580C1D23F42600CE06D7 /* XZRedTimelineTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZRedTimelineTableViewCell.xib; sourceTree = "<group>"; };
+		8EDC580F1D23F44300CE06D7 /* XZMomentsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZMomentsTableViewCell.h; sourceTree = "<group>"; };
+		8EDC58101D23F44300CE06D7 /* XZMomentsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZMomentsTableViewCell.m; sourceTree = "<group>"; };
+		8EDC58111D23F44300CE06D7 /* XZMomentsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZMomentsTableViewCell.xib; sourceTree = "<group>"; };
 		FEFF698849B3D0DCFCE18995 /* Pods-SportClub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportClub.release.xcconfig"; path = "Pods/Target Support Files/Pods-SportClub/Pods-SportClub.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -278,6 +299,19 @@
 				8E8396811D0E55FD00059703 /* MenuLabel.m */,
 				8E8396821D0E55FD00059703 /* UIColor+ImageGetColor.h */,
 				8E8396831D0E55FD00059703 /* UIColor+ImageGetColor.m */,
+				8EDC57F61D23C95100CE06D7 /* XZHomeHeaderView.h */,
+				8EDC57F71D23C95100CE06D7 /* XZHomeHeaderView.m */,
+				8EDC57F91D23D0A000CE06D7 /* XZHomefooterView.h */,
+				8EDC57FA1D23D0A000CE06D7 /* XZHomefooterView.m */,
+				8EDC58051D23F3BD00CE06D7 /* XZHomeLiveTableViewCell.h */,
+				8EDC58061D23F3BD00CE06D7 /* XZHomeLiveTableViewCell.m */,
+				8EDC58071D23F3BD00CE06D7 /* XZHomeLiveTableViewCell.xib */,
+				8EDC580A1D23F42600CE06D7 /* XZRedTimelineTableViewCell.h */,
+				8EDC580B1D23F42600CE06D7 /* XZRedTimelineTableViewCell.m */,
+				8EDC580C1D23F42600CE06D7 /* XZRedTimelineTableViewCell.xib */,
+				8EDC580F1D23F44300CE06D7 /* XZMomentsTableViewCell.h */,
+				8EDC58101D23F44300CE06D7 /* XZMomentsTableViewCell.m */,
+				8EDC58111D23F44300CE06D7 /* XZMomentsTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -579,6 +613,7 @@
 		8E1211211D0591CE0066E061 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = XZ;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = ZengChanghuan;
 				TargetAttributes = {
@@ -611,6 +646,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E1211391D0591CE0066E061 /* Assets.xcassets in Resources */,
+				8EDC58091D23F3BD00CE06D7 /* XZHomeLiveTableViewCell.xib in Resources */,
 				8EA1C5F21D1817DC0015FFF2 /* XZVerifyViewController.xib in Resources */,
 				8E8396D11D0E8DFD00059703 /* composer_close.wav in Resources */,
 				8EA1C5D31D178FAA0015FFF2 /* XZLogRegisterViewController.xib in Resources */,
@@ -618,9 +654,11 @@
 				8E18E03B1D1944640074FB65 /* MBProgressHUD.bundle in Resources */,
 				8EA1C5ED1D1817A70015FFF2 /* XZForgetPasswordViewController.xib in Resources */,
 				8EA1C5E31D180FC70015FFF2 /* XZAgreementViewController.xib in Resources */,
+				8EDC58131D23F44300CE06D7 /* XZMomentsTableViewCell.xib in Resources */,
 				8EA1C5DE1D1806BE0015FFF2 /* XZRegisterUserViewController.xib in Resources */,
 				8EA1C5E81D1810000015FFF2 /* XZProfileViewController.xib in Resources */,
 				8E8396D21D0E8DFD00059703 /* composer_open.wav in Resources */,
+				8EDC580E1D23F42600CE06D7 /* XZRedTimelineTableViewCell.xib in Resources */,
 				8EA1C5F71D1818110015FFF2 /* XZNewPasswordViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -681,20 +719,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EA1C5E71D1810000015FFF2 /* XZProfileViewController.m in Sources */,
+				8EDC58081D23F3BD00CE06D7 /* XZHomeLiveTableViewCell.m in Sources */,
 				8E18E06E1D1BBE590074FB65 /* NSString+MD5.m in Sources */,
 				8E8396681D0D08B400059703 /* XZStoreViewController.m in Sources */,
 				8E0BDF801D0D019700827767 /* XZTabBarViewController.m in Sources */,
 				8E83966B1D0D099000059703 /* XZUITabBar.m in Sources */,
 				8E18E03C1D1944640074FB65 /* MBProgressHUD.m in Sources */,
+				8EDC58121D23F44300CE06D7 /* XZMomentsTableViewCell.m in Sources */,
 				8E0BDF791D0CFE5C00827767 /* main.m in Sources */,
 				8EA1C5D61D17D03D0015FFF2 /* XZVerticalButton.m in Sources */,
 				8E83965F1D0D085700059703 /* XZDiscoverViewController.m in Sources */,
 				8EA1C5DD1D1806BE0015FFF2 /* XZRegisterUserViewController.m in Sources */,
 				8EA1C5F61D1818110015FFF2 /* XZNewPasswordViewController.m in Sources */,
+				8EDC580D1D23F42600CE06D7 /* XZRedTimelineTableViewCell.m in Sources */,
 				8EA1C5E21D180FC70015FFF2 /* XZAgreementViewController.m in Sources */,
+				8EDC57F81D23C95100CE06D7 /* XZHomeHeaderView.m in Sources */,
 				8EA1C5F11D1817DC0015FFF2 /* XZVerifyViewController.m in Sources */,
 				8EA1C5EC1D1817A70015FFF2 /* XZForgetPasswordViewController.m in Sources */,
 				8E8396651D0D088300059703 /* XZLiveViewController.m in Sources */,
+				8EDC57FB1D23D0A000CE06D7 /* XZHomefooterView.m in Sources */,
 				8E18E03A1D1944640074FB65 /* MBProgressHUD+MJ.m in Sources */,
 				8E8396861D0E55FD00059703 /* UIColor+ImageGetColor.m in Sources */,
 				8E8396741D0D5E5100059703 /* UIView+Extension.m in Sources */,

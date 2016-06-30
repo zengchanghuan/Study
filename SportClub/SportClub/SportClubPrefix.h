@@ -17,6 +17,8 @@
 #import "CommonCallback.h"
 #import "MBProgressHUD+MJ.h"
 #import "XZNetManager.h"
+
+
 //服务器地址
 #define SERVERURL @"http://114.112.98.72:8089"
 
