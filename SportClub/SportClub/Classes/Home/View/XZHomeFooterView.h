@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XZHomefooterView : UIView
+@interface XZHomeFooterView : UIView
 
 @end

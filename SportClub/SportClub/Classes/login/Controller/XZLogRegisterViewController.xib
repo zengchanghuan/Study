@@ -189,6 +189,6 @@
         <image name="login_register_right_line" width="103" height="1"/>
         <image name="login_sina_icon" width="70" height="70"/>
         <image name="login_sina_icon_click" width="70" height="70"/>
-        <image name="login_wechat" width="44" height="45"/>
+        <image name="login_wechat" width="35" height="35"/>
     </resources>
 </document>

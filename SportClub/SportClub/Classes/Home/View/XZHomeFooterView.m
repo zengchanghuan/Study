@@ -6,9 +6,9 @@
 //  Copyright © 2016年 ZengChanghuan. All rights reserved.
 //
 
-#import "XZHomefooterView.h"
+#import "XZHomeFooterView.h"
 
-@implementation XZHomefooterView
+@implementation XZHomeFooterView
 
 -(instancetype)initWithFrame:(CGRect)frame
 {
