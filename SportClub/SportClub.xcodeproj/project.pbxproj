@@ -58,8 +58,9 @@
 		8EDC580E1D23F42600CE06D7 /* XZRedTimelineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EDC580C1D23F42600CE06D7 /* XZRedTimelineTableViewCell.xib */; };
 		8EDC58121D23F44300CE06D7 /* XZMomentsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC58101D23F44300CE06D7 /* XZMomentsTableViewCell.m */; };
 		8EDC58131D23F44300CE06D7 /* XZMomentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EDC58111D23F44300CE06D7 /* XZMomentsTableViewCell.xib */; };
-		8EDC58421D25181100CE06D7 /* XZLiveCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC58401D25181100CE06D7 /* XZLiveCollectionViewCell.m */; };
-		8EDC58431D25181100CE06D7 /* XZLiveCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EDC58411D25181100CE06D7 /* XZLiveCollectionViewCell.xib */; };
+		8EDC58461D260F9B00CE06D7 /* XZLineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC58451D260F9B00CE06D7 /* XZLineLayout.m */; };
+		8EDC584D1D2615BE00CE06D7 /* XZCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC584B1D2615BE00CE06D7 /* XZCollectionViewCell.m */; };
+		8EDC584E1D2615BE00CE06D7 /* XZCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EDC584C1D2615BE00CE06D7 /* XZCollectionViewCell.xib */; };
 		F4ABDF121C39827EA4142BCB /* libPods-SportClub.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E3A53ADECF322E6CF2ABA1 /* libPods-SportClub.a */; };
 /* End PBXBuildFile section */
 
@@ -154,9 +155,11 @@
 		8EDC580F1D23F44300CE06D7 /* XZMomentsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZMomentsTableViewCell.h; sourceTree = "<group>"; };
 		8EDC58101D23F44300CE06D7 /* XZMomentsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZMomentsTableViewCell.m; sourceTree = "<group>"; };
 		8EDC58111D23F44300CE06D7 /* XZMomentsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZMomentsTableViewCell.xib; sourceTree = "<group>"; };
-		8EDC583F1D25181100CE06D7 /* XZLiveCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLiveCollectionViewCell.h; sourceTree = "<group>"; };
-		8EDC58401D25181100CE06D7 /* XZLiveCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLiveCollectionViewCell.m; sourceTree = "<group>"; };
-		8EDC58411D25181100CE06D7 /* XZLiveCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZLiveCollectionViewCell.xib; sourceTree = "<group>"; };
+		8EDC58441D260F9B00CE06D7 /* XZLineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZLineLayout.h; sourceTree = "<group>"; };
+		8EDC58451D260F9B00CE06D7 /* XZLineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZLineLayout.m; sourceTree = "<group>"; };
+		8EDC584A1D2615BE00CE06D7 /* XZCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCollectionViewCell.h; sourceTree = "<group>"; };
+		8EDC584B1D2615BE00CE06D7 /* XZCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCollectionViewCell.m; sourceTree = "<group>"; };
+		8EDC584C1D2615BE00CE06D7 /* XZCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZCollectionViewCell.xib; sourceTree = "<group>"; };
 		FEFF698849B3D0DCFCE18995 /* Pods-SportClub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportClub.release.xcconfig"; path = "Pods/Target Support Files/Pods-SportClub/Pods-SportClub.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -317,9 +320,11 @@
 				8EDC580F1D23F44300CE06D7 /* XZMomentsTableViewCell.h */,
 				8EDC58101D23F44300CE06D7 /* XZMomentsTableViewCell.m */,
 				8EDC58111D23F44300CE06D7 /* XZMomentsTableViewCell.xib */,
-				8EDC583F1D25181100CE06D7 /* XZLiveCollectionViewCell.h */,
-				8EDC58401D25181100CE06D7 /* XZLiveCollectionViewCell.m */,
-				8EDC58411D25181100CE06D7 /* XZLiveCollectionViewCell.xib */,
+				8EDC58441D260F9B00CE06D7 /* XZLineLayout.h */,
+				8EDC58451D260F9B00CE06D7 /* XZLineLayout.m */,
+				8EDC584A1D2615BE00CE06D7 /* XZCollectionViewCell.h */,
+				8EDC584B1D2615BE00CE06D7 /* XZCollectionViewCell.m */,
+				8EDC584C1D2615BE00CE06D7 /* XZCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -655,11 +660,11 @@
 			files = (
 				8E1211391D0591CE0066E061 /* Assets.xcassets in Resources */,
 				8EDC58091D23F3BD00CE06D7 /* XZHomeLiveTableViewCell.xib in Resources */,
+				8EDC584E1D2615BE00CE06D7 /* XZCollectionViewCell.xib in Resources */,
 				8EA1C5F21D1817DC0015FFF2 /* XZVerifyViewController.xib in Resources */,
 				8E8396D11D0E8DFD00059703 /* composer_close.wav in Resources */,
 				8EA1C5D31D178FAA0015FFF2 /* XZLogRegisterViewController.xib in Resources */,
 				8E8396D31D0E8DFD00059703 /* composer_select.wav in Resources */,
-				8EDC58431D25181100CE06D7 /* XZLiveCollectionViewCell.xib in Resources */,
 				8E18E03B1D1944640074FB65 /* MBProgressHUD.bundle in Resources */,
 				8EA1C5ED1D1817A70015FFF2 /* XZForgetPasswordViewController.xib in Resources */,
 				8EA1C5E31D180FC70015FFF2 /* XZAgreementViewController.xib in Resources */,
@@ -744,11 +749,12 @@
 				8EA1C5E21D180FC70015FFF2 /* XZAgreementViewController.m in Sources */,
 				8EDC57F81D23C95100CE06D7 /* XZHomeHeaderView.m in Sources */,
 				8EA1C5F11D1817DC0015FFF2 /* XZVerifyViewController.m in Sources */,
+				8EDC584D1D2615BE00CE06D7 /* XZCollectionViewCell.m in Sources */,
 				8EA1C5EC1D1817A70015FFF2 /* XZForgetPasswordViewController.m in Sources */,
 				8E8396651D0D088300059703 /* XZLiveViewController.m in Sources */,
 				8EDC57FB1D23D0A000CE06D7 /* XZHomeFooterView.m in Sources */,
 				8E18E03A1D1944640074FB65 /* MBProgressHUD+MJ.m in Sources */,
-				8EDC58421D25181100CE06D7 /* XZLiveCollectionViewCell.m in Sources */,
+				8EDC58461D260F9B00CE06D7 /* XZLineLayout.m in Sources */,
 				8E8396861D0E55FD00059703 /* UIColor+ImageGetColor.m in Sources */,
 				8E8396741D0D5E5100059703 /* UIView+Extension.m in Sources */,
 				8EA1C5D91D1800FB0015FFF2 /* XZTextField.m in Sources */,

@@ -7,10 +7,9 @@
 //
 
 #import "XZHomeLiveTableViewCell.h"
-#import "XZLiveCollectionViewCell.h"
-
+#import "XZCollectionViewCell.h"
+#import "XZLineLayout.h"
 @interface XZHomeLiveTableViewCell()
-@property (weak, nonatomic) IBOutlet UIView *liveView;
 
 @end
 
@@ -31,9 +30,9 @@ static NSString *const ID = @"image";
 {
     static NSString *ID = @"homeLiveID";
     XZHomeLiveTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    
     if (cell == nil) {
-        cell = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil] lastObject];
-        
+        cell = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([XZHomeLiveTableViewCell class]) owner:nil options:nil] lastObject];
     }
     return cell;
 }
@@ -42,11 +41,11 @@ static NSString *const ID = @"image";
 }
 - (void)awakeFromNib {
     // Initialization code
-    CGRect rect = self.liveView.bounds;
-    self.collectionView = [[UICollectionView alloc] initWithFrame:rect collectionViewLayout:[UICollectionViewFlowLayout new]];
-    [self.collectionView registerNib:[UINib nibWithNibName:@"XZLiveCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:ID];
-    self.collectionView.backgroundColor = [UIColor redColor];
-    [self.liveView addSubview:self.collectionView];
+    CGRect rect = CGRectMake(0, 0, screenWidth, 200);
+    self.collectionView = [[UICollectionView alloc] initWithFrame:rect collectionViewLayout:[XZLineLayout new]];
+    [self.collectionView registerNib:[UINib nibWithNibName:@"XZCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:ID];
+    [self.contentView addSubview:self.collectionView];
+
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

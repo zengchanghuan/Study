@@ -14,9 +14,11 @@
 #import "XZHomeLiveTableViewCell.h"
 #import "XZRedTimelineTableViewCell.h"
 #import "XZMomentsTableViewCell.h"
+#import "XZCollectionViewCell.h"
 
-//UICollectionViewDataSource UICollectionViewDelegate
-@interface XZHomeViewController ()<UITableViewDataSource,UITableViewDelegate>
+static NSString *const ID = @"image";
+
+@interface XZHomeViewController ()<UITableViewDataSource,UITableViewDelegate,UICollectionViewDataSource,UICollectionViewDelegate>
 
 @property (nonatomic, strong) UITableView *contentTableView;
 @property (nonatomic, strong) XZHomeHeaderView *headerView;
@@ -58,8 +60,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row == 0) {
         XZHomeLiveTableViewCell *cell1 = [XZHomeLiveTableViewCell cellWithTableView:tableView];
-//        cell1.collectionView.dataSource = self;
-//        cell1.collectionView.delegate = self;
+        cell1.collectionView.dataSource = self;
+        cell1.collectionView.delegate = self;
         return cell1;
     } else if (indexPath.row == 1) {
         XZRedTimelineTableViewCell *cell2 = [XZRedTimelineTableViewCell cellWithTableView:tableView];
@@ -109,6 +111,17 @@
     
 }
 #pragma mark UICollectionViewDataSource
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return 10;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    XZCollectionViewCell *liveCell = [collectionView dequeueReusableCellWithReuseIdentifier:ID forIndexPath:indexPath];
+    
+    return liveCell;
+}
 
 #pragma mark UICollectionViewDelegate
 @end
