@@ -12,7 +12,9 @@
 
 - (void)awakeFromNib {
     // Initialization code
-    self.contentView.backgroundColor = [UIColor redColor];
+    self.layer.cornerRadius = 100;
+    self.clipsToBounds = YES;
+   
 }
 
 @end

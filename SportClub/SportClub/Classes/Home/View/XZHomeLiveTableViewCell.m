@@ -31,7 +31,7 @@ NSString *const XZMyCollectionViewIdentifier = @"CollectionViewIdentifierID";
 }
 - (void)awakeFromNib {
     // Initialization code
-    CGRect rect = CGRectMake(0, 0, screenWidth, 200);
+    CGRect rect = CGRectMake(0, 45, screenWidth, 202);
     self.collectionView = [[UICollectionView alloc] initWithFrame:rect collectionViewLayout:[XZLineLayout new]];
     [self.collectionView registerNib:[UINib nibWithNibName:@"XZCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:XZMyCollectionViewIdentifier];
     self.collectionView.backgroundColor = [UIColor whiteColor];
@@ -45,6 +45,8 @@ NSString *const XZMyCollectionViewIdentifier = @"CollectionViewIdentifierID";
     // Configure the view for the selected state
 }
 
+- (IBAction)moreLive:(id)sender {
+}
 
 
 @end

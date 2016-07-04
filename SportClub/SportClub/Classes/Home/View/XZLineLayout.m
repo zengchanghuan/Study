@@ -9,13 +9,12 @@
 #import "XZLineLayout.h"
 
 @implementation XZLineLayout
-static const CGFloat XZItemWH = 200;
+static const CGFloat XZItemWH = 202;
 
 -(instancetype)init
 {
     if (self = [super init])
     {
-        
     }
     return self;
 }
@@ -61,6 +60,9 @@ static const CGFloat XZItemWH = 200;
     // 设置水平滚动
     self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     self.minimumLineSpacing = XZItemWH * 0.7;
+    
+    
+    
     
     // 每一个cell(item)都有自己的UICollectionViewLayoutAttributes
     // 每一个indexPath都有自己的UICollectionViewLayoutAttributes

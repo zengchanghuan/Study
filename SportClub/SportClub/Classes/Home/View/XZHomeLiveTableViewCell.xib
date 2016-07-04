@@ -13,9 +13,49 @@
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="281.5"/>
                 <autoresizingMask key="autoresizingMask"/>
-                <color key="backgroundColor" red="0.8980392157" green="0.69019607839999997" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="592-Cd-kBh">
+                        <rect key="frame" x="0.0" y="10" width="320" height="45"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微直播" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WX-fj-Q5T">
+                                <rect key="frame" x="137" y="13" width="45" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X41-6k-kal" userLabel="更多">
+                                <rect key="frame" x="288" y="12" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Jkp-LZ-ttJ"/>
+                                    <constraint firstAttribute="width" constant="20" id="Kli-kE-9Y0"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="btn_more"/>
+                                <connections>
+                                    <action selector="moreLive:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="AVk-Za-ria"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7WX-fj-Q5T" firstAttribute="centerY" secondItem="592-Cd-kBh" secondAttribute="centerY" id="2C1-LR-yAW"/>
+                            <constraint firstItem="X41-6k-kal" firstAttribute="centerY" secondItem="7WX-fj-Q5T" secondAttribute="centerY" id="6hc-Tx-MoO"/>
+                            <constraint firstAttribute="height" constant="45" id="ag2-Bf-LlQ"/>
+                            <constraint firstAttribute="trailing" secondItem="X41-6k-kal" secondAttribute="trailing" constant="12" id="eHU-BM-s8L"/>
+                            <constraint firstItem="7WX-fj-Q5T" firstAttribute="centerX" secondItem="592-Cd-kBh" secondAttribute="centerX" id="jmm-zj-jAC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="592-Cd-kBh" secondAttribute="trailing" id="LNj-xe-EJq"/>
+                    <constraint firstItem="592-Cd-kBh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="UTa-Hn-K4U"/>
+                    <constraint firstItem="592-Cd-kBh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="iIc-EV-qDY"/>
+                </constraints>
             </tableViewCellContentView>
             <point key="canvasLocation" x="-190" y="341"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="btn_more" width="20" height="20"/>
+    </resources>
 </document>

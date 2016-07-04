@@ -129,7 +129,6 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     XZCollectionViewCell *liveCell = [collectionView dequeueReusableCellWithReuseIdentifier:XZMyCollectionViewIdentifier forIndexPath:indexPath];
-    
     return liveCell;
 }
 
