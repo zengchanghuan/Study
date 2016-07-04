@@ -11,7 +11,6 @@
 @interface XZHomeLiveTableViewCell : UITableViewCell
 
 @property (strong, nonatomic) UICollectionView *collectionView;
-@property (strong, nonatomic) NSMutableArray *imagesArray;
 
 +(instancetype)cellWithTableView:(UITableView *)tableView;
 - (CGFloat)height;

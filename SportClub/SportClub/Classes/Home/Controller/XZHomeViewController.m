@@ -16,18 +16,29 @@
 #import "XZMomentsTableViewCell.h"
 #import "XZCollectionViewCell.h"
 
-static NSString *const ID = @"image";
+static NSString *const collectionViewID = @"collectionViewID";
 
 @interface XZHomeViewController ()<UITableViewDataSource,UITableViewDelegate,UICollectionViewDataSource,UICollectionViewDelegate>
 
 @property (nonatomic, strong) UITableView *contentTableView;
 @property (nonatomic, strong) XZHomeHeaderView *headerView;
 @property (nonatomic, strong) XZHomeFooterView *footerView;
+@property (strong, nonatomic) NSMutableArray *imagesArray;
 
 @end
 
 @implementation XZHomeViewController
-
+-(NSMutableArray *)imagesArray
+{
+    if (!_imagesArray) {
+        self.imagesArray = [[NSMutableArray alloc] init];
+        
+        for (int i = 1; i<=4; i++) {
+            [self.imagesArray addObject:[NSString stringWithFormat:@"%d", i]];
+        }
+    }
+    return _imagesArray;
+}
 #pragma life clcle
 
 - (void)loadView{
@@ -113,12 +124,12 @@ static NSString *const ID = @"image";
 #pragma mark UICollectionViewDataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 10;
+    return 4;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    XZCollectionViewCell *liveCell = [collectionView dequeueReusableCellWithReuseIdentifier:ID forIndexPath:indexPath];
+    XZCollectionViewCell *liveCell = [collectionView dequeueReusableCellWithReuseIdentifier:collectionViewID forIndexPath:indexPath];
     
     return liveCell;
 }

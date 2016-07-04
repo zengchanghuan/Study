@@ -7,18 +7,18 @@
 //
 
 #import "XZHomeHeaderView.h"
-
+#import "XZHeaderTab.h"
 @implementation XZHomeHeaderView
 
 -(id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-//        UIView *v = [UIView new];
-//        v.frame = self.bounds;
-//        [self addSubview:v];
-//        v.backgroundColor = [UIColor redColor];
         self.backgroundColor = [UIColor grayColor];
+        XZHeaderTab *tabView = [XZHeaderTab headTab];
+        tabView.frame = CGRectMake(0, 181, screenWidth, 45);
+        [self addSubview:tabView];
+        
     }
     return self;
 }

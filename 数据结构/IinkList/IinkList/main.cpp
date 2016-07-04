@@ -107,12 +107,41 @@ ListNode *GetIthElemPointer(ListNode *head, int i)
 // insert the elem to the position of the list
 bool InsertElem(ListNode *head, int insert_position, int insert_elem)
 {
+    if (insert_position <= 0) {
+        return false;
+    }
+    ListNode *pre = GetIthElemPointer(head, insert_position - 1);
+    if (pre == NULL) {
+        return false;
+    }
     
+    ListNode *new_node = createListNode(insert_elem);
+    
+    //新结点指向。。。
+    new_node->next = pre->next;
+    //前驱指针指向新结点
+    pre->next = new_node;
     return true;
 }
 
 bool DeleteElem(ListNode *head, int delete_position)
 {
+    if (delete_position <= 0) {
+        return false;
+    }
+    
+    ListNode *pcur = head;
+    while (pcur && delete_position > 1) {
+        pcur = pcur->next;
+        delete_position--;
+    }
+    if (pcur == nullptr || pcur->next == nullptr) {
+        return false;
+    }
+    ListNode *p_delete_node = pcur->next;
+    pcur->next = p_delete_node->next;
+    pcur->next = p_delete_node->next;
+    free(p_delete_node);
     
     return true;
 }
@@ -174,7 +203,7 @@ int main()
         }
         
         if (InsertElem(head, insert_position, insert_elem)) {
-            printf("insert successs\naa");
+            printf("insert successs\n");
             PrintLinkList(head);
         } else {
             printf("insert fail\n");

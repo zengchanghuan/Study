@@ -18,6 +18,8 @@
 		8E18E03B1D1944640074FB65 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8E18E0371D1944640074FB65 /* MBProgressHUD.bundle */; };
 		8E18E03C1D1944640074FB65 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E18E0391D1944640074FB65 /* MBProgressHUD.m */; };
 		8E18E06E1D1BBE590074FB65 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E18E06D1D1BBE590074FB65 /* NSString+MD5.m */; };
+		8E399B3A1D26430D00B3003A /* XZHeaderTab.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E399B391D26430D00B3003A /* XZHeaderTab.m */; };
+		8E399B3C1D26431C00B3003A /* XZHeaderTab.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E399B3B1D26431C00B3003A /* XZHeaderTab.xib */; };
 		8E83965C1D0D083500059703 /* XZHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E83965B1D0D083500059703 /* XZHomeViewController.m */; };
 		8E83965F1D0D085700059703 /* XZDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E83965E1D0D085700059703 /* XZDiscoverViewController.m */; };
 		8E8396621D0D086B00059703 /* XZComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8396611D0D086B00059703 /* XZComposeViewController.m */; };
@@ -89,6 +91,9 @@
 		8E18E0391D1944640074FB65 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		8E18E06C1D1BBE590074FB65 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
 		8E18E06D1D1BBE590074FB65 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		8E399B381D26430D00B3003A /* XZHeaderTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZHeaderTab.h; sourceTree = "<group>"; };
+		8E399B391D26430D00B3003A /* XZHeaderTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZHeaderTab.m; sourceTree = "<group>"; };
+		8E399B3B1D26431C00B3003A /* XZHeaderTab.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZHeaderTab.xib; sourceTree = "<group>"; };
 		8E83965A1D0D083500059703 /* XZHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZHomeViewController.h; sourceTree = "<group>"; };
 		8E83965B1D0D083500059703 /* XZHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZHomeViewController.m; sourceTree = "<group>"; };
 		8E83965D1D0D085700059703 /* XZDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZDiscoverViewController.h; sourceTree = "<group>"; };
@@ -309,6 +314,9 @@
 				8E8396831D0E55FD00059703 /* UIColor+ImageGetColor.m */,
 				8EDC57F61D23C95100CE06D7 /* XZHomeHeaderView.h */,
 				8EDC57F71D23C95100CE06D7 /* XZHomeHeaderView.m */,
+				8E399B381D26430D00B3003A /* XZHeaderTab.h */,
+				8E399B391D26430D00B3003A /* XZHeaderTab.m */,
+				8E399B3B1D26431C00B3003A /* XZHeaderTab.xib */,
 				8EDC57F91D23D0A000CE06D7 /* XZHomeFooterView.h */,
 				8EDC57FA1D23D0A000CE06D7 /* XZHomeFooterView.m */,
 				8EDC58051D23F3BD00CE06D7 /* XZHomeLiveTableViewCell.h */,
@@ -658,6 +666,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E399B3C1D26431C00B3003A /* XZHeaderTab.xib in Resources */,
 				8E1211391D0591CE0066E061 /* Assets.xcassets in Resources */,
 				8EDC58091D23F3BD00CE06D7 /* XZHomeLiveTableViewCell.xib in Resources */,
 				8EDC584E1D2615BE00CE06D7 /* XZCollectionViewCell.xib in Resources */,
@@ -765,6 +774,7 @@
 				8E18E0291D192B300074FB65 /* XZNetManager.m in Sources */,
 				8E0BDF781D0CFE5C00827767 /* AppDelegate.m in Sources */,
 				8E8396851D0E55FD00059703 /* MenuLabel.m in Sources */,
+				8E399B3A1D26430D00B3003A /* XZHeaderTab.m in Sources */,
 				8E18E02C1D192DD70074FB65 /* XZAccountManager.m in Sources */,
 				8E83965C1D0D083500059703 /* XZHomeViewController.m in Sources */,
 				8E8396761D0D60A300059703 /* Foundation+Log.m in Sources */,
