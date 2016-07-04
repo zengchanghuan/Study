@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XZHomeViewController : UITabBarController
+@interface XZHomeViewController : UIViewController
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+UIKIT_EXTERN NSString *const XZMyCollectionViewIdentifier;
 @interface XZHomeLiveTableViewCell : UITableViewCell
 
 @property (strong, nonatomic) UICollectionView *collectionView;

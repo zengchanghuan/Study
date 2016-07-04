@@ -16,7 +16,6 @@
 #import "XZMomentsTableViewCell.h"
 #import "XZCollectionViewCell.h"
 
-static NSString *const collectionViewID = @"collectionViewID";
 
 @interface XZHomeViewController ()<UITableViewDataSource,UITableViewDelegate,UICollectionViewDataSource,UICollectionViewDelegate>
 
@@ -129,7 +128,7 @@ static NSString *const collectionViewID = @"collectionViewID";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    XZCollectionViewCell *liveCell = [collectionView dequeueReusableCellWithReuseIdentifier:collectionViewID forIndexPath:indexPath];
+    XZCollectionViewCell *liveCell = [collectionView dequeueReusableCellWithReuseIdentifier:XZMyCollectionViewIdentifier forIndexPath:indexPath];
     
     return liveCell;
 }

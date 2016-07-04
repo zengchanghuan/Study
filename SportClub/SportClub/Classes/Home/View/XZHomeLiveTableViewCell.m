@@ -14,7 +14,7 @@
 @end
 
 @implementation XZHomeLiveTableViewCell
-static NSString *const collectionViewID = @"collectionViewID";
+NSString *const XZMyCollectionViewIdentifier = @"CollectionViewIdentifierID";
 
 +(instancetype)cellWithTableView:(UITableView *)tableView
 {
@@ -33,7 +33,7 @@ static NSString *const collectionViewID = @"collectionViewID";
     // Initialization code
     CGRect rect = CGRectMake(0, 0, screenWidth, 200);
     self.collectionView = [[UICollectionView alloc] initWithFrame:rect collectionViewLayout:[XZLineLayout new]];
-    [self.collectionView registerNib:[UINib nibWithNibName:@"XZCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:collectionViewID];
+    [self.collectionView registerNib:[UINib nibWithNibName:@"XZCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:XZMyCollectionViewIdentifier];
     self.collectionView.backgroundColor = [UIColor whiteColor];
     [self.contentView addSubview:self.collectionView];
 
