@@ -12,7 +12,7 @@
 
 - (void)awakeFromNib {
     // Initialization code
-    self.layer.cornerRadius = 100;
+    self.layer.cornerRadius = 6;
     self.clipsToBounds = YES;
    
 }

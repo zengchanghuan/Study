@@ -31,7 +31,8 @@ static NSString *ID = @"CELLID";
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    CGRect rect = CGRectMake(0, 100, 320, 320);
+    CGFloat w = self.view.frame.size.width;
+    CGRect rect = CGRectMake(0, 100, w, 220);
     UICollectionView *collectView = [[UICollectionView alloc] initWithFrame:rect collectionViewLayout:[XZLineLayout new]];
     collectView.dataSource = self;
     collectView.delegate = self;

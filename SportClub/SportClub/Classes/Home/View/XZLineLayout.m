@@ -7,9 +7,11 @@
 //
 
 #import "XZLineLayout.h"
-
+//#define CGFloat LAYOUTSCALE
 @implementation XZLineLayout
-static const CGFloat XZItemWH = 202;
+static const CGFloat XZItemW = 220;
+static const CGFloat XZItemH = 202;
+
 
 -(instancetype)init
 {
@@ -54,12 +56,13 @@ static const CGFloat XZItemWH = 202;
     
     
     // 每个cell的尺寸
-    self.itemSize = CGSizeMake(XZItemWH, XZItemWH);
-    CGFloat inset = (self.collectionView.frame.size.width - XZItemWH) * 0.5;
+    //itemSize的高度，不仅仅由宽高决定，还取决于你的放大的倍数,放大的最大的时候才是202，202除以最大放大位置
+    self.itemSize = CGSizeMake(XZItemW, XZItemH/1.6);
+    CGFloat inset = (self.collectionView.frame.size.width - XZItemW) * 0.5;
     self.sectionInset = UIEdgeInsetsMake(0, inset, 0, inset);
     // 设置水平滚动
     self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-    self.minimumLineSpacing = XZItemWH * 0.7;
+    self.minimumLineSpacing = XZItemW * 0.7;
     
     
     
@@ -69,7 +72,7 @@ static const CGFloat XZItemWH = 202;
 }
 
 
-/** 有效距离:当item的中间x距离屏幕的中间x在HMActiveDistance以内,才会开始放大, 其它情况都是缩小 */
+/** 有效距离:当item的中间x距离屏幕的中间x在XZActiveDistance以内,才会开始放大, 其它情况都是缩小 */
 static CGFloat const XZActiveDistance = 150;
 /** 缩放因素: 值越大, item就会越大 */
 static CGFloat const XZScaleFactor = 0.6;
@@ -97,6 +100,8 @@ static CGFloat const XZScaleFactor = 0.6;
         // 差距越小, 缩放比例越大
         // 根据跟屏幕最中间的距离计算缩放比例
         CGFloat scale = 1 + XZScaleFactor * (1 - (ABS(itemCenterX - centerX) / XZActiveDistance));
+        
+        NSLog(@"*****scale%f",scale);
         attrs.transform = CGAffineTransformMakeScale(scale, scale);
     }
     
