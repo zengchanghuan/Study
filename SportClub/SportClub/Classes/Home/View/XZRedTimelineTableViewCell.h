@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+UIKIT_EXTERN NSString *const XZRedTimelineCellIdentifier;
 
 @interface XZRedTimelineTableViewCell : UITableViewCell
 +(instancetype)cellWithTableView:(UITableView *)tableView;

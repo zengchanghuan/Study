@@ -89,7 +89,7 @@
     if (indexPath.row == 0) {
         return 282;
     } else if (indexPath.row == 1) {
-        return 300;
+        return 420;
     } else {
         return 200;
     }

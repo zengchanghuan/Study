@@ -7,15 +7,75 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="410" id="KGk-i7-Jjw" customClass="XZRedTimelineTableViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="410"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="420" id="KGk-i7-Jjw" customClass="XZRedTimelineTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="420"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="409.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="419.5"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZyD-ou-yoF" userLabel="title区">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="精选动态" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hh-rb-pim">
+                                <rect key="frame" x="130" y="13" width="60" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCg-dn-FHL" userLabel="更多">
+                                <rect key="frame" x="288" y="12" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="VaM-Ew-8ye"/>
+                                    <constraint firstAttribute="height" constant="20" id="gzH-Si-8Nf"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="btn_more"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="Lmz-8P-Hrh"/>
+                            <constraint firstAttribute="trailing" secondItem="NCg-dn-FHL" secondAttribute="trailing" constant="12" id="VTF-tI-LIO"/>
+                            <constraint firstItem="NCg-dn-FHL" firstAttribute="centerY" secondItem="9hh-rb-pim" secondAttribute="centerY" id="k6e-rY-1af"/>
+                            <constraint firstItem="9hh-rb-pim" firstAttribute="centerY" secondItem="ZyD-ou-yoF" secondAttribute="centerY" id="qS9-tr-ui5"/>
+                            <constraint firstItem="9hh-rb-pim" firstAttribute="centerX" secondItem="ZyD-ou-yoF" secondAttribute="centerX" id="uhB-Rw-d7N"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ciF-uc-FU8" userLabel="内容区">
+                        <rect key="frame" x="0.0" y="45" width="320" height="350"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="350" id="YdB-ph-Eij"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YIH-bP-Em0" userLabel="边框区">
+                        <rect key="frame" x="0.0" y="395" width="320" height="25"/>
+                        <color key="backgroundColor" red="0.8980392157" green="0.69019607839999997" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="v5a-eG-Cdh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ZyD-ou-yoF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9gF-0k-YlP"/>
+                    <constraint firstAttribute="trailing" secondItem="YIH-bP-Em0" secondAttribute="trailing" id="AMQ-rp-MSq"/>
+                    <constraint firstItem="YIH-bP-Em0" firstAttribute="top" secondItem="ZyD-ou-yoF" secondAttribute="bottom" constant="350" id="BLo-FM-3wg"/>
+                    <constraint firstAttribute="trailing" secondItem="ZyD-ou-yoF" secondAttribute="trailing" id="N8K-6H-NfA"/>
+                    <constraint firstItem="ZyD-ou-yoF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="PzD-cP-Gfl"/>
+                    <constraint firstItem="ciF-uc-FU8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="45" id="T1j-9N-b8J"/>
+                    <constraint firstAttribute="trailing" secondItem="ciF-uc-FU8" secondAttribute="trailing" id="Ty5-I0-fYI"/>
+                    <constraint firstItem="YIH-bP-Em0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="aVd-gQ-i1V"/>
+                    <constraint firstItem="ciF-uc-FU8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="d7Z-sB-Jo4"/>
+                </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" red="0.8980392157" green="0.69019607839999997" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
-            <point key="canvasLocation" x="84" y="312"/>
+            <connections>
+                <outlet property="redTimelineView" destination="ciF-uc-FU8" id="4bn-rT-E9c"/>
+            </connections>
+            <point key="canvasLocation" x="-95" y="279"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="btn_more" width="20" height="20"/>
+    </resources>
 </document>
