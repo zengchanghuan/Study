@@ -27,7 +27,7 @@ NSString *const XZMyCollectionViewIdentifier = @"CollectionViewIdentifierID";
     return cell;
 }
 -(CGFloat)height{
-    return 262;
+    return 282;
 }
 - (void)awakeFromNib {
     // Initialization code

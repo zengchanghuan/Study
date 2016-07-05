@@ -70,6 +70,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row == 0) {
         XZHomeLiveTableViewCell *cell1 = [XZHomeLiveTableViewCell cellWithTableView:tableView];
+        cell1.selectionStyle = UITableViewCellSelectionStyleNone;
         cell1.collectionView.dataSource = self;
         cell1.collectionView.delegate = self;
         return cell1;
@@ -85,9 +86,19 @@
 #pragma mark UITableViewDelegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 300;
+    if (indexPath.row == 0) {
+        return 282;
+    } else if (indexPath.row == 1) {
+        return 300;
+    } else {
+        return 200;
+    }
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return;
+}
 
 - (XZHomeHeaderView *)headerView{
     if (!_headerView) {
@@ -133,4 +144,8 @@
 }
 
 #pragma mark UICollectionViewDelegate
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    XZLog(@"indexPath.row = %ld",(long)indexPath.row);
+}
 @end

@@ -8,6 +8,7 @@
 
 #import "XZHomeHeaderView.h"
 #import "XZHeaderTab.h"
+#import "XZStatusToolbar.h"
 @implementation XZHomeHeaderView
 
 -(id)initWithFrame:(CGRect)frame
@@ -15,9 +16,9 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = [UIColor grayColor];
-        XZHeaderTab *tabView = [XZHeaderTab headTab];
-        tabView.frame = CGRectMake(0, 181, screenWidth, 45);
-        [self addSubview:tabView];
+        XZStatusToolbar *toolBar = [XZStatusToolbar toolbar];
+        toolBar.frame = CGRectMake(0, 181, screenWidth, 45);
+        [self addSubview:toolBar];
         
     }
     return self;

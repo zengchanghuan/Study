@@ -9,8 +9,8 @@
 #import "XZLineLayout.h"
 //#define CGFloat LAYOUTSCALE
 @implementation XZLineLayout
-static const CGFloat XZItemW = 220;
-static const CGFloat XZItemH = 202;
+static const CGFloat XZItemW = 200;
+static const CGFloat XZItemH = 200;
 
 
 -(instancetype)init
@@ -101,7 +101,7 @@ static CGFloat const XZScaleFactor = 0.6;
         // 根据跟屏幕最中间的距离计算缩放比例
         CGFloat scale = 1 + XZScaleFactor * (1 - (ABS(itemCenterX - centerX) / XZActiveDistance));
         
-        NSLog(@"*****scale%f",scale);
+        XZLog(@"*****scale%f",scale);
         attrs.transform = CGAffineTransformMakeScale(scale, scale);
     }
     
