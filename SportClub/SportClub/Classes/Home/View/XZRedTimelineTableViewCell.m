@@ -27,10 +27,7 @@ NSString *const XZRedTimelineCellIdentifier = @"redTimelineCellIdentifierID";
     }
     return cell;
 }
-//-(CGFloat)height
-//{
-//    return 420;
-//}
+
 - (void)awakeFromNib {
     // Initialization code
     CGRect rect = CGRectMake(0, 0, screenWidth,screenWidth);
@@ -38,9 +35,12 @@ NSString *const XZRedTimelineCellIdentifier = @"redTimelineCellIdentifierID";
     [self.redTimelineCollectionView registerNib:[UINib nibWithNibName:@"XRedTimelineCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:XZRedTimelineCellIdentifier];
     self.redTimelineCollectionView.dataSource = self;
     self.redTimelineCollectionView.delegate = self;
+    self.redTimelineCollectionView.backgroundColor = [UIColor whiteColor];
     [self.redTimelineView addSubview:self.redTimelineCollectionView];
     
    
+}
+- (IBAction)moreTimeline:(id)sender {
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -72,7 +72,6 @@ NSString *const XZRedTimelineCellIdentifier = @"redTimelineCellIdentifierID";
 #pragma mark UICollectionViewDelegateFlowLayout
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
-    XZLog(@"%f",XZStatusWH);
     return CGSizeMake(XZStatusWH,XZStatusWH);
 }
 

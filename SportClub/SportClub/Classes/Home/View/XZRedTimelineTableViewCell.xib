@@ -30,6 +30,9 @@
                                     <constraint firstAttribute="height" constant="20" id="gzH-Si-8Nf"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="btn_more"/>
+                                <connections>
+                                    <action selector="moreTimeline:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="WBo-XJ-gQt"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -43,15 +46,27 @@
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ciF-uc-FU8" userLabel="内容区">
                         <rect key="frame" x="0.0" y="45" width="320" height="350"/>
-                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="350" id="YdB-ph-Eij"/>
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YIH-bP-Em0" userLabel="边框区">
                         <rect key="frame" x="0.0" y="395" width="320" height="25"/>
-                        <color key="backgroundColor" red="0.8980392157" green="0.69019607839999997" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yrh-W3-NSQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="15"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="PAe-ov-o9a"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="yrh-W3-NSQ" secondAttribute="trailing" id="Ubf-JG-mHf"/>
+                            <constraint firstItem="yrh-W3-NSQ" firstAttribute="leading" secondItem="YIH-bP-Em0" secondAttribute="leading" id="eJH-X3-lMw"/>
+                            <constraint firstItem="yrh-W3-NSQ" firstAttribute="top" secondItem="YIH-bP-Em0" secondAttribute="top" id="uNv-Vd-hb7"/>
                             <constraint firstAttribute="height" constant="25" id="v5a-eG-Cdh"/>
                         </constraints>
                     </view>
