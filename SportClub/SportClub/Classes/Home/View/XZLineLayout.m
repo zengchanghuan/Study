@@ -101,7 +101,7 @@ static CGFloat const XZScaleFactor = 0.6;
         // 根据跟屏幕最中间的距离计算缩放比例
         CGFloat scale = 1 + XZScaleFactor * (1 - (ABS(itemCenterX - centerX) / XZActiveDistance));
         
-        XZLog(@"*****scale%f",scale);
+//        XZLog(@"*****scale%f",scale);
         attrs.transform = CGAffineTransformMakeScale(scale, scale);
     }
     

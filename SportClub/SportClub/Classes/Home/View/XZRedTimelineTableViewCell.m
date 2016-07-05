@@ -8,6 +8,9 @@
 
 #import "XZRedTimelineTableViewCell.h"
 #import "XRedTimelineCollectionViewCell.h"
+
+#define XZStatusWH (((screenWidth)/3.0)-10)
+
 NSString *const XZRedTimelineCellIdentifier = @"redTimelineCellIdentifierID";
 
 @interface XZRedTimelineTableViewCell ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
@@ -24,13 +27,13 @@ NSString *const XZRedTimelineCellIdentifier = @"redTimelineCellIdentifierID";
     }
     return cell;
 }
--(CGFloat)height
-{
-    return 420;
-}
+//-(CGFloat)height
+//{
+//    return 420;
+//}
 - (void)awakeFromNib {
     // Initialization code
-    CGRect rect = CGRectMake(0, 0, screenWidth, 350);
+    CGRect rect = CGRectMake(0, 0, screenWidth,screenWidth);
     self.redTimelineCollectionView = [[UICollectionView alloc] initWithFrame:rect collectionViewLayout:[UICollectionViewFlowLayout new]];
     [self.redTimelineCollectionView registerNib:[UINib nibWithNibName:@"XRedTimelineCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:XZRedTimelineCellIdentifier];
     self.redTimelineCollectionView.dataSource = self;
@@ -69,12 +72,14 @@ NSString *const XZRedTimelineCellIdentifier = @"redTimelineCellIdentifierID";
 #pragma mark UICollectionViewDelegateFlowLayout
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
-    return CGSizeMake(110, 110);
+    XZLog(@"%f",XZStatusWH);
+    return CGSizeMake(XZStatusWH,XZStatusWH);
 }
 
 -(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
 {
-    return UIEdgeInsetsMake(5, 5, 5, 5);
+    //top, left, bottom, right
+    return UIEdgeInsetsMake(5,5,5,5);
 }
 
 #pragma makr -UICollectionViewDelegate

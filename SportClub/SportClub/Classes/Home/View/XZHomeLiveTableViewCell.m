@@ -14,6 +14,7 @@
 @end
 
 @implementation XZHomeLiveTableViewCell
+
 NSString *const XZMyCollectionViewIdentifier = @"CollectionViewIdentifierID";
 
 +(instancetype)cellWithTableView:(UITableView *)tableView
