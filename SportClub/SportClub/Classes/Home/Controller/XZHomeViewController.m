@@ -116,7 +116,6 @@
     if (!_footerView) {
         
         _footerView = [XZHomeFooterView footer];
-//        _footerView = [[XZHomeFooterView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), 120)];
     }
     return _footerView;
 }

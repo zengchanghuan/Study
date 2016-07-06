@@ -8,5 +8,5 @@ target 'SportClub' do
   pod 'pop', '~> 1.0' 
   pod 'Masonry'
   pod 'AFNetworking'
-
+  pod 'SDCycleScrollView','~> 1.64'
 end
