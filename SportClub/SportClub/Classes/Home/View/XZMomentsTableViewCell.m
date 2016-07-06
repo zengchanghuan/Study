@@ -18,6 +18,7 @@
     XZMomentsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     if (cell == nil) {
         cell = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil] lastObject];
+        
     }
     return cell;
 }
@@ -28,6 +29,7 @@
 - (void)awakeFromNib {
     // Initialization code
 }
+
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];

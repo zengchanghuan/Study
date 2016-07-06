@@ -15,7 +15,7 @@
 #import "XZRedTimelineTableViewCell.h"
 #import "XZMomentsTableViewCell.h"
 #import "XZCollectionViewCell.h"
-
+#import "XZMomentsTitleViewCell.h"
 
 @interface XZHomeViewController ()<UITableViewDataSource,UITableViewDelegate,UICollectionViewDataSource,UICollectionViewDelegate>
 
@@ -64,7 +64,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 3;
+    return 6;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -77,9 +77,12 @@
     } else if (indexPath.row == 1) {
         XZRedTimelineTableViewCell *cell2 = [XZRedTimelineTableViewCell cellWithTableView:tableView];
         return cell2;
-    } else {
-        XZMomentsTableViewCell *cell3= [XZMomentsTableViewCell cellWithTableView:tableView];
+    } else if (indexPath.row == 2) {
+        XZMomentsTitleViewCell *cell3 = [XZMomentsTitleViewCell cellWithTableView:tableView];
         return cell3;
+    } else {
+        XZMomentsTableViewCell *cell4= [XZMomentsTableViewCell cellWithTableView:tableView];
+        return cell4;
     }
 }
 
@@ -90,8 +93,10 @@
         return 282;
     } else if (indexPath.row == 1) {
         return 420;
+    } else if (indexPath.row == 2){
+        return 45;
     } else {
-        return 200;
+        return 164;
     }
 }
 
@@ -148,4 +153,7 @@
 {
     XZLog(@"indexPath.row = %ld",(long)indexPath.row);
 }
+
+
+
 @end

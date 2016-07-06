@@ -55,6 +55,8 @@
 		8ED5EF851D2B925D00E22D19 /* XZStatusToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED5EF841D2B925D00E22D19 /* XZStatusToolbar.m */; };
 		8ED5EF891D2BA45200E22D19 /* XRedTimelineCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED5EF871D2BA45200E22D19 /* XRedTimelineCollectionViewCell.m */; };
 		8ED5EF8A1D2BA45200E22D19 /* XRedTimelineCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ED5EF881D2BA45200E22D19 /* XRedTimelineCollectionViewCell.xib */; };
+		8ED5EF8E1D2BD38E00E22D19 /* XZMomentsTitleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED5EF8C1D2BD38E00E22D19 /* XZMomentsTitleViewCell.m */; };
+		8ED5EF8F1D2BD38E00E22D19 /* XZMomentsTitleViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ED5EF8D1D2BD38E00E22D19 /* XZMomentsTitleViewCell.xib */; };
 		8EDC57F81D23C95100CE06D7 /* XZHomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC57F71D23C95100CE06D7 /* XZHomeHeaderView.m */; };
 		8EDC57FB1D23D0A000CE06D7 /* XZHomeFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC57FA1D23D0A000CE06D7 /* XZHomeFooterView.m */; };
 		8EDC58081D23F3BD00CE06D7 /* XZHomeLiveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC58061D23F3BD00CE06D7 /* XZHomeLiveTableViewCell.m */; };
@@ -155,6 +157,9 @@
 		8ED5EF861D2BA45200E22D19 /* XRedTimelineCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XRedTimelineCollectionViewCell.h; sourceTree = "<group>"; };
 		8ED5EF871D2BA45200E22D19 /* XRedTimelineCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XRedTimelineCollectionViewCell.m; sourceTree = "<group>"; };
 		8ED5EF881D2BA45200E22D19 /* XRedTimelineCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XRedTimelineCollectionViewCell.xib; sourceTree = "<group>"; };
+		8ED5EF8B1D2BD38E00E22D19 /* XZMomentsTitleViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZMomentsTitleViewCell.h; sourceTree = "<group>"; };
+		8ED5EF8C1D2BD38E00E22D19 /* XZMomentsTitleViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZMomentsTitleViewCell.m; sourceTree = "<group>"; };
+		8ED5EF8D1D2BD38E00E22D19 /* XZMomentsTitleViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZMomentsTitleViewCell.xib; sourceTree = "<group>"; };
 		8EDC57F61D23C95100CE06D7 /* XZHomeHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZHomeHeaderView.h; sourceTree = "<group>"; };
 		8EDC57F71D23C95100CE06D7 /* XZHomeHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZHomeHeaderView.m; sourceTree = "<group>"; };
 		8EDC57F91D23D0A000CE06D7 /* XZHomeFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZHomeFooterView.h; sourceTree = "<group>"; };
@@ -346,6 +351,9 @@
 				8EDC584A1D2615BE00CE06D7 /* XZCollectionViewCell.h */,
 				8EDC584B1D2615BE00CE06D7 /* XZCollectionViewCell.m */,
 				8EDC584C1D2615BE00CE06D7 /* XZCollectionViewCell.xib */,
+				8ED5EF8B1D2BD38E00E22D19 /* XZMomentsTitleViewCell.h */,
+				8ED5EF8C1D2BD38E00E22D19 /* XZMomentsTitleViewCell.m */,
+				8ED5EF8D1D2BD38E00E22D19 /* XZMomentsTitleViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -684,6 +692,7 @@
 				8EDC58091D23F3BD00CE06D7 /* XZHomeLiveTableViewCell.xib in Resources */,
 				8EDC584E1D2615BE00CE06D7 /* XZCollectionViewCell.xib in Resources */,
 				8EA1C5F21D1817DC0015FFF2 /* XZVerifyViewController.xib in Resources */,
+				8ED5EF8F1D2BD38E00E22D19 /* XZMomentsTitleViewCell.xib in Resources */,
 				8ED5EF8A1D2BA45200E22D19 /* XRedTimelineCollectionViewCell.xib in Resources */,
 				8E8396D11D0E8DFD00059703 /* composer_close.wav in Resources */,
 				8EA1C5D31D178FAA0015FFF2 /* XZLogRegisterViewController.xib in Resources */,
@@ -796,6 +805,7 @@
 				8ED5EF851D2B925D00E22D19 /* XZStatusToolbar.m in Sources */,
 				8E8396621D0D086B00059703 /* XZComposeViewController.m in Sources */,
 				8E83966E1D0D5BD600059703 /* XZNavigationController.m in Sources */,
+				8ED5EF8E1D2BD38E00E22D19 /* XZMomentsTitleViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
