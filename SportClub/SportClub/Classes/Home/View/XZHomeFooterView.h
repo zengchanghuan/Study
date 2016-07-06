@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface XZHomeFooterView : UIView
-
++ (instancetype)footer;
 @end

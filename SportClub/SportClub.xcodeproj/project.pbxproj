@@ -57,6 +57,7 @@
 		8ED5EF8A1D2BA45200E22D19 /* XRedTimelineCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ED5EF881D2BA45200E22D19 /* XRedTimelineCollectionViewCell.xib */; };
 		8ED5EF8E1D2BD38E00E22D19 /* XZMomentsTitleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED5EF8C1D2BD38E00E22D19 /* XZMomentsTitleViewCell.m */; };
 		8ED5EF8F1D2BD38E00E22D19 /* XZMomentsTitleViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ED5EF8D1D2BD38E00E22D19 /* XZMomentsTitleViewCell.xib */; };
+		8ED5EF911D2CA56B00E22D19 /* XZHomeFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ED5EF901D2CA56B00E22D19 /* XZHomeFooterView.xib */; };
 		8EDC57F81D23C95100CE06D7 /* XZHomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC57F71D23C95100CE06D7 /* XZHomeHeaderView.m */; };
 		8EDC57FB1D23D0A000CE06D7 /* XZHomeFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC57FA1D23D0A000CE06D7 /* XZHomeFooterView.m */; };
 		8EDC58081D23F3BD00CE06D7 /* XZHomeLiveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC58061D23F3BD00CE06D7 /* XZHomeLiveTableViewCell.m */; };
@@ -160,6 +161,7 @@
 		8ED5EF8B1D2BD38E00E22D19 /* XZMomentsTitleViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZMomentsTitleViewCell.h; sourceTree = "<group>"; };
 		8ED5EF8C1D2BD38E00E22D19 /* XZMomentsTitleViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZMomentsTitleViewCell.m; sourceTree = "<group>"; };
 		8ED5EF8D1D2BD38E00E22D19 /* XZMomentsTitleViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZMomentsTitleViewCell.xib; sourceTree = "<group>"; };
+		8ED5EF901D2CA56B00E22D19 /* XZHomeFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZHomeFooterView.xib; sourceTree = "<group>"; };
 		8EDC57F61D23C95100CE06D7 /* XZHomeHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZHomeHeaderView.h; sourceTree = "<group>"; };
 		8EDC57F71D23C95100CE06D7 /* XZHomeHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZHomeHeaderView.m; sourceTree = "<group>"; };
 		8EDC57F91D23D0A000CE06D7 /* XZHomeFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZHomeFooterView.h; sourceTree = "<group>"; };
@@ -334,6 +336,7 @@
 				8E399B3B1D26431C00B3003A /* XZHeaderTab.xib */,
 				8EDC57F91D23D0A000CE06D7 /* XZHomeFooterView.h */,
 				8EDC57FA1D23D0A000CE06D7 /* XZHomeFooterView.m */,
+				8ED5EF901D2CA56B00E22D19 /* XZHomeFooterView.xib */,
 				8EDC58051D23F3BD00CE06D7 /* XZHomeLiveTableViewCell.h */,
 				8EDC58061D23F3BD00CE06D7 /* XZHomeLiveTableViewCell.m */,
 				8EDC58071D23F3BD00CE06D7 /* XZHomeLiveTableViewCell.xib */,
@@ -701,6 +704,7 @@
 				8EA1C5ED1D1817A70015FFF2 /* XZForgetPasswordViewController.xib in Resources */,
 				8EA1C5E31D180FC70015FFF2 /* XZAgreementViewController.xib in Resources */,
 				8EDC58131D23F44300CE06D7 /* XZMomentsTableViewCell.xib in Resources */,
+				8ED5EF911D2CA56B00E22D19 /* XZHomeFooterView.xib in Resources */,
 				8EA1C5DE1D1806BE0015FFF2 /* XZRegisterUserViewController.xib in Resources */,
 				8EA1C5E81D1810000015FFF2 /* XZProfileViewController.xib in Resources */,
 				8E8396D21D0E8DFD00059703 /* composer_open.wav in Resources */,

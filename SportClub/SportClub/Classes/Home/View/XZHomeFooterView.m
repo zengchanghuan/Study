@@ -7,15 +7,18 @@
 //
 
 #import "XZHomeFooterView.h"
+@interface XZHomeFooterView()
+@property (weak, nonatomic) IBOutlet UIView *moreUserView;
 
+@end
 @implementation XZHomeFooterView
 
--(instancetype)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        self.backgroundColor = [UIColor purpleColor];
-    }
-    return self;
+- (IBAction)moreUser:(id)sender {
 }
+
++(instancetype)footer
+{
+    return [[[NSBundle mainBundle]loadNibNamed:@"XZHomeFooterView" owner:nil options:nil]lastObject];
+}
+
 @end
