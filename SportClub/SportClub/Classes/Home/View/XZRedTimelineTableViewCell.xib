@@ -45,42 +45,26 @@
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ciF-uc-FU8" userLabel="内容区">
-                        <rect key="frame" x="0.0" y="45" width="320" height="350"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <rect key="frame" x="0.0" y="45" width="320" height="375"/>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="350" id="YdB-ph-Eij"/>
                         </constraints>
-                    </view>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YIH-bP-Em0" userLabel="边框区">
-                        <rect key="frame" x="0.0" y="395" width="320" height="25"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yrh-W3-NSQ">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="15"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="15" id="PAe-ov-o9a"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="yrh-W3-NSQ" secondAttribute="trailing" id="Ubf-JG-mHf"/>
-                            <constraint firstItem="yrh-W3-NSQ" firstAttribute="leading" secondItem="YIH-bP-Em0" secondAttribute="leading" id="eJH-X3-lMw"/>
-                            <constraint firstItem="yrh-W3-NSQ" firstAttribute="top" secondItem="YIH-bP-Em0" secondAttribute="top" id="uNv-Vd-hb7"/>
-                            <constraint firstAttribute="height" constant="25" id="v5a-eG-Cdh"/>
-                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="YdB-ph-Eij"/>
+                            </mask>
+                        </variation>
                     </view>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="ciF-uc-FU8" firstAttribute="top" secondItem="ZyD-ou-yoF" secondAttribute="bottom" id="8Th-OQ-Z1Z"/>
                     <constraint firstItem="ZyD-ou-yoF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9gF-0k-YlP"/>
-                    <constraint firstAttribute="trailing" secondItem="YIH-bP-Em0" secondAttribute="trailing" id="AMQ-rp-MSq"/>
-                    <constraint firstItem="YIH-bP-Em0" firstAttribute="top" secondItem="ZyD-ou-yoF" secondAttribute="bottom" constant="350" id="BLo-FM-3wg"/>
+                    <constraint firstAttribute="trailing" secondItem="ciF-uc-FU8" secondAttribute="trailing" id="F7c-b4-Wrk"/>
+                    <constraint firstAttribute="bottom" secondItem="ciF-uc-FU8" secondAttribute="bottom" id="Gv3-O6-ZDz"/>
                     <constraint firstAttribute="trailing" secondItem="ZyD-ou-yoF" secondAttribute="trailing" id="N8K-6H-NfA"/>
                     <constraint firstItem="ZyD-ou-yoF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="PzD-cP-Gfl"/>
-                    <constraint firstItem="ciF-uc-FU8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="45" id="T1j-9N-b8J"/>
-                    <constraint firstAttribute="trailing" secondItem="ciF-uc-FU8" secondAttribute="trailing" id="Ty5-I0-fYI"/>
-                    <constraint firstItem="YIH-bP-Em0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="aVd-gQ-i1V"/>
-                    <constraint firstItem="ciF-uc-FU8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="d7Z-sB-Jo4"/>
+                    <constraint firstItem="ciF-uc-FU8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ZhU-2i-5Jh"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" red="0.8980392157" green="0.69019607839999997" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>

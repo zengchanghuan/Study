@@ -57,7 +57,9 @@
 		8ED5EF8A1D2BA45200E22D19 /* XRedTimelineCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ED5EF881D2BA45200E22D19 /* XRedTimelineCollectionViewCell.xib */; };
 		8ED5EF8E1D2BD38E00E22D19 /* XZMomentsTitleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED5EF8C1D2BD38E00E22D19 /* XZMomentsTitleViewCell.m */; };
 		8ED5EF8F1D2BD38E00E22D19 /* XZMomentsTitleViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ED5EF8D1D2BD38E00E22D19 /* XZMomentsTitleViewCell.xib */; };
-		8ED5EF911D2CA56B00E22D19 /* XZHomeFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ED5EF901D2CA56B00E22D19 /* XZHomeFooterView.xib */; };
+		8ED5EF951D2CB3A500E22D19 /* XZHomeUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED5EF931D2CB3A500E22D19 /* XZHomeUserCell.m */; };
+		8ED5EF961D2CB3A500E22D19 /* XZHomeUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ED5EF941D2CB3A500E22D19 /* XZHomeUserCell.xib */; };
+		8ED5EF9A1D2CE14D00E22D19 /* XZHomeFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ED5EF991D2CE14D00E22D19 /* XZHomeFooterView.xib */; };
 		8EDC57F81D23C95100CE06D7 /* XZHomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC57F71D23C95100CE06D7 /* XZHomeHeaderView.m */; };
 		8EDC57FB1D23D0A000CE06D7 /* XZHomeFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC57FA1D23D0A000CE06D7 /* XZHomeFooterView.m */; };
 		8EDC58081D23F3BD00CE06D7 /* XZHomeLiveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC58061D23F3BD00CE06D7 /* XZHomeLiveTableViewCell.m */; };
@@ -161,7 +163,10 @@
 		8ED5EF8B1D2BD38E00E22D19 /* XZMomentsTitleViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZMomentsTitleViewCell.h; sourceTree = "<group>"; };
 		8ED5EF8C1D2BD38E00E22D19 /* XZMomentsTitleViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZMomentsTitleViewCell.m; sourceTree = "<group>"; };
 		8ED5EF8D1D2BD38E00E22D19 /* XZMomentsTitleViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZMomentsTitleViewCell.xib; sourceTree = "<group>"; };
-		8ED5EF901D2CA56B00E22D19 /* XZHomeFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZHomeFooterView.xib; sourceTree = "<group>"; };
+		8ED5EF921D2CB3A500E22D19 /* XZHomeUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZHomeUserCell.h; sourceTree = "<group>"; };
+		8ED5EF931D2CB3A500E22D19 /* XZHomeUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZHomeUserCell.m; sourceTree = "<group>"; };
+		8ED5EF941D2CB3A500E22D19 /* XZHomeUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZHomeUserCell.xib; sourceTree = "<group>"; };
+		8ED5EF991D2CE14D00E22D19 /* XZHomeFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZHomeFooterView.xib; sourceTree = "<group>"; };
 		8EDC57F61D23C95100CE06D7 /* XZHomeHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZHomeHeaderView.h; sourceTree = "<group>"; };
 		8EDC57F71D23C95100CE06D7 /* XZHomeHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZHomeHeaderView.m; sourceTree = "<group>"; };
 		8EDC57F91D23D0A000CE06D7 /* XZHomeFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZHomeFooterView.h; sourceTree = "<group>"; };
@@ -336,7 +341,10 @@
 				8E399B3B1D26431C00B3003A /* XZHeaderTab.xib */,
 				8EDC57F91D23D0A000CE06D7 /* XZHomeFooterView.h */,
 				8EDC57FA1D23D0A000CE06D7 /* XZHomeFooterView.m */,
-				8ED5EF901D2CA56B00E22D19 /* XZHomeFooterView.xib */,
+				8ED5EF991D2CE14D00E22D19 /* XZHomeFooterView.xib */,
+				8ED5EF921D2CB3A500E22D19 /* XZHomeUserCell.h */,
+				8ED5EF931D2CB3A500E22D19 /* XZHomeUserCell.m */,
+				8ED5EF941D2CB3A500E22D19 /* XZHomeUserCell.xib */,
 				8EDC58051D23F3BD00CE06D7 /* XZHomeLiveTableViewCell.h */,
 				8EDC58061D23F3BD00CE06D7 /* XZHomeLiveTableViewCell.m */,
 				8EDC58071D23F3BD00CE06D7 /* XZHomeLiveTableViewCell.xib */,
@@ -696,6 +704,7 @@
 				8EDC584E1D2615BE00CE06D7 /* XZCollectionViewCell.xib in Resources */,
 				8EA1C5F21D1817DC0015FFF2 /* XZVerifyViewController.xib in Resources */,
 				8ED5EF8F1D2BD38E00E22D19 /* XZMomentsTitleViewCell.xib in Resources */,
+				8ED5EF9A1D2CE14D00E22D19 /* XZHomeFooterView.xib in Resources */,
 				8ED5EF8A1D2BA45200E22D19 /* XRedTimelineCollectionViewCell.xib in Resources */,
 				8E8396D11D0E8DFD00059703 /* composer_close.wav in Resources */,
 				8EA1C5D31D178FAA0015FFF2 /* XZLogRegisterViewController.xib in Resources */,
@@ -704,7 +713,7 @@
 				8EA1C5ED1D1817A70015FFF2 /* XZForgetPasswordViewController.xib in Resources */,
 				8EA1C5E31D180FC70015FFF2 /* XZAgreementViewController.xib in Resources */,
 				8EDC58131D23F44300CE06D7 /* XZMomentsTableViewCell.xib in Resources */,
-				8ED5EF911D2CA56B00E22D19 /* XZHomeFooterView.xib in Resources */,
+				8ED5EF961D2CB3A500E22D19 /* XZHomeUserCell.xib in Resources */,
 				8EA1C5DE1D1806BE0015FFF2 /* XZRegisterUserViewController.xib in Resources */,
 				8EA1C5E81D1810000015FFF2 /* XZProfileViewController.xib in Resources */,
 				8E8396D21D0E8DFD00059703 /* composer_open.wav in Resources */,
@@ -782,6 +791,7 @@
 				8E83965F1D0D085700059703 /* XZDiscoverViewController.m in Sources */,
 				8EA1C5DD1D1806BE0015FFF2 /* XZRegisterUserViewController.m in Sources */,
 				8EA1C5F61D1818110015FFF2 /* XZNewPasswordViewController.m in Sources */,
+				8ED5EF951D2CB3A500E22D19 /* XZHomeUserCell.m in Sources */,
 				8EDC580D1D23F42600CE06D7 /* XZRedTimelineTableViewCell.m in Sources */,
 				8EA1C5E21D180FC70015FFF2 /* XZAgreementViewController.m in Sources */,
 				8EDC57F81D23C95100CE06D7 /* XZHomeHeaderView.m in Sources */,

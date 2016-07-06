@@ -40,8 +40,8 @@
 #define XZRandomColor XZColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
 
 //屏幕总宽度
-#define screenWidth [UIScreen mainScreen].bounds.size.width
+#define XZScreenWidth [UIScreen mainScreen].bounds.size.width
 
-#define screenHeight [UIScreen mainScreen].bounds.size.height
+#define XZScreenHeight [UIScreen mainScreen].bounds.size.height
 
 #endif /* SportClubPrefix_h */

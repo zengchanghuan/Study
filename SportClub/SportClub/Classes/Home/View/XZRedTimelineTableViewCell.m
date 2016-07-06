@@ -5,13 +5,18 @@
 //  Created by ZengChanghuan on 16/6/29.
 //  Copyright © 2016年 ZengChanghuan. All rights reserved.
 //
-
 #import "XZRedTimelineTableViewCell.h"
 #import "XRedTimelineCollectionViewCell.h"
 
-#define XZStatusWH (((screenWidth)/3.0)-10)
+NSUInteger const XZRedTimelineCollectionViewCellColCount = 3;
+NSUInteger const XZRedTimelineCollectionViewCellRowCount = 3;
+CGFloat const XZRedTimelineCollectionViewCellMarginLeftRight = 12.0;
+CGFloat const XZRedTimelineCollectionViewCellMidMarginX = 5.0;
+CGFloat const XZSelectTheDynamicHeight = 45;
 
 NSString *const XZRedTimelineCellIdentifier = @"redTimelineCellIdentifierID";
+
+#define XZStatusWH (((XZScreenWidth - XZRedTimelineCollectionViewCellMarginLeftRight * 2 - (XZRedTimelineCollectionViewCellColCount - 1) * XZRedTimelineCollectionViewCellMidMarginX)) /(XZRedTimelineCollectionViewCellColCount * 1.0))
 
 @interface XZRedTimelineTableViewCell ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 @property (weak, nonatomic) IBOutlet UIView *redTimelineView;
@@ -21,49 +26,55 @@ NSString *const XZRedTimelineCellIdentifier = @"redTimelineCellIdentifierID";
 +(instancetype)cellWithTableView:(UITableView *)tableView
 {
     static NSString *ID = @"redTimelineID";
+    tableView.separatorStyle = UITableViewCellSelectionStyleNone;
+    tableView.separatorColor = [UIColor clearColor];
     XZRedTimelineTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     if (cell == nil) {
         cell = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil] lastObject];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     return cell;
 }
 
 - (void)awakeFromNib {
-    // Initialization code
-    CGRect rect = CGRectMake(0, 0, screenWidth,screenWidth);
-    self.redTimelineCollectionView = [[UICollectionView alloc] initWithFrame:rect collectionViewLayout:[UICollectionViewFlowLayout new]];
+    UICollectionViewFlowLayout *flowLayout = [UICollectionViewFlowLayout new];
+    flowLayout.sectionInset = UIEdgeInsetsMake(0, XZRedTimelineCollectionViewCellMarginLeftRight, XZRedTimelineCollectionViewCellMidMarginX, XZRedTimelineCollectionViewCellMarginLeftRight);
+    flowLayout.minimumLineSpacing = 0;
+    flowLayout.minimumInteritemSpacing = 0;
+    CGRect rect = CGRectMake(0, 0, XZScreenWidth, [XZRedTimelineTableViewCell collectionViewHeight]);
+    self.redTimelineCollectionView = [[UICollectionView alloc] initWithFrame:rect collectionViewLayout:flowLayout];
+    self.redTimelineCollectionView.scrollEnabled = NO;
     [self.redTimelineCollectionView registerNib:[UINib nibWithNibName:@"XRedTimelineCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:XZRedTimelineCellIdentifier];
     self.redTimelineCollectionView.dataSource = self;
     self.redTimelineCollectionView.delegate = self;
     self.redTimelineCollectionView.backgroundColor = [UIColor whiteColor];
     [self.redTimelineView addSubview:self.redTimelineCollectionView];
-    
-   
 }
+
++ (CGFloat)cellHeight{
+    return [self collectionViewHeight] + XZSelectTheDynamicHeight;
+}
+
++ (CGFloat)collectionViewHeight{
+    return XZStatusWH * XZRedTimelineCollectionViewCellRowCount + (XZRedTimelineCollectionViewCellRowCount + 1) * XZRedTimelineCollectionViewCellMidMarginX;
+}
+
 - (IBAction)moreTimeline:(id)sender {
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
-}
-
 #pragma mark -UICollectionViewDataSource
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
-{
-    return 3;
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    return XZRedTimelineCollectionViewCellColCount;
 }
 
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
-{
-    return 3;
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
+    return XZRedTimelineCollectionViewCellRowCount;
 }
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
-{
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:XZRedTimelineCellIdentifier forIndexPath:indexPath];
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 45)];
-    label.text = @"text";
+    UILabel *label = [[UILabel alloc] initWithFrame:cell.bounds];
+    label.text = [NSString stringWithFormat:@"%ld - %ld", indexPath.section, indexPath.item];
     [cell.contentView addSubview:label];
     return cell;
     
@@ -72,13 +83,7 @@ NSString *const XZRedTimelineCellIdentifier = @"redTimelineCellIdentifierID";
 #pragma mark UICollectionViewDelegateFlowLayout
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
-    return CGSizeMake(XZStatusWH,XZStatusWH);
-}
-
--(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
-{
-    //top, left, bottom, right
-    return UIEdgeInsetsMake(5,5,5,5);
+    return CGSizeMake(XZStatusWH, XZStatusWH);
 }
 
 #pragma makr -UICollectionViewDelegate

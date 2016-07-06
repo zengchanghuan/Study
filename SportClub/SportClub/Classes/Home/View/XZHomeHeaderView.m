@@ -17,7 +17,7 @@
     if (self) {
         self.backgroundColor = [UIColor grayColor];
         XZStatusToolbar *toolBar = [XZStatusToolbar toolbar];
-        toolBar.frame = CGRectMake(0, 181, screenWidth, 45);
+        toolBar.frame = CGRectMake(0, 181, XZScreenWidth, 45);
         [self addSubview:toolBar];
         
     }
