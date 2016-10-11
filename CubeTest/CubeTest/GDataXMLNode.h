@@ -35,11 +35,11 @@
 //
 //   -lxml2
 
-#import <libxml/tree.h>
-#import <libxml/parser.h>
-#import <libxml/xmlstring.h>
-#import <libxml/xpath.h>
-#import <libxml/xpathInternals.h>
+#import <libxml2/tree.h>
+#import <libxml2/parser.h>
+#import <libxml2/xmlstring.h>
+#import <libxml2/xpath.h>
+#import <libxml2/xpathInternals.h>
 
 
 #if (MAC_OS_X_VERSION_MAX_ALLOWED <= MAC_OS_X_VERSION_10_4) || defined(GDATA_TARGET_NAMESPACE)

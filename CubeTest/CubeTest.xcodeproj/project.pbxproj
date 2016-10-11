@@ -7,15 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E096F411D5C5B310031BE18 /* cube.license in Resources */ = {isa = PBXBuildFile; fileRef = 8E096F401D5C5B310031BE18 /* cube.license */; };
+		8E096F761D5C65EC0031BE18 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E096F751D5C65EC0031BE18 /* libxml2.tbd */; };
+		8E16F4A31D86AC350041EEFA /* oldphone.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8E16F4A21D86AC350041EEFA /* oldphone.wav */; };
+		8E4357A11D76E286004BA7EF /* CubeEncipher.license in Resources */ = {isa = PBXBuildFile; fileRef = 8E4357A01D76E286004BA7EF /* CubeEncipher.license */; };
+		8E4357A31D77BE3B004BA7EF /* conferenceStr.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8E4357A21D77BE3B004BA7EF /* conferenceStr.txt */; };
+		8E4357A51D77BE99004BA7EF /* cube.license.original in Resources */ = {isa = PBXBuildFile; fileRef = 8E4357A41D77BE99004BA7EF /* cube.license.original */; };
 		8EDF08A81D4F00A30007A9B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF08A71D4F00A30007A9B1 /* main.m */; };
 		8EDF08AB1D4F00A30007A9B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF08AA1D4F00A30007A9B1 /* AppDelegate.m */; };
 		8EDF08AE1D4F00A30007A9B1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF08AD1D4F00A30007A9B1 /* ViewController.m */; };
 		8EDF08B11D4F00A30007A9B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EDF08AF1D4F00A30007A9B1 /* Main.storyboard */; };
 		8EDF08B31D4F00A30007A9B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EDF08B21D4F00A30007A9B1 /* Assets.xcassets */; };
 		8EDF08B61D4F00A30007A9B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EDF08B41D4F00A30007A9B1 /* LaunchScreen.storyboard */; };
+		8EDF08CC1D4F58F80007A9B1 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF08C01D4F58F80007A9B1 /* ioapi.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8EDF08CD1D4F58F80007A9B1 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF08C21D4F58F80007A9B1 /* mztools.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8EDF08CE1D4F58F80007A9B1 /* time_adpter.c in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF08C41D4F58F80007A9B1 /* time_adpter.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8EDF08CF1D4F58F80007A9B1 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF08C61D4F58F80007A9B1 /* unzip.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8EDF08D01D4F58F80007A9B1 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF08C81D4F58F80007A9B1 /* zip.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8EDF08D11D4F58F80007A9B1 /* ZipArchiveUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF08CB1D4F58F80007A9B1 /* ZipArchiveUtils.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8EDF08D31D4F5F880007A9B1 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EDF08D21D4F5F880007A9B1 /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E096F401D5C5B310031BE18 /* cube.license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cube.license; sourceTree = "<group>"; };
+		8E096F751D5C65EC0031BE18 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		8E16F4A21D86AC350041EEFA /* oldphone.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = oldphone.wav; sourceTree = "<group>"; };
+		8E4357A01D76E286004BA7EF /* CubeEncipher.license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CubeEncipher.license; sourceTree = "<group>"; };
+		8E4357A21D77BE3B004BA7EF /* conferenceStr.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = conferenceStr.txt; sourceTree = "<group>"; };
+		8E4357A41D77BE99004BA7EF /* cube.license.original */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cube.license.original; sourceTree = "<group>"; };
 		8EDF08A31D4F00A30007A9B1 /* CubeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CubeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EDF08A71D4F00A30007A9B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8EDF08A91D4F00A30007A9B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +45,20 @@
 		8EDF08B21D4F00A30007A9B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EDF08B51D4F00A30007A9B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8EDF08B71D4F00A30007A9B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EDF08BF1D4F58F80007A9B1 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		8EDF08C01D4F58F80007A9B1 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		8EDF08C11D4F58F80007A9B1 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		8EDF08C21D4F58F80007A9B1 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		8EDF08C31D4F58F80007A9B1 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		8EDF08C41D4F58F80007A9B1 /* time_adpter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = time_adpter.c; sourceTree = "<group>"; };
+		8EDF08C51D4F58F80007A9B1 /* time_adpter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = time_adpter.h; sourceTree = "<group>"; };
+		8EDF08C61D4F58F80007A9B1 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		8EDF08C71D4F58F80007A9B1 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		8EDF08C81D4F58F80007A9B1 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		8EDF08C91D4F58F80007A9B1 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		8EDF08CA1D4F58F80007A9B1 /* ZipArchiveUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchiveUtils.h; sourceTree = "<group>"; };
+		8EDF08CB1D4F58F80007A9B1 /* ZipArchiveUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipArchiveUtils.m; sourceTree = "<group>"; };
+		8EDF08D21D4F5F880007A9B1 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E096F761D5C65EC0031BE18 /* libxml2.tbd in Frameworks */,
+				8EDF08D31D4F5F880007A9B1 /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +77,8 @@
 		8EDF089A1D4F00A20007A9B1 = {
 			isa = PBXGroup;
 			children = (
+				8E096F751D5C65EC0031BE18 /* libxml2.tbd */,
+				8EDF08D21D4F5F880007A9B1 /* libz.tbd */,
 				8EDF08A51D4F00A30007A9B1 /* CubeTest */,
 				8EDF08A41D4F00A30007A9B1 /* Products */,
 			);
@@ -58,6 +95,7 @@
 		8EDF08A51D4F00A30007A9B1 /* CubeTest */ = {
 			isa = PBXGroup;
 			children = (
+				8EDF08BD1D4F58F80007A9B1 /* ZipArchive */,
 				8EDF08A91D4F00A30007A9B1 /* AppDelegate.h */,
 				8EDF08AA1D4F00A30007A9B1 /* AppDelegate.m */,
 				8EDF08AC1D4F00A30007A9B1 /* ViewController.h */,
@@ -74,9 +112,42 @@
 		8EDF08A61D4F00A30007A9B1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8E16F4A21D86AC350041EEFA /* oldphone.wav */,
+				8E4357A01D76E286004BA7EF /* CubeEncipher.license */,
+				8E4357A41D77BE99004BA7EF /* cube.license.original */,
+				8E4357A21D77BE3B004BA7EF /* conferenceStr.txt */,
+				8E096F401D5C5B310031BE18 /* cube.license */,
 				8EDF08A71D4F00A30007A9B1 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8EDF08BD1D4F58F80007A9B1 /* ZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				8EDF08BE1D4F58F80007A9B1 /* minizip */,
+				8EDF08CA1D4F58F80007A9B1 /* ZipArchiveUtils.h */,
+				8EDF08CB1D4F58F80007A9B1 /* ZipArchiveUtils.m */,
+			);
+			path = ZipArchive;
+			sourceTree = "<group>";
+		};
+		8EDF08BE1D4F58F80007A9B1 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				8EDF08BF1D4F58F80007A9B1 /* crypt.h */,
+				8EDF08C01D4F58F80007A9B1 /* ioapi.c */,
+				8EDF08C11D4F58F80007A9B1 /* ioapi.h */,
+				8EDF08C21D4F58F80007A9B1 /* mztools.c */,
+				8EDF08C31D4F58F80007A9B1 /* mztools.h */,
+				8EDF08C41D4F58F80007A9B1 /* time_adpter.c */,
+				8EDF08C51D4F58F80007A9B1 /* time_adpter.h */,
+				8EDF08C61D4F58F80007A9B1 /* unzip.c */,
+				8EDF08C71D4F58F80007A9B1 /* unzip.h */,
+				8EDF08C81D4F58F80007A9B1 /* zip.c */,
+				8EDF08C91D4F58F80007A9B1 /* zip.h */,
+			);
+			path = minizip;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +207,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E096F411D5C5B310031BE18 /* cube.license in Resources */,
+				8E16F4A31D86AC350041EEFA /* oldphone.wav in Resources */,
 				8EDF08B61D4F00A30007A9B1 /* LaunchScreen.storyboard in Resources */,
+				8E4357A31D77BE3B004BA7EF /* conferenceStr.txt in Resources */,
 				8EDF08B31D4F00A30007A9B1 /* Assets.xcassets in Resources */,
+				8E4357A11D76E286004BA7EF /* CubeEncipher.license in Resources */,
+				8E4357A51D77BE99004BA7EF /* cube.license.original in Resources */,
 				8EDF08B11D4F00A30007A9B1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,8 +226,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EDF08AE1D4F00A30007A9B1 /* ViewController.m in Sources */,
+				8EDF08D01D4F58F80007A9B1 /* zip.c in Sources */,
+				8EDF08CF1D4F58F80007A9B1 /* unzip.c in Sources */,
+				8EDF08D11D4F58F80007A9B1 /* ZipArchiveUtils.m in Sources */,
 				8EDF08AB1D4F00A30007A9B1 /* AppDelegate.m in Sources */,
+				8EDF08CC1D4F58F80007A9B1 /* ioapi.c in Sources */,
 				8EDF08A81D4F00A30007A9B1 /* main.m in Sources */,
+				8EDF08CE1D4F58F80007A9B1 /* time_adpter.c in Sources */,
+				8EDF08CD1D4F58F80007A9B1 /* mztools.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +344,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CubeTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Cube.www.CubeTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -273,6 +356,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CubeTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Cube.www.CubeTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -298,6 +382,7 @@
 				8EDF08BC1D4F00A30007A9B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

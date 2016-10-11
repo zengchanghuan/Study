@@ -8,6 +8,195 @@
 
 #import "CubeLicense.h"
 
+#import "NSDictionary+NilSafe.h"
+@implementation CubeServer
+
++ (CubeServer *)cubeServerDict:(NSDictionary *)dict
+{
+    NSString *host = dict[@"Host"];
+    NSInteger HTTPPort = [dict[@"HTTPPort"] integerValue];
+    NSInteger TCPPort = [dict[@"TCPPort"] integerValue];
+    CubeServer *cubeServer = [[CubeServer alloc] init];
+    cubeServer.host = host;
+    cubeServer.HTTPPort = HTTPPort;
+    cubeServer.TCPPort = TCPPort;
+    return cubeServer;
+}
+- (NSMutableDictionary *)toJSON
+{
+    NSMutableDictionary *dic = [[NSMutableDictionary alloc] initWithCapacity:3];
+    [dic setObject:_host forKey:@"Host"];
+    [dic setObject:[NSNumber numberWithInteger:_HTTPPort] forKey:@"HTTPPort"];
+    [dic setObject:[NSNumber numberWithInteger:_TCPPort] forKey:@"TCPPort"];
+    return dic;
+}
+
+@end
+
+@implementation ICEServer
+
++ (ICEServer *)ICEServerParse:(NSDictionary *)dict
+{
+    NSString *host = dict[@"Host"];
+    NSString *password = dict[@"Password"];
+    NSInteger port = [dict[@"Port"] integerValue];
+    NSString *username = dict[@"Username"];
+    ICEServer *ICEServerOb = [ICEServer new];
+    ICEServerOb.host = host;
+    ICEServerOb.password = password;
+    ICEServerOb.port = port;
+    ICEServerOb.username = username;
+    return ICEServerOb;
+}
+- (NSMutableDictionary *)toJSON
+{
+    NSMutableDictionary *dic = [[NSMutableDictionary alloc] initWithCapacity:4];
+    [dic setObject:_host forKey:@"Host"];
+    [dic setObject:_password forKey:@"Password"];
+    [dic setObject:_username forKey:@"Username"];
+    [dic setObject:[NSNumber numberWithInteger:_port] forKey:@"Port"];
+    return dic;
+}
+
+@end
+
+
+@implementation CubeHttpServer
+
++ (CubeHttpServer *)cubeHttpServerParse:(NSDictionary *)dict
+{
+    NSInteger HTTPPort = [dict[@"HTTPPort"] integerValue];
+    NSString *host = dict[@"Host"];
+    NSInteger SSLPort = [dict[@"SSLPort"] integerValue];
+    CubeHttpServer *cubeHttpServer = [CubeHttpServer new];
+    cubeHttpServer.HTTPPort = HTTPPort;
+    cubeHttpServer.host = host;
+    cubeHttpServer.SSLPort = SSLPort;
+    return cubeHttpServer;
+}
+- (NSMutableDictionary *)toJSON
+{
+    NSMutableDictionary *dic = [[NSMutableDictionary alloc] initWithCapacity:3];
+    [dic setObject:[NSNumber numberWithInteger:_HTTPPort] forKey:@"HTTPPort"];
+    [dic setObject:_host forKey:@"Host"];
+    [dic setObject:[NSNumber numberWithInteger:_SSLPort] forKey:@"SSLPort"];
+    
+    return dic;
+}
+
+@end
+
+@implementation BackupServer
+
++ (BackupServer *)backupServerParse:(NSDictionary *)dict
+{
+    NSInteger HTTPPort = [dict[@"HTTPPort"] integerValue];
+    NSString *host = dict[@"Host"];
+    NSInteger TCPPort = [dict[@"TCPPort"] integerValue];
+    
+    BackupServer *object = [BackupServer new];
+    object.HTTPPort = HTTPPort;
+    object.host = host;
+    object.TCPPort = TCPPort;
+    
+    return object;
+}
+- (NSMutableDictionary *)toJSON
+{
+    NSMutableDictionary *dic = [[NSMutableDictionary alloc] initWithCapacity:3];
+    [dic setObject:[NSNumber numberWithInteger:_HTTPPort] forKey:@"HTTPPort"];
+    [dic setObject:_host forKey:@"Host"];
+    [dic setObject:[NSNumber numberWithInteger:_TCPPort] forKey:@"TCPPort"];
+    return dic;
+}
+
+@end
+@implementation BackupHttpServer
+
++ (BackupHttpServer *)backupHttpServerParse:(NSDictionary *)dict
+{
+    /* HTTPPort = 7080;
+    Host = "backup.shixinyun.com";
+    TCPPort = 7008;
+     */
+    NSInteger HTTPPort = [dict[@"HTTPPort"] integerValue];
+    NSString *host = dict[@"Host"];
+    NSInteger SSLPort = [dict[@"SSLPort"] integerValue];
+    
+    BackupHttpServer *object = [BackupHttpServer new];
+    object.HTTPPort = HTTPPort;
+    object.host = host;
+    object.SSLPort = SSLPort;
+    return object;
+}
+- (NSMutableDictionary *)toJSON
+{
+    NSMutableDictionary *dic = [[NSMutableDictionary alloc] initWithCapacity:2];
+    [dic setObject:[NSNumber numberWithInteger:_HTTPPort] forKey:@"HTTPPort"];
+    [dic setObject:_host forKey:@"Host"];
+    [dic setObject:[NSNumber numberWithInteger:_SSLPort] forKey:@"SSLPort"];
+    
+    return dic;
+}
+
+@end
 @implementation CubeLicense
++ (CubeLicense *)licenseParse:(NSDictionary *)dict
+{
+    NSLog(@"dict = %@",dict);
+    NSString *ConfigVersion = dict[@"ConfigVersion"];
+    NSString *AppKey = dict[@"AppKey"];
+    NSString *AppId = dict[@"AppId"];
+    long BeginNumber = [dict[@"BeginNumber"] longValue];
+    long EndNumber = [dict[@"EndNumber"] longValue];
+    long long BeginDate = [dict[@"BeginDate"] longLongValue];
+    long long EndDate = [dict[@"EndDate"] longLongValue];
+    
+    CubeServer *cubeServer = [CubeServer cubeServerDict:dict[@"CubeServer"]];
+    CubeHttpServer *cubeHTTPServer = [CubeHttpServer cubeHttpServerParse:dict[@"CubeHttpServer"]];
+    NSDictionary *ConferenceDic = dict[@"Conference"];
+    BackupServer *backupServer = [BackupServer backupServerParse:dict[@"BackupServer"]];
+    BackupHttpServer *backupHttpServer = [BackupHttpServer backupHttpServerParse:dict[@"BackupHttpServer"]];
+    NSDictionary *backupConferenceDic = dict[@"BackupConference"];
+    NSArray *permissionArray = dict[@"Permissions"];
+    NSDictionary *companyDic = dict[@"Company"];
+    NSString *version = dict[@"Version"];
+    NSString *createTime = dict[@"CreateTime"];
+    NSMutableArray *ICEServerArray = [[NSMutableArray alloc] initWithCapacity:2];
+    for (NSDictionary *iceServerDic in dict[@"ICEServers"])
+    {
+        ICEServer *ICEServerObject = [ICEServer ICEServerParse:iceServerDic];
+        [ICEServerArray addObject:ICEServerObject];
+        
+    }
+    
+    CubeLicense *license = [[CubeLicense alloc] init];
+    license.configVersion = ConfigVersion;
+    license.appKey = AppKey;
+    license.appId = AppId;
+    license.beginNumber = BeginNumber;
+    license.endNumber = EndNumber;
+    license.beginDate = BeginDate;
+    license.endDate = EndDate;
+    license.cubeServer = cubeServer;
+    license.cubeHttpServer = cubeHTTPServer;
+    license.conferenceDic = ConferenceDic;
+    license.backupServer = backupServer;
+    license.backupHttpServer = backupHttpServer;
+    license.backupConferenceDic = backupConferenceDic;
+    license.permissionArray = permissionArray;
+    license.companyDic = companyDic;
+    license.version = version;
+    license.createTime = [createTime longLongValue];
+    license.ICEServers = ICEServerArray;
+    
+    
+    return license;
+}
+- (NSMutableDictionary *)toJSON
+{
+    NSMutableDictionary *licenseDic = [[NSMutableDictionary alloc] init];
+    return licenseDic;
+}
 
 @end

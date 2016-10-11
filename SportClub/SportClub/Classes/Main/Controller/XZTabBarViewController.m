@@ -17,7 +17,7 @@
 #import "MenuLabel.h"
 #import "HyPopMenuView.h"
 #import <POP.h>
-
+#import "XZTestViewController.h"
 #define Objs @[[MenuLabel CreatelabelIconName:@"tabbar_compose_idea" Title:@"文字"],[MenuLabel CreatelabelIconName:@"tabbar_compose_photo" Title:@"相册"],[MenuLabel CreatelabelIconName:@"tabbar_compose_camera" Title:@"拍摄"],[MenuLabel CreatelabelIconName:@"tabbar_compose_lbs" Title:@"签到"],[MenuLabel CreatelabelIconName:@"tabbar_compose_review" Title:@"点评"],[MenuLabel CreatelabelIconName:@"tabbar_compose_more" Title:@"更多"],]
 
 
@@ -30,6 +30,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    XZTestViewController *test = [XZTestViewController new];
+    [self addChildVc:test title:@"测试" image:@"tabbar_home" selectedImage:@"tabbar_home"];
     XZHomeViewController *home = [XZHomeViewController new];
     [self addChildVc:home title:@"热点" image:@"tabbar_home" selectedImage:@"tabbar_home"];
     
@@ -88,7 +90,7 @@
     [AudioDictionary setObject:@"wav" forKey:kHyPopMenuViewSelectAudioTypeKey];
     
     [HyPopMenuView CreatingPopMenuObjectItmes:Objs TopView:topView /*nil*/OpenOrCloseAudioDictionary:AudioDictionary /*nil*/ SelectdCompletionBlock:^(MenuLabel *menuLabel, NSInteger index) {
-        NSLog(@"index:%ld ItmeNmae:%@",index,menuLabel.title);
+        NSLog(@"index:%ld ItmeNmae:%@",(long)index,menuLabel.title);
     }];
     
     

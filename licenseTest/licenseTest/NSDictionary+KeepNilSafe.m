@@ -6,10 +6,9 @@
 //  Copyright © 2016年 ZengChanghuan. All rights reserved.
 //
 
-#import "NSDictionary+NilSafe.h"
 
 #import <objc/runtime.h>
-#import "NSDictionary+NilSafe.h"
+#import "NSDictionary+KeepNilSafe.h"
 
 @implementation NSObject (Swizzling)
 

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8E16F4B11D9BE48F0041EEFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E16F4B01D9BE48F0041EEFA /* main.m */; };
+		8EE7E9D61DAB38D600B44AA8 /* License.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE7E9D51DAB38D600B44AA8 /* License.m */; };
+		8EE7E9D91DAB3CE400B44AA8 /* NSDictionary+KeepNilSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE7E9D81DAB3CE400B44AA8 /* NSDictionary+KeepNilSafe.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,13 @@
 /* Begin PBXFileReference section */
 		8E16F4AD1D9BE48F0041EEFA /* licenseTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = licenseTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E16F4B01D9BE48F0041EEFA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8E16F4B71D9BE4AB0041EEFA /* license.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
+		8EE7E9D31DAB38A500B44AA8 /* license2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license2.txt; sourceTree = "<group>"; };
+		8EE7E9D41DAB38D600B44AA8 /* License.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = License.h; sourceTree = "<group>"; };
+		8EE7E9D51DAB38D600B44AA8 /* License.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = License.m; sourceTree = "<group>"; };
+		8EE7E9D71DAB3CE400B44AA8 /* NSDictionary+KeepNilSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+KeepNilSafe.h"; sourceTree = "<group>"; };
+		8EE7E9D81DAB3CE400B44AA8 /* NSDictionary+KeepNilSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+KeepNilSafe.m"; sourceTree = "<group>"; };
+		8EE7E9E01DAB969800B44AA8 /* license3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license3.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +66,14 @@
 		8E16F4AF1D9BE48F0041EEFA /* licenseTest */ = {
 			isa = PBXGroup;
 			children = (
+				8E16F4B71D9BE4AB0041EEFA /* license.txt */,
+				8EE7E9D31DAB38A500B44AA8 /* license2.txt */,
 				8E16F4B01D9BE48F0041EEFA /* main.m */,
+				8EE7E9E01DAB969800B44AA8 /* license3.txt */,
+				8EE7E9D41DAB38D600B44AA8 /* License.h */,
+				8EE7E9D51DAB38D600B44AA8 /* License.m */,
+				8EE7E9D71DAB3CE400B44AA8 /* NSDictionary+KeepNilSafe.h */,
+				8EE7E9D81DAB3CE400B44AA8 /* NSDictionary+KeepNilSafe.m */,
 			);
 			path = licenseTest;
 			sourceTree = "<group>";
@@ -119,6 +135,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E16F4B11D9BE48F0041EEFA /* main.m in Sources */,
+				8EE7E9D91DAB3CE400B44AA8 /* NSDictionary+KeepNilSafe.m in Sources */,
+				8EE7E9D61DAB38D600B44AA8 /* License.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +257,7 @@
 				8E16F4B61D9BE48F0041EEFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

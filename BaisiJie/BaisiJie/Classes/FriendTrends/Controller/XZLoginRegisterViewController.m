@@ -27,5 +27,7 @@
 }
 - (IBAction)registerBtn:(id)sender {
 }
-
+- (void)updateUserActivityState:(NSUserActivity *)activity{
+    
+}
 @end

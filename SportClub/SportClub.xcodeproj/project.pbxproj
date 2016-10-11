@@ -71,6 +71,7 @@
 		8EDC58461D260F9B00CE06D7 /* XZLineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC58451D260F9B00CE06D7 /* XZLineLayout.m */; };
 		8EDC584D1D2615BE00CE06D7 /* XZCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC584B1D2615BE00CE06D7 /* XZCollectionViewCell.m */; };
 		8EDC584E1D2615BE00CE06D7 /* XZCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EDC584C1D2615BE00CE06D7 /* XZCollectionViewCell.xib */; };
+		8EDF08821D4788720007A9B1 /* XZTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDF08811D4788720007A9B1 /* XZTestViewController.m */; };
 		F4ABDF121C39827EA4142BCB /* libPods-SportClub.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E3A53ADECF322E6CF2ABA1 /* libPods-SportClub.a */; };
 /* End PBXBuildFile section */
 
@@ -185,6 +186,8 @@
 		8EDC584A1D2615BE00CE06D7 /* XZCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZCollectionViewCell.h; sourceTree = "<group>"; };
 		8EDC584B1D2615BE00CE06D7 /* XZCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZCollectionViewCell.m; sourceTree = "<group>"; };
 		8EDC584C1D2615BE00CE06D7 /* XZCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZCollectionViewCell.xib; sourceTree = "<group>"; };
+		8EDF08801D4788720007A9B1 /* XZTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZTestViewController.h; sourceTree = "<group>"; };
+		8EDF08811D4788720007A9B1 /* XZTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZTestViewController.m; sourceTree = "<group>"; };
 		FEFF698849B3D0DCFCE18995 /* Pods-SportClub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportClub.release.xcconfig"; path = "Pods/Target Support Files/Pods-SportClub/Pods-SportClub.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -312,6 +315,8 @@
 			children = (
 				8E83965A1D0D083500059703 /* XZHomeViewController.h */,
 				8E83965B1D0D083500059703 /* XZHomeViewController.m */,
+				8EDF08801D4788720007A9B1 /* XZTestViewController.h */,
+				8EDF08811D4788720007A9B1 /* XZTestViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -799,6 +804,7 @@
 				8EDC584D1D2615BE00CE06D7 /* XZCollectionViewCell.m in Sources */,
 				8EA1C5EC1D1817A70015FFF2 /* XZForgetPasswordViewController.m in Sources */,
 				8E8396651D0D088300059703 /* XZLiveViewController.m in Sources */,
+				8EDF08821D4788720007A9B1 /* XZTestViewController.m in Sources */,
 				8EDC57FB1D23D0A000CE06D7 /* XZHomeFooterView.m in Sources */,
 				8E18E03A1D1944640074FB65 /* MBProgressHUD+MJ.m in Sources */,
 				8EDC58461D260F9B00CE06D7 /* XZLineLayout.m in Sources */,
