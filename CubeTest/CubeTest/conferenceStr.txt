@@ -1,0 +1,2 @@
+
+{"id":"3020","sipPassword":{"12100":"123456","600099":"123456"},"videoSize":"QVGA","closed":0,"hasGuest":false,"expired":10000,"sipNumber":{"12100":"100010","600099":"100009"},"host":"125.208.1.67","presenters":["600099"],"group":"g2016081211081410022","created":1470971297359,"founder":"600099","status":{"12100":{"hasFloor":false,"joined":false,"canHear":true,"joinTime":0,"canWatch":true,"canSpeak":true,"kicked":false,"quitTime":0},"600099":{"hasFloor":false,"joined":false,"canHear":true,"joinTime":0,"canWatch":true,"canSpeak":true,"kicked":false,"quitTime":0}}}
